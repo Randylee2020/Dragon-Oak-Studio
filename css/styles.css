@@ -568,7 +568,7 @@ section {
   isolation: isolate;
   padding-bottom: clamp(58px, 7vw, 82px);
   background:
-    url("../assets/dragon-oak-obsidian-stone.png") 60% 50% / cover no-repeat,
+    url("../assets/dragon-oak-obsidian-stone.webp") 60% 50% / cover no-repeat,
     linear-gradient(180deg, #06121d 0%, #071521 50%, #040b12 100%);
   border-top: 1px solid rgba(124, 190, 224, 0.1);
   border-bottom: 1px solid rgba(124, 190, 224, 0.1);
@@ -595,7 +595,7 @@ section {
   z-index: 0;
   pointer-events: none;
   opacity: 0.18;
-  background: url("../assets/dragon-oak-obsidian-stone.png") 60% 50% / cover no-repeat;
+  background: url("../assets/dragon-oak-obsidian-stone.webp") 60% 50% / cover no-repeat;
   filter: saturate(1.45) contrast(1.12);
   mix-blend-mode: screen;
   mask-image:
@@ -741,7 +741,7 @@ section {
   overflow: hidden;
   isolation: isolate;
   background:
-    url("../assets/dragon-oak-obsidian-stone.png") 28% 42% / cover no-repeat,
+    url("../assets/dragon-oak-obsidian-stone.webp") 28% 42% / cover no-repeat,
     rgba(5, 10, 15, 0.65);
   border-top: 1px solid rgba(125, 195, 225, 0.08);
   border-bottom: 1px solid rgba(125, 195, 225, 0.08);
@@ -767,7 +767,7 @@ section {
   z-index: 0;
   pointer-events: none;
   opacity: 0.08;
-  background: url("../assets/dragon-oak-obsidian-stone.png") 72% 58% / cover no-repeat;
+  background: url("../assets/dragon-oak-obsidian-stone.webp") 72% 58% / cover no-repeat;
   filter: saturate(1.28) contrast(1.06);
   mix-blend-mode: screen;
   mask-image:
@@ -881,7 +881,7 @@ section {
   overflow: hidden;
   isolation: isolate;
   background:
-    url("../assets/dragon-oak-obsidian-stone.png") 44% 62% / cover no-repeat,
+    url("../assets/dragon-oak-obsidian-stone.webp") 44% 62% / cover no-repeat,
     linear-gradient(180deg, rgba(4, 8, 13, 0.92), rgba(6, 12, 18, 0.98));
 }
 
@@ -907,7 +907,7 @@ section {
   z-index: 0;
   pointer-events: none;
   opacity: 0.13;
-  background: url("../assets/dragon-oak-obsidian-stone.png") 78% 36% / cover no-repeat;
+  background: url("../assets/dragon-oak-obsidian-stone.webp") 78% 36% / cover no-repeat;
   filter: saturate(1.38) contrast(1.1);
   mix-blend-mode: screen;
   mask-image:
@@ -1049,7 +1049,7 @@ section {
   overflow: hidden;
   isolation: isolate;
   background:
-    url("../assets/dragon-oak-obsidian-stone.png") 68% 46% / cover no-repeat,
+    url("../assets/dragon-oak-obsidian-stone.webp") 68% 46% / cover no-repeat,
     linear-gradient(90deg, rgba(7, 13, 20, 0.99), rgba(5, 10, 16, 0.95));
   border-top: 1px solid rgba(126, 200, 235, 0.09);
 }
@@ -1075,7 +1075,7 @@ section {
   z-index: 0;
   pointer-events: none;
   opacity: 0.075;
-  background: url("../assets/dragon-oak-obsidian-stone.png") 18% 74% / cover no-repeat;
+  background: url("../assets/dragon-oak-obsidian-stone.webp") 18% 74% / cover no-repeat;
   filter: saturate(1.2) contrast(1.04);
   mix-blend-mode: screen;
   mask-image:
@@ -1195,7 +1195,7 @@ section {
   overflow: hidden;
   isolation: isolate;
   background:
-    url("../assets/dragon-oak-obsidian-stone.png") 54% 48% / cover no-repeat,
+    url("../assets/dragon-oak-obsidian-stone.webp") 54% 48% / cover no-repeat,
     rgba(4, 8, 12, 0.94);
   border-top: 1px solid rgba(126, 200, 235, 0.08);
 }
@@ -1222,7 +1222,7 @@ section {
   z-index: 0;
   pointer-events: none;
   opacity: 0.145;
-  background: url("../assets/dragon-oak-obsidian-stone.png") 24% 38% / cover no-repeat;
+  background: url("../assets/dragon-oak-obsidian-stone.webp") 24% 38% / cover no-repeat;
   filter: saturate(1.42) contrast(1.11);
   mix-blend-mode: screen;
   mask-image:

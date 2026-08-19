@@ -21,6 +21,35 @@ let burnContext = null;
 let burnSourceCanvas = null;
 let burnSourceContext = null;
 
+const loadIntroMedia = (video) => {
+  if (!video || video.dataset.loaded === "true") {
+    return;
+  }
+
+  const source = video.dataset.src;
+
+  if (!source) {
+    return;
+  }
+
+  video.src = source;
+  video.preload = "auto";
+  video.dataset.loaded = "true";
+  video.load();
+};
+
+const releaseIntroMedia = () => {
+  [introVideo, introBurnVideo].forEach((video) => {
+    if (!video) {
+      return;
+    }
+
+    video.pause();
+    video.removeAttribute("src");
+    video.load();
+  });
+};
+
 const getIntroViewed = () => {
   try {
     return (
@@ -51,6 +80,7 @@ const playIntroVideo = () => {
     return;
   }
 
+  loadIntroMedia(introVideo);
   introOverlay?.classList.remove("needs-start");
   introVideo.play().catch(() => {
     introOverlay?.classList.add("needs-start");
@@ -175,6 +205,7 @@ const prepareBurnSurface = () => {
   }
 
   burnPrepared = true;
+  loadIntroMedia(introBurnVideo);
   resizeBurnCanvas();
   introBurnVideo.currentTime = 0;
   introBurnVideo.playbackRate = introBurnPlaybackRate;
@@ -212,8 +243,7 @@ const startBurnThroughReveal = () => {
       return;
     }
 
-    introVideo?.pause();
-    introBurnVideo?.pause();
+    releaseIntroMedia();
     burnSourceCanvas = null;
     burnSourceContext = null;
     document.body.classList.remove("intro-active");
@@ -253,8 +283,7 @@ const finishIntro = ({ fadeAudio = true } = {}) => {
 
   window.setTimeout(
     () => {
-      introVideo?.pause();
-      introBurnVideo?.pause();
+      releaseIntroMedia();
       introOverlay.remove();
     },
     prefersReducedMotion ? 120 : introSkipFadeDuration + 80
@@ -273,6 +302,7 @@ if (introOverlay) {
     document.body.classList.add("intro-active");
     introSkip?.addEventListener("click", () => finishIntro({ fadeAudio: false }));
     introStart?.addEventListener("click", playIntroVideo);
+    introVideo?.addEventListener("playing", () => loadIntroMedia(introBurnVideo), { once: true });
 
     introVideo?.addEventListener("timeupdate", () => {
       if (introVideo.currentTime >= introRevealPrepTime) {
@@ -294,7 +324,7 @@ if (introOverlay) {
       }
 
       resizeBurnCanvas();
-      drawBurnSurface(0, performance.now());
+      drawMaskedParchmentFrame();
     });
 
     playIntroVideo();
