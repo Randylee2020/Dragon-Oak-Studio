@@ -400,7 +400,15 @@ linear-gradient(
     section {
       padding: 100px 0;
     }
-
+.services-section {
+    position: relative;
+    background:
+        radial-gradient(circle at 18% 25%, rgba(52, 189, 242, .07), transparent 32%),
+        radial-gradient(circle at 82% 70%, rgba(30, 90, 140, .06), transparent 30%),
+        linear-gradient(180deg, #06121d 0%, #071521 50%, #040b12 100%);
+    border-top: 1px solid rgba(124, 190, 224, .10);
+    border-bottom: 1px solid rgba(124, 190, 224, .10);
+}
     .section-kicker {
       color: var(--ice);
       text-transform: uppercase;
@@ -993,7 +1001,7 @@ linear-gradient(
       </div>
 
     </div>
-  </section>
+ <section>
 
   <!-- FEATURE STRIP -->
   <div class="feature-strip">
@@ -1028,7 +1036,7 @@ linear-gradient(
   </div>
 
   <!-- LASER / UV -->
-  <section>
+  <section class="services-section">
     <div class="container">
 
       <p class="section-kicker">What We Do</p>
