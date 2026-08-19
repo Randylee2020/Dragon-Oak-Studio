@@ -400,13 +400,49 @@ section {
 /* Craftsmanship Meets Technology */
 .services-section {
   position: relative;
+  overflow: hidden;
+  isolation: isolate;
   padding-bottom: clamp(58px, 7vw, 82px);
   background:
-    radial-gradient(circle at 18% 25%, rgba(52, 189, 242, 0.07), transparent 32%),
-    radial-gradient(circle at 82% 70%, rgba(30, 90, 140, 0.06), transparent 30%),
+    url("../assets/dragon-oak-obsidian-stone.png") 60% 50% / cover no-repeat,
     linear-gradient(180deg, #06121d 0%, #071521 50%, #040b12 100%);
   border-top: 1px solid rgba(124, 190, 224, 0.1);
   border-bottom: 1px solid rgba(124, 190, 224, 0.1);
+}
+
+.services-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, #040b12 0%, rgba(4, 11, 18, 0.5) 12%, rgba(4, 11, 18, 0.26) 50%, rgba(4, 11, 18, 0.54) 88%, #040b12 100%),
+    radial-gradient(circle at 62% 48%, rgba(52, 189, 242, 0.18), transparent 32%),
+    radial-gradient(ellipse at 28% 30%, rgba(2, 8, 13, 0.4), transparent 38%),
+    radial-gradient(ellipse at 50% 56%, rgba(2, 8, 13, 0.34), transparent 54%),
+    linear-gradient(90deg, rgba(2, 6, 10, 0.56), rgba(3, 10, 16, 0.3) 45%, rgba(2, 6, 10, 0.55));
+}
+
+.services-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.18;
+  background: url("../assets/dragon-oak-obsidian-stone.png") 60% 50% / cover no-repeat;
+  filter: saturate(1.45) contrast(1.12);
+  mix-blend-mode: screen;
+  mask-image:
+    radial-gradient(circle at 62% 52%, black 0 22%, transparent 42%),
+    radial-gradient(circle at 29% 65%, black 0 12%, transparent 28%),
+    radial-gradient(circle at 83% 34%, black 0 10%, transparent 24%);
+}
+
+.services-section .container {
+  position: relative;
+  z-index: 2;
 }
 
 .services {
@@ -537,11 +573,48 @@ section {
 
 /* Featured Products */
 .products-section {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
   background:
-    radial-gradient(circle at 76% 18%, rgba(52, 189, 242, 0.055), transparent 26%),
+    url("../assets/dragon-oak-obsidian-stone.png") 28% 42% / cover no-repeat,
     rgba(5, 10, 15, 0.65);
   border-top: 1px solid rgba(125, 195, 225, 0.08);
   border-bottom: 1px solid rgba(125, 195, 225, 0.08);
+}
+
+.products-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(4, 11, 18, 0.72) 0%, rgba(4, 11, 18, 0.38) 16%, rgba(4, 11, 18, 0.48) 52%, rgba(4, 11, 18, 0.64) 86%, #040b12 100%),
+    radial-gradient(ellipse at 50% 56%, rgba(1, 6, 11, 0.48), transparent 58%),
+    radial-gradient(circle at 79% 22%, rgba(52, 189, 242, 0.055), transparent 24%),
+    linear-gradient(90deg, rgba(2, 6, 10, 0.68), rgba(3, 10, 16, 0.44) 45%, rgba(2, 6, 10, 0.7));
+}
+
+.products-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.08;
+  background: url("../assets/dragon-oak-obsidian-stone.png") 72% 58% / cover no-repeat;
+  filter: saturate(1.28) contrast(1.06);
+  mix-blend-mode: screen;
+  mask-image:
+    radial-gradient(circle at 18% 34%, transparent 0 17%, black 28%, transparent 46%),
+    radial-gradient(circle at 84% 24%, black 0 9%, transparent 28%),
+    radial-gradient(circle at 66% 76%, black 0 10%, transparent 30%);
+}
+
+.products-section .container {
+  position: relative;
+  z-index: 2;
 }
 
 .product-grid {
@@ -642,10 +715,47 @@ section {
 .custom-section {
   position: relative;
   overflow: hidden;
+  isolation: isolate;
   background:
-    radial-gradient(circle at 19% 48%, rgba(52, 189, 242, 0.075), transparent 30%),
-    radial-gradient(circle at 86% 28%, rgba(132, 175, 204, 0.055), transparent 24%),
+    url("../assets/dragon-oak-obsidian-stone.png") 44% 62% / cover no-repeat,
     linear-gradient(180deg, rgba(4, 8, 13, 0.92), rgba(6, 12, 18, 0.98));
+}
+
+.custom-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(4, 11, 18, 0.6) 0%, rgba(4, 11, 18, 0.28) 15%, rgba(4, 11, 18, 0.38) 55%, rgba(4, 11, 18, 0.58) 86%, #040b12 100%),
+    radial-gradient(circle at 29% 50%, rgba(1, 5, 9, 0.66), transparent 31%),
+    radial-gradient(ellipse at 74% 46%, rgba(1, 5, 9, 0.62), transparent 39%),
+    radial-gradient(circle at 12% 24%, rgba(52, 189, 242, 0.12), transparent 24%),
+    radial-gradient(circle at 91% 70%, rgba(52, 189, 242, 0.1), transparent 25%),
+    linear-gradient(90deg, rgba(2, 6, 10, 0.62), rgba(3, 10, 16, 0.3) 48%, rgba(2, 6, 10, 0.66));
+}
+
+.custom-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.13;
+  background: url("../assets/dragon-oak-obsidian-stone.png") 78% 36% / cover no-repeat;
+  filter: saturate(1.38) contrast(1.1);
+  mix-blend-mode: screen;
+  mask-image:
+    radial-gradient(circle at 8% 25%, black 0 13%, transparent 31%),
+    radial-gradient(circle at 91% 68%, black 0 15%, transparent 33%),
+    radial-gradient(circle at 53% 10%, black 0 9%, transparent 25%),
+    radial-gradient(circle at 47% 88%, black 0 10%, transparent 28%);
+}
+
+.custom-section .container {
+  position: relative;
+  z-index: 2;
 }
 
 .custom-grid {
@@ -771,10 +881,48 @@ section {
 
 /* About */
 .about {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
   background:
-    radial-gradient(circle at 74% 42%, rgba(52, 189, 242, 0.045), transparent 28%),
+    url("../assets/dragon-oak-obsidian-stone.png") 68% 46% / cover no-repeat,
     linear-gradient(90deg, rgba(7, 13, 20, 0.99), rgba(5, 10, 16, 0.95));
   border-top: 1px solid rgba(126, 200, 235, 0.09);
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(4, 11, 18, 0.68) 0%, rgba(4, 11, 18, 0.46) 18%, rgba(4, 11, 18, 0.5) 58%, rgba(4, 11, 18, 0.66) 100%),
+    radial-gradient(ellipse at 28% 44%, rgba(1, 5, 9, 0.72), transparent 44%),
+    radial-gradient(ellipse at 74% 54%, rgba(1, 5, 9, 0.46), transparent 42%),
+    radial-gradient(circle at 90% 19%, rgba(52, 189, 242, 0.045), transparent 22%),
+    linear-gradient(90deg, rgba(2, 6, 10, 0.7), rgba(3, 10, 16, 0.5) 46%, rgba(2, 6, 10, 0.62));
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.075;
+  background: url("../assets/dragon-oak-obsidian-stone.png") 18% 74% / cover no-repeat;
+  filter: saturate(1.2) contrast(1.04);
+  mix-blend-mode: screen;
+  mask-image:
+    radial-gradient(circle at 91% 20%, black 0 10%, transparent 29%),
+    radial-gradient(circle at 70% 65%, black 0 9%, transparent 27%),
+    radial-gradient(circle at 4% 79%, black 0 9%, transparent 25%);
+}
+
+.about .container {
+  position: relative;
+  z-index: 2;
 }
 
 .about .section-intro + .section-intro {
@@ -880,11 +1028,49 @@ section {
 /* Contact */
 .contact-section {
   position: relative;
+  overflow: hidden;
+  isolation: isolate;
   background:
-    radial-gradient(circle at center, rgba(52, 189, 242, 0.055), transparent 34%),
-    radial-gradient(circle at 18% 80%, rgba(132, 175, 204, 0.045), transparent 24%),
+    url("../assets/dragon-oak-obsidian-stone.png") 54% 48% / cover no-repeat,
     rgba(4, 8, 12, 0.94);
   border-top: 1px solid rgba(126, 200, 235, 0.08);
+}
+
+.contact-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background:
+    linear-gradient(180deg, rgba(4, 11, 18, 0.58) 0%, rgba(4, 11, 18, 0.3) 18%, rgba(4, 11, 18, 0.48) 56%, rgba(3, 8, 13, 0.76) 100%),
+    radial-gradient(ellipse at 50% 47%, rgba(1, 5, 9, 0.78), transparent 38%),
+    radial-gradient(circle at 8% 42%, rgba(52, 189, 242, 0.12), transparent 25%),
+    radial-gradient(circle at 92% 38%, rgba(52, 189, 242, 0.13), transparent 26%),
+    radial-gradient(circle at 50% 96%, rgba(1, 5, 9, 0.72), transparent 36%),
+    linear-gradient(90deg, rgba(2, 6, 10, 0.52), rgba(3, 10, 16, 0.28) 50%, rgba(2, 6, 10, 0.54));
+}
+
+.contact-section::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.145;
+  background: url("../assets/dragon-oak-obsidian-stone.png") 24% 38% / cover no-repeat;
+  filter: saturate(1.42) contrast(1.11);
+  mix-blend-mode: screen;
+  mask-image:
+    radial-gradient(circle at 8% 34%, black 0 15%, transparent 35%),
+    radial-gradient(circle at 93% 34%, black 0 16%, transparent 36%),
+    radial-gradient(circle at 22% 86%, black 0 11%, transparent 28%),
+    radial-gradient(circle at 78% 82%, black 0 12%, transparent 29%);
+}
+
+.contact-section .container {
+  position: relative;
+  z-index: 2;
 }
 
 .contact-box {
@@ -902,7 +1088,8 @@ section {
   box-shadow:
     inset 0 1px 0 rgba(231, 244, 255, 0.045),
     inset 0 0 0 1px rgba(36, 86, 118, 0.12),
-    0 24px 54px rgba(0, 0, 0, 0.32);
+    0 24px 54px rgba(0, 0, 0, 0.32),
+    0 0 34px rgba(52, 189, 242, 0.055);
 }
 
 .contact-box::before,
