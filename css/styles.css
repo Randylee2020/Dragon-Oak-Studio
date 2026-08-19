@@ -348,7 +348,7 @@ button {
       rgba(2, 6, 10, 0.28) 78%,
       rgba(2, 6, 10, 0.5) 100%
     ),
-    url("../assets/dragon-oak-hero-bg.png") center center / cover no-repeat;
+    url("../assets/dragon-oak-hero-bg.webp") center center / cover no-repeat;
 }
 
 .hero::before {
