@@ -8,1335 +8,399 @@
     content="Dragon Oak Studio creates premium laser-crafted, UV printed, digital and custom products."
   />
   <title>Dragon Oak Studio | Crafted by Fire. Designed to Last.</title>
-
-  <style>
-    :root {
-      --black: #05080b;
-      --black-2: #090e14;
-      --charcoal: #101720;
-      --steel-dark: #1a2634;
-      --steel: #7890a7;
-      --silver: #e5edf5;
-      --silver-soft: #aab9c7;
-      --ice: #34bdf2;
-      --ice-bright: #80dcff;
-      --line: rgba(115, 198, 235, 0.2);
-      --white: #f5f8fb;
-      --text: #c5d0da;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-   body { 
-     background:
-  radial-gradient(circle at 78% 18%, rgba(35, 120, 180, 0.18), transparent 28%),
-  radial-gradient(circle at 20% 35%, rgba(20, 75, 120, 0.14), transparent 30%),
-  radial-gradient(circle at 55% 70%, rgba(120, 45, 20, 0.08), transparent 25%),
-  linear-gradient(
-    180deg,
-    #020407 0%,
-    #07111a 28%,
-    #091722 55%,
-    #04070b 100%
-  );
-
-    body::before {
-      content: "";
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      opacity: 0.15;
-      background-image:
-        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(255,255,255,.02) 1px, transparent 1px);
-      background-size: 42px 42px;
-      z-index: -1;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    img {
-      max-width: 100%;
-    }
-
-    .container {
-      width: min(1180px, 92%);
-      margin-inline: auto;
-    }
-
-    /* HEADER */
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      border-bottom: 1px solid rgba(130, 207, 245, 0.12);
-      background: rgba(4, 8, 12, 0.9);
-      backdrop-filter: blur(18px);
-    }
-
-    .nav {
-      min-height: 82px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 30px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .mini-crest {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      border: 1px solid rgba(128, 220, 255, 0.5);
-      display: grid;
-      place-items: center;
-      color: var(--ice);
-      box-shadow:
-        inset 0 0 20px rgba(52, 189, 242, 0.08),
-        0 0 20px rgba(52, 189, 242, 0.07);
-      font-size: 23px;
-    }
-
-    .brand-name {
-      font-family: Georgia, "Times New Roman", serif;
-      letter-spacing: 2px;
-      font-size: 20px;
-      color: var(--silver);
-      line-height: 1.05;
-    }
-
-    .brand-name small {
-      display: block;
-      margin-top: 5px;
-      font-family: "Segoe UI", Arial, sans-serif;
-      font-size: 10px;
-      letter-spacing: 7px;
-      color: var(--ice);
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      align-items: center;
-      gap: 30px;
-    }
-
-    nav a {
-      font-size: 13px;
-      letter-spacing: 1.4px;
-      color: #d8e0e7;
-      transition: 0.25s ease;
-    }
-
-    nav a:hover {
-      color: var(--ice-bright);
-    }
-
-    .menu-toggle {
-      display: none;
-      border: 1px solid var(--line);
-      background: transparent;
-      color: white;
-      padding: 8px 11px;
-      border-radius: 5px;
-      font-size: 20px;
-      cursor: pointer;
-    }
-
-    /* crest-wrap */
-.hero {
-  min-height: 620px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  border-bottom: 1px solid var(--line);
-  isolation: isolate;
-
-background:
-linear-gradient(
-  90deg,
-  rgba(2,6,10,.90) 0%,
-  rgba(2,6,10,.72) 38%,
-  rgba(2,6,10,.52) 58%,
-  rgba(2,6,10,.30) 78%,
-  rgba(2,6,10,.48) 100%
-),   
-  url("dragon-oak-hero-bg..png") center center / cover no-repeat;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-
-  background:
-    radial-gradient(circle at 82% 20%, rgba(110, 190, 255, .10), transparent 18%),
-    radial-gradient(circle at 67% 45%, rgba(30, 125, 195, .08), transparent 25%),
-    linear-gradient(
-      90deg,
-      rgba(0,0,0,.18) 0%,
-      rgba(0,0,0,.08) 42%,
-      rgba(0,0,0,.02) 72%,
-      rgba(0,0,0,.10) 100%
-    );
-
-  z-index: -1;
-}
-  
-
-    .hero-grid {
-      
-      display: grid;
-      grid-template-columns: 1.05fr .95fr;
-      gap: 40px;
-      align-items: center;
-      padding: 80px 0;
-    }
-
-    .eyebrow {
-      color: var(--ice);
-      text-transform: uppercase;
-      letter-spacing: 5px;
-      font-size: 12px;
-      margin-bottom: 18px;
-    }
-
-    h1 {
-      font-family: Georgia, "Times New Roman", serif;
-      font-weight: 500;
-      font-size: clamp(48px, 5vw, 76px);
-      line-height: .96;
-      letter-spacing: 2px;
-      color: var(--silver);
-      text-shadow: 0 0 24px rgba(140, 210, 240, 0.05);
-    }
-
-    h1 span {
-      display: block;
-      margin-top: 12px;
-      color: var(--ice-bright);
-      font-size: .38em;
-      letter-spacing: 12px;
-      font-family: "Segoe UI", Arial, sans-serif;
-      font-weight: 400;
-    }
-
-    .tagline {
-      font-family: Georgia, "Times New Roman", serif;
-      text-transform: uppercase;
-      margin: 28px 0 16px;
-      letter-spacing: 3px;
-      font-size: 17px;
-      color: #dce8f0;
-    }
-
-    .hero-copy {
-      max-width: 620px;
-      color: var(--text);
-      font-size: 17px;
-      line-height: 1.9;
-    }
-
-    .hero-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 34px;
-    }
-
-    .btn {
-      min-width: 175px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 14px 22px;
-      border-radius: 3px;
-      text-transform: uppercase;
-      letter-spacing: 1.6px;
-      font-weight: 600;
-      font-size: 12px;
-      transition: 0.25s ease;
-      cursor: pointer;
-    }
-
-    .btn-primary {
-      color: #031018;
-      background: linear-gradient(135deg, #6ed6fa, #2498d2);
-      box-shadow: 0 0 25px rgba(52, 189, 242, .18);
-    }
-
-    .btn-primary:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 0 35px rgba(52, 189, 242, .28);
-    }
-
-    .btn-outline {
-      color: var(--silver);
-      border: 1px solid rgba(117, 205, 245, .5);
-      background: rgba(255,255,255,.01);
-    }
-
-    .btn-outline:hover {
-      color: var(--ice-bright);
-      border-color: var(--ice-bright);
-      background: rgba(52, 189, 242, .06);
-    }
-
-    /* CREST */
-.crest-wrap {
-    display: grid;
-    place-items: center;
-    min-height: 520px;
-    position: relative;
-    transform: translateX(35px);
-}
-
-    .crest-glow {
-      width: min(455px, 90vw);
-      aspect-ratio: 1;
-      border-radius: 50%;
-      position: relative;
-      display: grid;
-      place-items: center;
-      background:
-        radial-gradient(circle, rgba(45,145,196,.16), rgba(3,9,14,.96) 65%);
-      border: 2px solid #66798a;
-      box-shadow:
-        0 0 0 8px rgba(25,38,50,.8),
-        0 0 0 10px rgba(139,161,179,.18),
-        inset 0 0 70px rgba(52,189,242,.15),
-        0 0 80px rgba(52,189,242,.12);
-    }
-
-    .crest-glow::before,
-    .crest-glow::after {
-      content: "";
-      position: absolute;
-      border-radius: 50%;
-      inset: 18px;
-      border: 1px dashed rgba(130, 216, 255, .18);
-    }
-
-    .crest-glow::after {
-      inset: 36px;
-      border-style: solid;
-      border-color: rgba(202, 222, 237, .1);
-    }
-
-    .dragon-mark {
-      position: relative;
-      z-index: 2;
-      width: 73%;
-      height: 73%;
-      filter: drop-shadow(0 0 20px rgba(52, 189, 242, .16));
-    }
-
-    .crest-label {
-      position: absolute;
-      bottom: 26px;
-      padding: 9px 20px;
-      border: 1px solid rgba(118, 201, 239, .3);
-      background: rgba(2,7,11,.78);
-      color: var(--ice-bright);
-      letter-spacing: 4px;
-      font-size: 11px;
-      text-transform: uppercase;
-      z-index: 3;
-    }
-
-    /* FEATURE STRIP */
-    .feature-strip {
-      border-bottom: 1px solid var(--line);
-      background: #050a0e;
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-    }
-
-    .feature {
-      padding: 27px 12px;
-      text-align: center;
-      border-right: 1px solid rgba(130, 190, 220, .11);
-    }
-
-    .feature:last-child {
-      border-right: none;
-    }
-
-    .feature-icon {
-      font-size: 26px;
-      color: var(--ice);
-      margin-bottom: 8px;
-    }
-
-    .feature p {
-      text-transform: uppercase;
-      font-size: 10px;
-      letter-spacing: 1.5px;
-      color: #d3dce4;
-    }
-
-    /* GENERAL SECTION */
-    section {
-      padding: 100px 0;
-    }
-.services-section {
-    position: relative;
-    background:
-        radial-gradient(circle at 18% 25%, rgba(52, 189, 242, .07), transparent 32%),
-        radial-gradient(circle at 82% 70%, rgba(30, 90, 140, .06), transparent 30%),
-        linear-gradient(180deg, #06121d 0%, #071521 50%, #040b12 100%);
-    border-top: 1px solid rgba(124, 190, 224, .10);
-    border-bottom: 1px solid rgba(124, 190, 224, .10);
-}
-    .section-kicker {
-      color: var(--ice);
-      text-transform: uppercase;
-      letter-spacing: 4px;
-      font-size: 11px;
-      margin-bottom: 8px;
-    }
-
-.section-title {
-    font-family: Georgia, "Times New Roman", serif;
-    color: var(--silver);
-    font-weight: 500;
-    font-size: clamp(34px, 4vw, 52px);
-    margin-bottom: 20px;
-    letter-spacing: 0.5px;
-    text-shadow:
-        0 0 18px rgba(52, 189, 242, 0.10),
-        0 2px 8px rgba(0, 0, 0, 0.65);
-}
-
-    .section-intro {
-      color: var(--text);
-      max-width: 760px;
-      font-size: 16px;
-      line-height: 1.8;
-    }
-
-    /* LASER + UV */
-    .services {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 24px;
-      margin-top: 45px;
-    }
-
-  .service-card {
-    min-height: 330px;
-    padding: 38px;
-    border: 1px solid rgba(124, 190, 224, .24);
-    background:
-        radial-gradient(circle at 15% 10%,
-            rgba(52, 189, 242, .09),
-            transparent 35%),
-        linear-gradient(145deg,
-            rgba(15, 29, 40, .98),
-            rgba(4, 8, 12, .98));
-    position: relative;
-    overflow: hidden;
-    transition: .3s ease;
-    box-shadow:
-        inset 0 1px 0 rgba(255,255,255,.035),
-        0 18px 45px rgba(0,0,0,.22);
-}
-.service-image {
-    width: 100%;
-    height: 210px;
-    object-fit: cover;
-    object-position: center;
-    display: block;
-    margin: 18px 0 24px;
-    border: 1px solid rgba(124, 190, 224, .25);
-    box-shadow:
-        0 12px 30px rgba(0, 0, 0, .45),
-        0 0 20px rgba(52, 189, 242, .08);
-}
-    .service-card:hover {
-      transform: translateY(-4px);
-      border-color: rgba(86, 201, 250, .45);
-      box-shadow: 0 18px 50px rgba(0,0,0,.35);
-    }
-
-    .service-card::after {
-      content: "";
-      position: absolute;
-      width: 220px;
-      height: 220px;
-      right: -80px;
-      bottom: -100px;
-      border-radius: 50%;
-      background: rgba(52, 189, 242, .07);
-      filter: blur(20px);
-    }
-
-    .service-number {
-      font-family: Georgia, serif;
-      font-size: 70px;
-      color: rgba(104, 204, 246, .08);
-      position: absolute;
-      right: 25px;
-      top: 10px;
-    }
-
-    .service-icon {
-      color: var(--ice);
-      font-size: 42px;
-      margin-bottom: 20px;
-    }
-
-    .service-card h3 {
-      font-family: Georgia, serif;
-      font-size: 26px;
-      font-weight: 500;
-      letter-spacing: 2px;
-      color: var(--silver);
-      margin-bottom: 12px;
-    }
-
-    .service-card p {
-      color: var(--text);
-      max-width: 520px;
-    }
-
-    /* PRODUCTS */
-    .products-section {
-      background: rgba(5, 10, 15, .65);
-      border-top: 1px solid rgba(125,195,225,.08);
-      border-bottom: 1px solid rgba(125,195,225,.08);
-    }
-
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 18px;
-      margin-top: 45px;
-    }
-
-    .product-card {
-      min-height: 285px;
-      position: relative;
-      border: 1px solid rgba(128, 204, 240, .16);
-      overflow: hidden;
-      background:
-        radial-gradient(circle at 60% 30%, rgba(49,145,190,.12), transparent 34%),
-        linear-gradient(155deg, #111c26, #05090d);
-      transition: 0.3s ease;
-    }
-
-    .product-card:hover {
-      transform: translateY(-5px);
-      border-color: rgba(79, 195, 247, .45);
-      box-shadow: 0 18px 50px rgba(0,0,0,.35);
-    }
-
-    .product-art {
-      height: 205px;
-      display: grid;
-      place-items: center;
-      color: rgba(162, 224, 249, .8);
-      font-size: 72px;
-    }
-.product-art img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-}
-    .product-label {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      padding: 19px;
-      background: rgba(2, 6, 9, .88);
-      border-top: 1px solid rgba(128, 204, 240, .13);
-    }
-
-    .product-label h3 {
-      color: var(--silver);
-      font-family: Georgia, serif;
-      font-weight: 500;
-      letter-spacing: 1px;
-      font-size: 20px;
-    }
-
-    .product-label p {
-      font-size: 12px;
-      color: #8fa0ad;
-      margin-top: 4px;
-    }
-
-    /* CUSTOM */
-    .custom-grid {
-      display: grid;
-      grid-template-columns: .9fr 1.1fr;
-      align-items: center;
-      gap: 60px;
-    }
-
-    .custom-art {
-      min-height: 430px;
-      display: grid;
-      place-items: center;
-      border: 1px solid rgba(127, 202, 237, .2);
-      background:
-        radial-gradient(circle, rgba(52,189,242,.13), transparent 35%),
-        linear-gradient(145deg, #111b25, #05090d);
-      position: relative;
-    }
-
-    .custom-ring {
-      width: 260px;
-      height: 260px;
-      border-radius: 50%;
-      border: 2px solid #667a8e;
-      display: grid;
-      place-items: center;
-      box-shadow:
-        inset 0 0 40px rgba(52,189,242,.13),
-        0 0 40px rgba(52,189,242,.07);
-      font-size: 92px;
-      color: var(--ice-bright);
-    }
-
-    .custom-copy ul {
-      list-style: none;
-      margin: 28px 0 34px;
-    }
-
-    .custom-copy li {
-      color: var(--text);
-      margin-bottom: 12px;
-      padding-left: 26px;
-      position: relative;
-    }
-
-    .custom-copy li::before {
-      content: "◆";
-      color: var(--ice);
-      position: absolute;
-      left: 0;
-      font-size: 10px;
-      top: 5px;
-    }
-
-    /* ABOUT */
-    .about {
-      background:
-        linear-gradient(90deg, rgba(9,15,22,.98), rgba(8,14,20,.9));
-      border-top: 1px solid rgba(126,200,235,.09);
-    }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1.15fr .85fr;
-      gap: 65px;
-      align-items: center;
-    }
-
-    .values {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-    }
-
-    .value {
-      padding: 24px;
-      border: 1px solid rgba(119, 194, 230, .14);
-      background: rgba(255,255,255,.015);
-    }
-
-    .value strong {
-      display: block;
-      color: var(--ice-bright);
-      font-family: Georgia, serif;
-      margin-bottom: 5px;
-      font-size: 19px;
-    }
-
-    .value span {
-      color: #9aaab7;
-      font-size: 13px;
-    }
-
-    /* CONTACT */
-    .contact-box {
-      max-width: 850px;
-      margin: 40px auto 0;
-      text-align: center;
-      padding: 55px 35px;
-      border: 1px solid rgba(123, 200, 235, .2);
-      background:
-        radial-gradient(circle at center, rgba(52,189,242,.08), transparent 50%),
-        rgba(7,12,18,.85);
-    }
-
-    .contact-box p {
-      color: var(--text);
-      max-width: 620px;
-      margin: 10px auto 28px;
-    }
-
-    /* FOOTER */
-    footer {
-      padding: 55px 0 28px;
-      border-top: 1px solid rgba(126, 199, 235, .14);
-      background: #030609;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 1.4fr 1fr 1fr;
-      gap: 60px;
-    }
-
-    footer h4 {
-      color: var(--silver);
-      margin-bottom: 14px;
-      font-family: Georgia, serif;
-      letter-spacing: 1px;
-    }
-
-    footer p,
-    footer a {
-      color: #82919d;
-      font-size: 13px;
-    }
-
-    .footer-links {
-      display: grid;
-      gap: 8px;
-    }
-
-    footer a:hover {
-      color: var(--ice-bright);
-    }
-
-    .copyright {
-      margin-top: 40px;
-      padding-top: 24px;
-      border-top: 1px solid rgba(255,255,255,.06);
-      color: #63717c;
-      font-size: 12px;
-      text-align: center;
-    }
-
-    /* MOBILE */
-    @media (max-width: 900px) {
-      .hero-grid,
-      .custom-grid,
-      .about-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        min-height: auto;
-      }
-
-      .crest-wrap {
-        min-height: 430px;
-      }
-
-      .services {
-        grid-template-columns: 1fr;
-      }
-
-      .product-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .features {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      nav ul {
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 82px;
-        display: none;
-        padding: 25px 5%;
-        background: rgba(3,7,11,.98);
-        border-bottom: 1px solid var(--line);
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      nav ul.open {
-        display: flex;
-      }
-
-      .menu-toggle {
-        display: block;
-      }
-    }
-
-    @media (max-width: 600px) {
-      section {
-        padding: 75px 0;
-      }
-
-      .hero-grid {
-        padding: 65px 0;
-      }
-
-      h1 {
-        font-size: 50px;
-      }
-
-      h1 span {
-        font-size: 17px;
-        letter-spacing: 8px;
-      }
-
-      .tagline {
-        font-size: 14px;
-      }
-
-      .crest-glow {
-        width: 340px;
-      }
-
-      .crest-wrap {
-        min-height: 370px;
-      }
-
-      .features {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .product-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .values {
-        grid-template-columns: 1fr;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 35px;
-      }
-
-      .service-card {
-        padding: 28px;
-      }
-    }
-  </style>
+  <link rel="icon" href="assets/dragon-oak-logo.png" type="image/png" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="js/main.js" defer></script>
 </head>
 
 <body>
-
-<header>
-  <div class="container nav">
-    <a class="brand" href="#home">
-      <div class="mini-crest">◆</div>
-      <div class="brand-name">
-        DRAGON OAK
-        <small>STUDIO</small>
-      </div>
-    </a>
-
-    <nav>
-      <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
-
-      <ul id="navMenu">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#products">PRODUCTS</a></li>
-        <li><a href="#custom">CUSTOM WORK</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<main>
-
-  <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="container hero-grid">
-
-      <div>
-        <p class="eyebrow">Forged Steel & Ice</p>
-
-        <h1>
+  <!-- Header / Navigation -->
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Dragon Oak Studio home">
+        <span class="mini-crest" aria-hidden="true">◆</span>
+        <span class="brand-name">
           DRAGON OAK
-          <span>STUDIO</span>
-        </h1>
+          <small>STUDIO</small>
+        </span>
+      </a>
 
-        <p class="tagline">Crafted by Fire. Designed to Last.</p>
-
-        <p class="hero-copy">
-          Dragon Oak Studio combines precision laser craftsmanship,
-          high-definition UV printing and original design to create
-          distinctive products on wood, metal, acrylic, glass and more.
-        </p>
-
-        <div class="hero-buttons">
-          <a class="btn btn-primary" href="#products">Explore Our Work</a>
-          <a class="btn btn-outline" href="#custom">Custom Creations</a>
-        </div>
-      </div>
-
-      <div class="crest-wrap">
-      <img src="./dragon-oak-logo.png"
-     alt="Dragon Oak Studio Fire and Steel Logo"
-     style="width:min(700px,100%);height:auto;display:block;filter:drop-shadow(0 20px 40px rgba(0,0,0,.55));">
-        <div class="crest-glow" style="display:none;">
-
-          <!-- Temporary custom SVG mark.
-               We will replace this with your finished Dragon Oak crest. -->
-          <svg class="dragon-mark" viewBox="0 0 500 500" aria-label="Dragon Oak Studio crest">
-            <defs>
-              <linearGradient id="steelGrad" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#f2f6fa"/>
-                <stop offset="30%" stop-color="#9cafc0"/>
-                <stop offset="65%" stop-color="#52697e"/>
-                <stop offset="100%" stop-color="#d9e5ee"/>
-              </linearGradient>
-
-              <filter id="blueGlow">
-                <feGaussianBlur stdDeviation="5" result="blur"/>
-                <feMerge>
-                  <feMergeNode in="blur"/>
-                  <feMergeNode in="SourceGraphic"/>
-                </feMerge>
-              </filter>
-            </defs>
-
-            <circle
-              cx="250"
-              cy="250"
-              r="195"
-              fill="none"
-              stroke="url(#steelGrad)"
-              stroke-width="8"
-              opacity=".9"
-            />
-
-            <path
-              d="M342 108
-                 C296 82 230 91 190 126
-                 C150 160 133 209 145 254
-                 C155 296 188 327 226 340
-                 C183 322 157 290 158 247
-                 C160 205 184 175 221 158
-                 C256 142 287 147 312 164
-                 C278 158 249 172 237 198
-                 C224 226 238 252 263 264
-                 C286 275 314 268 330 246
-                 C321 285 287 309 249 309
-                 C304 337 369 303 377 244
-                 C383 199 362 161 327 140
-                 L342 108 Z"
-              fill="url(#steelGrad)"
-              stroke="#dbe9f3"
-              stroke-width="4"
-            />
-
-            <path
-              d="M238 198
-                 L190 167
-                 L208 218
-                 L167 211
-                 L207 243
-                 L165 263
-                 L220 266"
-              fill="none"
-              stroke="url(#steelGrad)"
-              stroke-width="9"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-            />
-
-            <path
-              d="M313 166
-                 L359 145
-                 L338 187
-                 L376 180
-                 L344 211"
-              fill="none"
-              stroke="url(#steelGrad)"
-              stroke-width="8"
-              stroke-linecap="round"
-            />
-
-            <circle
-              cx="296"
-              cy="181"
-              r="7"
-              fill="#64d4ff"
-              filter="url(#blueGlow)"
-            />
-
-            <!-- Oak leaves -->
-            <g fill="none" stroke="#8eb3ca" stroke-width="6" opacity=".85">
-              <path d="M155 316 C120 340 101 371 91 404"/>
-              <path d="M345 316 C380 340 399 371 409 404"/>
-            </g>
-
-            <g fill="#8aa0b2">
-              <ellipse cx="133" cy="340" rx="13" ry="31" transform="rotate(48 133 340)"/>
-              <ellipse cx="112" cy="368" rx="12" ry="29" transform="rotate(55 112 368)"/>
-              <ellipse cx="367" cy="340" rx="13" ry="31" transform="rotate(-48 367 340)"/>
-              <ellipse cx="388" cy="368" rx="12" ry="29" transform="rotate(-55 388 368)"/>
-            </g>
-          </svg>
-
-          <div class="crest-label">Dragon Oak Studio</div>
-        </div>
-      </div>
-
-    </div>
- </section>
-  <!-- FEATURE STRIP -->
-  <div class="feature-strip">
-    <div class="container features">
-
-      <div class="feature">
-        <div class="feature-icon">✦</div>
-        <p>Laser Crafted</p>
-      </div>
-
-      <div class="feature">
-        <div class="feature-icon">◈</div>
-        <p>UV Printed</p>
-      </div>
-
-      <div class="feature">
-        <div class="feature-icon">◆</div>
-        <p>Custom Designs</p>
-      </div>
-
-      <div class="feature">
-        <div class="feature-icon">◇</div>
-        <p>Premium Quality</p>
-      </div>
-
-      <div class="feature">
-        <div class="feature-icon">✧</div>
-        <p>Built to Last</p>
-      </div>
-
-    </div>
-  </div>
-
-  <!-- LASER / UV -->
-  <section class="services-section">
-    <div class="container">
-
-      <p class="section-kicker">What We Do</p>
-      <h2 class="section-title">Craftsmanship Meets Technology</h2>
-
-   <p class="section-intro">
-  Dragon Oak Studio combines precision laser cutting and engraving with
-  high-definition UV printing to create custom products with depth, color,
-  texture and character. From wood and acrylic to metal, glass and specialty
-  items, we turn original ideas into pieces designed to stand out.
-</p>
-
-      <div class="services">
-
-        <article class="service-card">
-          <div class="service-number">01</div>
-          <div class="service-icon">✦</div>
-<img class="service-image" src="Round Slate Dragon Coaster.png" alt="Dragon Oak laser crafted coaster">
-          <h3>LASER CRAFTED</h3>
-
-          <p>
-            Precision laser cutting and engraving for wood, acrylic, leather,
-            coated metals and more. Ideal for ornaments, bottle openers,
-            signs, tags, gifts and detailed custom pieces.
-          </p>
-        </article>
-
-        <article class="service-card">
-          <div class="service-number">02</div>
-          <div class="service-icon">◈</div>
-
-          <h3>UV PRINTED</h3>
-
-          <p>
-            High-definition full-color UV printing designed for vivid detail,
-            durability and premium presentation on a wide range of products
-            and materials.
-          </p>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- PRODUCTS -->
-  <section class="products-section" id="products">
-    <div class="container">
-
-      <p class="section-kicker">Our Creations</p>
-      <h2 class="section-title">Featured Products</h2>
-
-      <p class="section-intro">
-        Our collection will continue to grow as Dragon Oak Studio expands.
-        Each piece can range from classic engraving to vivid UV-printed artwork
-        and personalized designs.
-      </p>
-
-      <div class="product-grid">
-
-  <article class="product-card">
-  <div class="product-art">
-    <img src="UV Tumbler.png" alt="Custom UV printed tumbler">
-  </div>
-  <div class="product-label">
-    <h3>Tumblers</h3>
-    <p>Laser engraved & full-color UV designs</p>
-  </div>
-</article>
-        <article class="product-card">
-          <div class="product-art">❄</div>
-          <div class="product-label">
-            <h3>Christmas Ornaments</h3>
-            <p>Wood, layered & UV printed keepsakes</p>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-art">⚒</div>
-          <div class="product-label">
-            <h3>Bottle Openers</h3>
-            <p>Personalized gifts, bars & business branding</p>
-          </div>
-        </article>
-
-        <article class="product-card">
-          <div class="product-art">◇</div>
-          <div class="product-label">
-            <h3>Bag Tags</h3>
-            <p>Custom names, artwork and branded designs</p>
-          </div>
-        </article>
-
-   <article class="product-card">
-  <div class="product-art">
-    <img src="Round Slate Dragon Coaster.png" alt="UV printed dragon slate coaster">
-  </div>
-  <div class="product-label">
-    <h3>Coasters</h3>
-    <p>Wood, acrylic and full-color custom designs</p>
-  </div>
-</article>
-
-        <article class="product-card">
-          <div class="product-art">✧</div>
-          <div class="product-label">
-            <h3>And More</h3>
-            <p>New products and original creations coming often</p>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CUSTOM -->
-  <section id="custom">
-    <div class="container custom-grid">
-
-      <div class="custom-art">
-        <div class="custom-ring">◆</div>
-      </div>
-
-      <div class="custom-copy">
-        <p class="section-kicker">Made For You</p>
-        <h2 class="section-title">Custom Creations</h2>
-
-        <p class="section-intro">
-          Have an idea in mind? Dragon Oak Studio can turn names,
-          artwork, logos, photographs and original concepts into
-          personalized pieces built around your vision.
-        </p>
-
-        <ul>
-          <li>Personalized gifts and keepsakes</li>
-          <li>Business logos and branded products</li>
-          <li>Special events and commemorative pieces</li>
-          <li>Custom laser-cut designs</li>
-          <li>Full-color UV printed artwork</li>
-          <li>Digital design files</li>
-        </ul>
-
-        <a class="btn btn-primary" href="#contact">Start Your Project</a>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ABOUT -->
-  <section class="about" id="about">
-    <div class="container about-grid">
-
-      <div>
-        <p class="section-kicker">Our Story</p>
-        <h2 class="section-title">About Dragon Oak Studio</h2>
-
-        <p class="section-intro">
-          Dragon Oak Studio was created around a love of design,
-          technology and craftsmanship. We combine digital creativity,
-          laser fabrication and UV printing to make products with
-          character, detail and lasting quality.
-        </p>
-
-        <br />
-
-        <p class="section-intro">
-          From one-of-a-kind gifts to branded business products and
-          downloadable designs, our goal is simple: create pieces that
-          stand apart from ordinary mass-produced products.
-        </p>
-      </div>
-
-      <div class="values">
-
-        <div class="value">
-          <strong>Precision</strong>
-          <span>Detailed craftsmanship in every design.</span>
-        </div>
-
-        <div class="value">
-          <strong>Creativity</strong>
-          <span>Original ideas and custom possibilities.</span>
-        </div>
-
-        <div class="value">
-          <strong>Quality</strong>
-          <span>Premium materials and careful finishing.</span>
-        </div>
-
-        <div class="value">
-          <strong>Innovation</strong>
-          <span>Laser, UV printing and digital technology.</span>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="container">
-
-      <div class="contact-box">
-        <p class="section-kicker">Let's Create Something</p>
-        <h2 class="section-title">Have an Idea?</h2>
-
-        <p>
-          Dragon Oak Studio is building something new.
-          Custom projects, product inquiries and collaborations are welcome.
-        </p>
-
-        <a
-          class="btn btn-primary"
-          href="mailto:info@dragonoakstudio.com"
+      <nav class="site-nav" aria-label="Main navigation">
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-controls="navMenu"
+          aria-expanded="false"
+          aria-label="Open menu"
         >
-          Contact Dragon Oak
-        </a>
-      </div>
+          ☰
+        </button>
 
+        <ul id="navMenu" class="nav-menu">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#products">PRODUCTS</a></li>
+          <li><a href="#custom">CUSTOM WORK</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
     </div>
-  </section>
+  </header>
 
-</main>
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="eyebrow">Forged Steel & Ice</p>
 
-<footer>
-  <div class="container">
-
-    <div class="footer-grid">
-
-      <div>
-        <div class="brand">
-          <div class="mini-crest">◆</div>
-          <div class="brand-name">
+          <h1>
             DRAGON OAK
-            <small>STUDIO</small>
+            <span>STUDIO</span>
+          </h1>
+
+          <p class="tagline">Crafted by Fire. Designed to Last.</p>
+
+          <p class="hero-copy">
+            Dragon Oak Studio combines precision laser craftsmanship,
+            high-definition UV printing and original design to create
+            distinctive products on wood, metal, acrylic, glass and more.
+          </p>
+
+          <div class="hero-buttons" aria-label="Featured actions">
+            <a class="btn btn-primary" href="#products">Explore Our Work</a>
+            <a class="btn btn-outline" href="#custom">Custom Creations</a>
           </div>
         </div>
 
-        <p style="margin-top:18px;">
-          Crafted by Fire. Designed to Last.
-        </p>
-      </div>
-
-      <div>
-        <h4>Quick Links</h4>
-
-        <div class="footer-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#products">Products</a>
-          <a href="#custom">Custom Work</a>
-          <a href="#contact">Contact</a>
+        <div class="crest-wrap" aria-hidden="true">
+          <img
+            class="hero-logo"
+            src="assets/dragon-oak-logo.png"
+            alt=""
+            width="1200"
+            height="1200"
+          />
         </div>
       </div>
+    </section>
 
-      <div>
-        <h4>Dragon Oak Studio</h4>
-
-        <div class="footer-links">
+    <!-- Feature Strip -->
+    <section class="feature-strip" aria-label="Studio capabilities">
+      <div class="container features">
+        <article class="feature">
+          <span class="feature-icon" aria-hidden="true">✦</span>
           <p>Laser Crafted</p>
+        </article>
+
+        <article class="feature">
+          <span class="feature-icon" aria-hidden="true">◈</span>
           <p>UV Printed</p>
-          <p>Digital Designs</p>
-          <p>Custom Creations</p>
+        </article>
+
+        <article class="feature">
+          <span class="feature-icon" aria-hidden="true">◆</span>
+          <p>Custom Designs</p>
+        </article>
+
+        <article class="feature">
+          <span class="feature-icon" aria-hidden="true">◇</span>
+          <p>Premium Quality</p>
+        </article>
+
+        <article class="feature">
+          <span class="feature-icon" aria-hidden="true">✧</span>
+          <p>Built to Last</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Craftsmanship Meets Technology -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <p class="section-kicker">What We Do</p>
+        <h2 class="section-title">Craftsmanship Meets Technology</h2>
+
+        <p class="section-intro">
+          Dragon Oak Studio combines precision laser cutting and engraving with
+          high-definition UV printing to create custom products with depth,
+          color, texture and character. From wood and acrylic to metal, glass
+          and specialty items, we turn original ideas into pieces designed to
+          stand out.
+        </p>
+
+        <div class="services" aria-label="Core services">
+          <!-- Laser Crafted -->
+          <article class="service-card">
+            <span class="service-number" aria-hidden="true">01</span>
+            <span class="service-icon" aria-hidden="true">✦</span>
+            <img
+              class="service-image"
+              src="assets/round-slate-dragon-coaster.png"
+              alt="Dragon Oak laser crafted slate coaster"
+              width="1200"
+              height="1200"
+            />
+            <h3>LASER CRAFTED</h3>
+            <p>
+              Precision laser cutting and engraving for wood, acrylic, leather,
+              coated metals and more. Ideal for ornaments, bottle openers,
+              signs, tags, gifts and detailed custom pieces.
+            </p>
+          </article>
+
+          <!-- UV Printed -->
+          <article class="service-card">
+            <span class="service-number" aria-hidden="true">02</span>
+            <span class="service-icon" aria-hidden="true">◈</span>
+            <img
+              class="service-image"
+              src="assets/uv-tumbler.png"
+              alt="Dragon Oak UV printed tumbler"
+              width="1200"
+              height="1200"
+            />
+            <h3>UV PRINTED</h3>
+            <p>
+              High-definition full-color UV printing designed for vivid detail,
+              durability and premium presentation on a wide range of products
+              and materials.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="products-section" id="products">
+      <div class="container">
+        <p class="section-kicker">Our Creations</p>
+        <h2 class="section-title">Featured Products</h2>
+
+        <p class="section-intro">
+          Our collection will continue to grow as Dragon Oak Studio expands.
+          Each piece can range from classic engraving to vivid UV-printed
+          artwork and personalized designs.
+        </p>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-art">
+              <img src="assets/uv-tumbler.png" alt="Custom UV printed tumbler" />
+            </div>
+            <div class="product-label">
+              <h3>Tumblers</h3>
+              <p>Laser engraved & full-color UV designs</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-art">
+              <img
+                src="assets/halloween-tumbler.png"
+                alt="Halloween themed custom tumbler"
+              />
+            </div>
+            <div class="product-label">
+              <h3>Seasonal Tumblers</h3>
+              <p>Limited themes, gifts and full-color artwork</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-art">
+              <img
+                src="assets/round-slate-dragon-coaster.png"
+                alt="Round slate dragon coaster"
+              />
+            </div>
+            <div class="product-label">
+              <h3>Coasters</h3>
+              <p>Wood, acrylic and full-color custom designs</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-art">
+              <img src="assets/slate-dragon-coaster.png" alt="Slate dragon coaster" />
+            </div>
+            <div class="product-label">
+              <h3>Slate Pieces</h3>
+              <p>Premium engraved and printed display pieces</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-art">
+              <img src="assets/fbg-stain-glass.png" alt="Full-color stained glass artwork" />
+            </div>
+            <div class="product-label">
+              <h3>Artwork</h3>
+              <p>Vivid UV-printed designs and keepsakes</p>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-art">
+              <img
+                src="assets/fbg-round-slate-coaster.png"
+                alt="Full-color printed round slate coaster"
+              />
+            </div>
+            <div class="product-label">
+              <h3>And More</h3>
+              <p>New products and original creations coming often</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom Creations -->
+    <section class="custom-section" id="custom">
+      <div class="container custom-grid">
+        <div class="custom-art" aria-hidden="true">
+          <img
+            class="custom-logo"
+            src="assets/dragon-oak-logo.png"
+            alt=""
+            width="1200"
+            height="1200"
+          />
+        </div>
+
+        <div class="custom-copy">
+          <p class="section-kicker">Made For You</p>
+          <h2 class="section-title">Custom Creations</h2>
+
+          <p class="section-intro">
+            Have an idea in mind? Dragon Oak Studio can turn names,
+            artwork, logos, photographs and original concepts into
+            personalized pieces built around your vision.
+          </p>
+
+          <ul class="custom-list">
+            <li>Personalized gifts and keepsakes</li>
+            <li>Business logos and branded products</li>
+            <li>Special events and commemorative pieces</li>
+            <li>Custom laser-cut designs</li>
+            <li>Full-color UV printed artwork</li>
+            <li>Digital design files</li>
+          </ul>
+
+          <a class="btn btn-primary" href="#contact">Start Your Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div>
+          <p class="section-kicker">Our Story</p>
+          <h2 class="section-title">About Dragon Oak Studio</h2>
+
+          <p class="section-intro">
+            Dragon Oak Studio was created around a love of design, technology
+            and craftsmanship. We combine digital creativity, laser fabrication
+            and UV printing to make products with character, detail and lasting
+            quality.
+          </p>
+
+          <p class="section-intro">
+            From one-of-a-kind gifts to branded business products and
+            downloadable designs, our goal is simple: create pieces that stand
+            apart from ordinary mass-produced products.
+          </p>
+        </div>
+
+        <div class="values" aria-label="Studio values">
+          <article class="value">
+            <strong>Precision</strong>
+            <span>Detailed craftsmanship in every design.</span>
+          </article>
+
+          <article class="value">
+            <strong>Creativity</strong>
+            <span>Original ideas and custom possibilities.</span>
+          </article>
+
+          <article class="value">
+            <strong>Quality</strong>
+            <span>Premium materials and careful finishing.</span>
+          </article>
+
+          <article class="value">
+            <strong>Innovation</strong>
+            <span>Laser, UV printing and digital technology.</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="contact-box">
+          <p class="section-kicker">Let's Create Something</p>
+          <h2 class="section-title">Have an Idea?</h2>
+
+          <p>
+            Dragon Oak Studio is building something new. Custom projects,
+            product inquiries and collaborations are welcome.
+          </p>
+
+          <a class="btn btn-primary" href="mailto:info@dragonoakstudio.com">
+            Contact Dragon Oak
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="#home" aria-label="Dragon Oak Studio home">
+            <span class="mini-crest" aria-hidden="true">◆</span>
+            <span class="brand-name">
+              DRAGON OAK
+              <small>STUDIO</small>
+            </span>
+          </a>
+
+          <p class="footer-tagline">Crafted by Fire. Designed to Last.</p>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#products">Products</a>
+            <a href="#custom">Custom Work</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <h4>Dragon Oak Studio</h4>
+          <div class="footer-links">
+            <p>Laser Crafted</p>
+            <p>UV Printed</p>
+            <p>Digital Designs</p>
+            <p>Custom Creations</p>
+          </div>
         </div>
       </div>
 
+      <p class="copyright">
+        © <span id="year"></span> Dragon Oak Studio. All Rights Reserved.
+      </p>
     </div>
-
-    <div class="copyright">
-      © <span id="year"></span> Dragon Oak Studio. All Rights Reserved.
-    </div>
-
-  </div>
-</footer>
-
-<script>
-  const menuToggle = document.getElementById("menuToggle");
-  const navMenu = document.getElementById("navMenu");
-
-  menuToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("open");
-  });
-
-  document.querySelectorAll("#navMenu a").forEach(link => {
-    link.addEventListener("click", () => {
-      navMenu.classList.remove("open");
-    });
-  });
-
-  document.getElementById("year").textContent = new Date().getFullYear();
-</script>
-
+  </footer>
 </body>
 </html>
