@@ -7,6 +7,10 @@ const introStart = document.getElementById("introStart");
 const introVideo = document.getElementById("introVideo");
 const introBurnVideo = document.getElementById("introBurnVideo");
 const introBurnCanvas = document.getElementById("introBurnCanvas");
+const contactForm = document.getElementById("contactForm");
+const contactSubmit = document.getElementById("contactSubmit");
+const contactStatus = document.getElementById("contactStatus");
+const contactStartedAt = document.getElementById("contactStartedAt");
 
 const introSessionKey = "dragonOakIntroViewed";
 const introRevealPrepTime = 5.75;
@@ -349,4 +353,171 @@ if (menuToggle && navMenu) {
 
 if (year) {
   year.textContent = new Date().getFullYear();
+}
+
+const projectTypes = [
+  "Laser Cutting / Engraving",
+  "UV Printing",
+  "Custom Product",
+  "Digital Design File",
+  "Business Branding",
+  "Bulk / Business Order",
+  "Other",
+];
+
+const fieldMessages = {
+  name: "Please enter your name.",
+  email: "Please enter a valid email address.",
+  projectType: "Please choose a project type.",
+  message: "Please tell us a little about your project.",
+};
+
+const setFieldError = (field, message = "") => {
+  const error = document.getElementById(`${field.id}Error`);
+
+  field.setAttribute("aria-invalid", message ? "true" : "false");
+
+  if (error) {
+    error.textContent = message;
+  }
+};
+
+const setFormStatus = (message = "", type = "") => {
+  if (!contactStatus) {
+    return;
+  }
+
+  contactStatus.textContent = message;
+  contactStatus.classList.toggle("is-success", type === "success");
+  contactStatus.classList.toggle("is-error", type === "error");
+};
+
+const getContactPayload = () => {
+  const formData = new FormData(contactForm);
+
+  return {
+    name: String(formData.get("name") || "").trim(),
+    email: String(formData.get("email") || "").trim(),
+    phone: String(formData.get("phone") || "").trim(),
+    company: String(formData.get("company") || "").trim(),
+    projectType: String(formData.get("projectType") || "").trim(),
+    message: String(formData.get("message") || "").trim(),
+    website: String(formData.get("website") || "").trim(),
+    startedAt: String(formData.get("startedAt") || "").trim(),
+  };
+};
+
+const validateContactForm = () => {
+  const payload = getContactPayload();
+  const fields = {
+    name: contactForm.elements.name,
+    email: contactForm.elements.email,
+    projectType: contactForm.elements.projectType,
+    message: contactForm.elements.message,
+  };
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  let firstInvalidField = null;
+
+  Object.values(contactForm.elements).forEach((field) => {
+    if (field instanceof HTMLElement && field.id) {
+      setFieldError(field);
+    }
+  });
+
+  if (!payload.name) {
+    setFieldError(fields.name, fieldMessages.name);
+    firstInvalidField ||= fields.name;
+  }
+
+  if (!emailPattern.test(payload.email)) {
+    setFieldError(fields.email, fieldMessages.email);
+    firstInvalidField ||= fields.email;
+  }
+
+  if (!projectTypes.includes(payload.projectType)) {
+    setFieldError(fields.projectType, fieldMessages.projectType);
+    firstInvalidField ||= fields.projectType;
+  }
+
+  if (!payload.message) {
+    setFieldError(fields.message, fieldMessages.message);
+    firstInvalidField ||= fields.message;
+  }
+
+  if (firstInvalidField) {
+    firstInvalidField.focus();
+    setFormStatus("Please check the highlighted fields and try again.", "error");
+    return null;
+  }
+
+  return payload;
+};
+
+if (contactForm && contactSubmit) {
+  if (contactStartedAt) {
+    contactStartedAt.value = String(Date.now());
+  }
+
+  contactForm.addEventListener("input", (event) => {
+    const field = event.target;
+
+    if (field instanceof HTMLElement && field.id) {
+      setFieldError(field);
+    }
+
+    setFormStatus();
+  });
+
+  contactForm.addEventListener("submit", async (event) => {
+    event.preventDefault();
+
+    if (contactSubmit.disabled) {
+      return;
+    }
+
+    const payload = validateContactForm();
+
+    if (!payload) {
+      return;
+    }
+
+    contactSubmit.disabled = true;
+    contactSubmit.textContent = "Sending...";
+    setFormStatus("Sending your project inquiry...", "");
+
+    try {
+      const response = await fetch(contactForm.action, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify(payload),
+      });
+      const result = await response.json().catch(() => ({}));
+
+      if (!response.ok || !result.ok) {
+        throw new Error("submission_failed");
+      }
+
+      contactForm.reset();
+
+      if (contactStartedAt) {
+        contactStartedAt.value = String(Date.now());
+      }
+
+      setFormStatus(
+        "Your message has been sent to Dragon Oak Studio. We'll be in touch soon.",
+        "success"
+      );
+    } catch {
+      setFormStatus(
+        "We couldn't send your inquiry just now. Please try again in a moment.",
+        "error"
+      );
+    } finally {
+      contactSubmit.disabled = false;
+      contactSubmit.textContent = "Send Project Inquiry";
+    }
+  });
 }

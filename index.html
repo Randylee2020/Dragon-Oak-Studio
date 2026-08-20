@@ -407,13 +407,71 @@
           <h2 class="section-title">Have an Idea?</h2>
 
           <p>
-            Dragon Oak Studio is building something new. Custom projects,
-            product inquiries and collaborations are welcome.
+            Tell us what you have in mind. Custom projects, product
+            inquiries and collaborations are welcome.
           </p>
 
-          <a class="btn btn-primary" href="mailto:info@dragonoakstudio.com">
-            Contact Dragon Oak
-          </a>
+          <form class="contact-form" id="contactForm" action="/api/contact" method="post" novalidate>
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="contactName">Name <span aria-hidden="true">*</span></label>
+                <input id="contactName" name="name" type="text" autocomplete="name" required maxlength="120" />
+                <p class="field-error" id="contactNameError"></p>
+              </div>
+
+              <div class="form-field">
+                <label for="contactEmail">Email <span aria-hidden="true">*</span></label>
+                <input id="contactEmail" name="email" type="email" autocomplete="email" required maxlength="180" />
+                <p class="field-error" id="contactEmailError"></p>
+              </div>
+
+              <div class="form-field">
+                <label for="contactPhone">Phone (Optional)</label>
+                <input id="contactPhone" name="phone" type="tel" autocomplete="tel" maxlength="40" />
+                <p class="field-error" id="contactPhoneError"></p>
+              </div>
+
+              <div class="form-field">
+                <label for="contactCompany">Company / Business Name (Optional)</label>
+                <input id="contactCompany" name="company" type="text" autocomplete="organization" maxlength="140" />
+                <p class="field-error" id="contactCompanyError"></p>
+              </div>
+
+              <div class="form-field form-field-full">
+                <label for="contactProjectType">Project Type <span aria-hidden="true">*</span></label>
+                <select id="contactProjectType" name="projectType" required>
+                  <option value="">Select a project type</option>
+                  <option value="Laser Cutting / Engraving">Laser Cutting / Engraving</option>
+                  <option value="UV Printing">UV Printing</option>
+                  <option value="Custom Product">Custom Product</option>
+                  <option value="Digital Design File">Digital Design File</option>
+                  <option value="Business Branding">Business Branding</option>
+                  <option value="Bulk / Business Order">Bulk / Business Order</option>
+                  <option value="Other">Other</option>
+                </select>
+                <p class="field-error" id="contactProjectTypeError"></p>
+              </div>
+
+              <div class="form-field form-field-full">
+                <label for="contactMessage">Message <span aria-hidden="true">*</span></label>
+                <textarea id="contactMessage" name="message" rows="6" required maxlength="4000"></textarea>
+                <p class="field-error" id="contactMessageError"></p>
+              </div>
+            </div>
+
+            <div class="form-hidden" aria-hidden="true">
+              <label for="contactWebsite">Website</label>
+              <input id="contactWebsite" name="website" type="text" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <input type="hidden" id="contactStartedAt" name="startedAt" value="" tabindex="-1" />
+
+            <button class="btn btn-primary" id="contactSubmit" type="submit">
+              Send Project Inquiry
+            </button>
+
+            <p class="form-status" id="contactStatus" role="status" aria-live="polite"></p>
+          </form>
         </div>
       </div>
     </section>
