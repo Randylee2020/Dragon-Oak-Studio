@@ -452,6 +452,23 @@
                 <p class="field-error" id="contactProjectTypeError"></p>
               </div>
 
+              <div class="form-field form-field-full reference-upload">
+                <label for="contactReferenceImages">Upload Reference Files (Optional)</label>
+                <input
+                  id="contactReferenceImages"
+                  name="referenceImages"
+                  type="file"
+                  accept=".jpg,.jpeg,.png,.webp,.pdf,.svg,image/jpeg,image/png,image/webp,application/pdf,image/svg+xml"
+                  multiple
+                />
+                <p class="field-help">JPG, JPEG, PNG, WebP, PDF or SVG. Up to 3 files, 5 MB each.</p>
+                <div class="file-summary" id="contactFileSummary" aria-live="polite"></div>
+                <button class="file-reset" id="contactFileReset" type="button" hidden disabled>
+                  Remove selected files
+                </button>
+                <p class="field-error" id="contactReferenceImagesError"></p>
+              </div>
+
               <div class="form-field form-field-full">
                 <label for="contactMessage">Message <span aria-hidden="true">*</span></label>
                 <textarea id="contactMessage" name="message" rows="6" required maxlength="4000"></textarea>

@@ -1349,6 +1349,26 @@ section {
     background-color 0.2s ease;
 }
 
+.form-field input[type="file"] {
+  cursor: pointer;
+  color: var(--silver-soft);
+}
+
+.form-field input[type="file"]::file-selector-button {
+  margin-right: 14px;
+  border: 1px solid rgba(128, 204, 240, 0.32);
+  border-radius: 3px;
+  padding: 9px 13px;
+  color: var(--ice-bright);
+  background: rgba(52, 189, 242, 0.08);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
 .form-field textarea {
   resize: vertical;
   min-height: 150px;
@@ -1382,6 +1402,93 @@ section {
   color: #ffb0a8;
   font-size: 12px;
   line-height: 1.4;
+}
+
+.field-help {
+  margin: -2px 0 0;
+  color: #8d9eaa;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.file-summary {
+  display: grid;
+  gap: 8px;
+}
+
+.file-pill {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-width: 0;
+  border: 1px solid rgba(128, 204, 240, 0.16);
+  border-radius: 3px;
+  padding: 10px 12px;
+  color: var(--text);
+  background: rgba(3, 8, 13, 0.52);
+}
+
+.file-details {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+}
+
+.file-pill strong {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--silver);
+  font-size: 13px;
+  line-height: 1.35;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.file-meta {
+  color: #8d9eaa;
+  font-size: 12px;
+  line-height: 1.35;
+}
+
+.file-remove {
+  flex: 0 0 auto;
+  border: 1px solid rgba(128, 204, 240, 0.22);
+  border-radius: 3px;
+  padding: 7px 9px;
+  color: var(--ice-bright);
+  background: rgba(52, 189, 242, 0.06);
+  font: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.file-remove:hover,
+.file-remove:focus-visible {
+  color: var(--silver);
+  border-color: rgba(128, 220, 255, 0.46);
+}
+
+.file-reset {
+  justify-self: start;
+  border: 0;
+  padding: 0;
+  color: var(--ice-bright);
+  background: transparent;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.file-reset:hover,
+.file-reset:focus-visible {
+  color: var(--silver);
 }
 
 .form-hidden {

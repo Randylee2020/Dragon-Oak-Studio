@@ -11,6 +11,9 @@ const contactForm = document.getElementById("contactForm");
 const contactSubmit = document.getElementById("contactSubmit");
 const contactStatus = document.getElementById("contactStatus");
 const contactStartedAt = document.getElementById("contactStartedAt");
+const contactReferenceImages = document.getElementById("contactReferenceImages");
+const contactFileSummary = document.getElementById("contactFileSummary");
+const contactFileReset = document.getElementById("contactFileReset");
 
 const introSessionKey = "dragonOakIntroViewed";
 const introRevealPrepTime = 5.75;
@@ -18,6 +21,8 @@ const introBurnStartTime = 6.05;
 const introSkipFadeDuration = 520;
 const introBurnRevealDuration = 2400;
 const introBurnPlaybackRate = 2.05;
+const maxReferenceFiles = 3;
+const maxReferenceFileSize = 5 * 1024 * 1024;
 let burnAnimationFrame = null;
 let burnPrepared = false;
 let burnStarted = false;
@@ -364,12 +369,21 @@ const projectTypes = [
   "Bulk / Business Order",
   "Other",
 ];
+const allowedReferenceTypes = new Map([
+  ["image/jpeg", new Set(["jpg", "jpeg"])],
+  ["image/png", new Set(["png"])],
+  ["image/webp", new Set(["webp"])],
+  ["application/pdf", new Set(["pdf"])],
+  ["image/svg+xml", new Set(["svg"])],
+]);
+let selectedReferenceFiles = [];
 
 const fieldMessages = {
   name: "Please enter your name.",
   email: "Please enter a valid email address.",
   projectType: "Please choose a project type.",
   message: "Please tell us a little about your project.",
+  referenceImages: "Please choose JPG, PNG, WebP, PDF or SVG files under 5 MB.",
 };
 
 const setFieldError = (field, message = "") => {
@@ -405,6 +419,243 @@ const getContactPayload = () => {
     website: String(formData.get("website") || "").trim(),
     startedAt: String(formData.get("startedAt") || "").trim(),
   };
+};
+
+const formatFileSize = (bytes) => {
+  if (bytes < 1024 * 1024) {
+    return `${Math.max(Math.round(bytes / 1024), 1)} KB`;
+  }
+
+  return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
+};
+
+const getFileExtension = (fileName) => {
+  const extension = fileName.split(".").pop();
+  return extension ? extension.toLowerCase() : "";
+};
+
+const getReadableFileType = (file) => {
+  const extension = getFileExtension(file.name);
+
+  if (extension === "jpg" || extension === "jpeg") {
+    return "JPEG";
+  }
+
+  return extension.toUpperCase();
+};
+
+const readFileHeader = async (file, length = 16) => {
+  const buffer = await file.slice(0, length).arrayBuffer();
+  return new Uint8Array(buffer);
+};
+
+const fileHeaderMatchesType = async (file) => {
+  const header = await readFileHeader(file, 64);
+  const headerText = new TextDecoder("utf-8")
+    .decode(header)
+    .replace(/^\uFEFF/, "")
+    .trimStart()
+    .toLowerCase();
+
+  if (file.type === "image/jpeg") {
+    return header[0] === 0xff && header[1] === 0xd8 && header[2] === 0xff;
+  }
+
+  if (file.type === "image/png") {
+    return (
+      header[0] === 0x89 &&
+      header[1] === 0x50 &&
+      header[2] === 0x4e &&
+      header[3] === 0x47 &&
+      header[4] === 0x0d &&
+      header[5] === 0x0a &&
+      header[6] === 0x1a &&
+      header[7] === 0x0a
+    );
+  }
+
+  if (file.type === "image/webp") {
+    return (
+      header[0] === 0x52 &&
+      header[1] === 0x49 &&
+      header[2] === 0x46 &&
+      header[3] === 0x46 &&
+      header[8] === 0x57 &&
+      header[9] === 0x45 &&
+      header[10] === 0x42 &&
+      header[11] === 0x50
+    );
+  }
+
+  if (file.type === "application/pdf") {
+    return header[0] === 0x25 && header[1] === 0x50 && header[2] === 0x44 && header[3] === 0x46 && header[4] === 0x2d;
+  }
+
+  if (file.type === "image/svg+xml") {
+    return headerText.startsWith("<svg") || headerText.startsWith("<?xml");
+  }
+
+  return false;
+};
+
+const svgHasUnsafeContent = async (file) => {
+  const text = (await file.text()).toLowerCase();
+
+  return (
+    !text.includes("<svg") ||
+    text.includes("<html") ||
+    text.includes("<script") ||
+    text.includes("<foreignobject") ||
+    text.includes("javascript:") ||
+    /\son[a-z]+\s*=/.test(text) ||
+    /<(iframe|object|embed|link|meta)\b/.test(text)
+  );
+};
+
+const validateReferenceFiles = async (files) => {
+  if (!files.length) {
+    return { files: [], message: "" };
+  }
+
+  if (files.length > maxReferenceFiles) {
+    return { files: [], message: "Please select no more than 3 reference files." };
+  }
+
+  for (const file of files) {
+    const extension = getFileExtension(file.name);
+
+    if (!allowedReferenceTypes.has(file.type) || !allowedReferenceTypes.get(file.type).has(extension) || file.size <= 0 || file.size > maxReferenceFileSize) {
+      return { files: [], message: fieldMessages.referenceImages };
+    }
+
+    if (!(await fileHeaderMatchesType(file))) {
+      return { files: [], message: "One selected file does not match its file type." };
+    }
+
+    if (file.type === "image/svg+xml" && (await svgHasUnsafeContent(file))) {
+      return { files: [], message: "One selected SVG contains unsupported active content." };
+    }
+  }
+
+  return { files, message: "" };
+};
+
+const renderReferenceFiles = () => {
+  if (!contactFileSummary || !contactFileReset) {
+    return;
+  }
+
+  contactFileSummary.innerHTML = "";
+  contactFileReset.hidden = selectedReferenceFiles.length === 0;
+  contactFileReset.disabled = selectedReferenceFiles.length === 0;
+
+  selectedReferenceFiles.forEach((file, index) => {
+    const item = document.createElement("div");
+    const details = document.createElement("div");
+    const name = document.createElement("strong");
+    const meta = document.createElement("span");
+    const remove = document.createElement("button");
+
+    item.className = "file-pill";
+    details.className = "file-details";
+    meta.className = "file-meta";
+    remove.className = "file-remove";
+    remove.type = "button";
+    remove.dataset.fileIndex = String(index);
+    remove.textContent = "Remove";
+    name.textContent = file.name;
+    meta.textContent = `${getReadableFileType(file)} | ${formatFileSize(file.size)}`;
+
+    details.append(name, meta);
+    item.append(details, remove);
+    contactFileSummary.append(item);
+  });
+};
+
+const removeReferenceFile = (index) => {
+  selectedReferenceFiles = selectedReferenceFiles.filter((_file, fileIndex) => fileIndex !== index);
+
+  if (contactReferenceImages) {
+    contactReferenceImages.value = "";
+  }
+
+  renderReferenceFiles();
+};
+
+const resetReferenceFiles = () => {
+  selectedReferenceFiles = [];
+
+  if (contactReferenceImages) {
+    contactReferenceImages.value = "";
+    setFieldError(contactReferenceImages);
+  }
+
+  renderReferenceFiles();
+};
+
+const uploadReferenceFile = async (file) => {
+  const signatureResponse = await fetch("/api/reference-upload", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify({
+      fileName: file.name,
+      fileSize: file.size,
+      mimeType: file.type,
+    }),
+  });
+  const signature = await signatureResponse.json().catch(() => ({}));
+
+  if (!signatureResponse.ok || !signature.ok) {
+    throw new Error("upload_signature_failed");
+  }
+
+  const formData = new FormData();
+  formData.append("file", file);
+  formData.append("api_key", signature.apiKey);
+  formData.append("timestamp", signature.timestamp);
+  formData.append("folder", signature.folder);
+  formData.append("public_id", signature.publicId);
+  formData.append("signature", signature.signature);
+
+  const uploadResponse = await fetch(
+    `https://api.cloudinary.com/v1_1/${signature.cloudName}/${signature.resourceType}/upload`,
+    {
+      method: "POST",
+      body: formData,
+    }
+  );
+  const uploadResult = await uploadResponse.json().catch(() => ({}));
+
+  if (!uploadResponse.ok || !uploadResult.secure_url) {
+    throw new Error("reference_upload_failed");
+  }
+
+  return {
+    url: uploadResult.secure_url,
+    originalName: file.name,
+    size: file.size,
+    type: file.type,
+    resourceType: signature.resourceType,
+  };
+};
+
+const uploadReferenceFiles = async () => {
+  if (!selectedReferenceFiles.length) {
+    return [];
+  }
+
+  setFormStatus("Uploading reference files...", "");
+
+  const uploadedImages = [];
+
+  for (const file of selectedReferenceFiles) {
+    uploadedImages.push(await uploadReferenceFile(file));
+  }
+
+  return uploadedImages;
 };
 
 const validateContactForm = () => {
@@ -468,6 +719,36 @@ if (contactForm && contactSubmit) {
     setFormStatus();
   });
 
+  contactReferenceImages?.addEventListener("change", async () => {
+    const files = Array.from(contactReferenceImages.files || []);
+    const result = await validateReferenceFiles(files);
+
+    selectedReferenceFiles = result.files;
+    setFieldError(contactReferenceImages, result.message);
+    setFormStatus(result.message ? "Please check the selected reference files." : "");
+    renderReferenceFiles();
+
+    if (result.message) {
+      contactReferenceImages.value = "";
+    }
+  });
+
+  contactFileReset?.addEventListener("click", () => {
+    resetReferenceFiles();
+    setFormStatus();
+  });
+
+  contactFileSummary?.addEventListener("click", (event) => {
+    const button = event.target.closest(".file-remove");
+
+    if (!button) {
+      return;
+    }
+
+    removeReferenceFile(Number(button.dataset.fileIndex));
+    setFormStatus();
+  });
+
   contactForm.addEventListener("submit", async (event) => {
     event.preventDefault();
 
@@ -486,6 +767,8 @@ if (contactForm && contactSubmit) {
     setFormStatus("Sending your project inquiry...", "");
 
     try {
+      payload.referenceImages = await uploadReferenceFiles();
+
       const response = await fetch(contactForm.action, {
         method: "POST",
         headers: {
@@ -501,6 +784,7 @@ if (contactForm && contactSubmit) {
       }
 
       contactForm.reset();
+      resetReferenceFiles();
 
       if (contactStartedAt) {
         contactStartedAt.value = String(Date.now());
