@@ -593,6 +593,32 @@ const resetReferenceFiles = () => {
   renderReferenceFiles();
 };
 
+const getCloudinaryUploadParams = (signature) => {
+  const uploadParams = signature.uploadParams || {
+    folder: signature.folder,
+    public_id: signature.publicId,
+    timestamp: signature.timestamp,
+  };
+  const requiredValues = [
+    uploadParams.folder,
+    uploadParams.public_id,
+    uploadParams.timestamp,
+    signature.signature,
+    signature.apiKey,
+    signature.cloudName,
+    signature.resourceType,
+  ];
+
+  if (
+    requiredValues.some((value) => value === undefined || value === null || value === "") ||
+    !["image", "raw"].includes(signature.resourceType)
+  ) {
+    throw new Error("upload_signature_failed");
+  }
+
+  return uploadParams;
+};
+
 const uploadReferenceFile = async (file) => {
   const signatureResponse = await fetch("/api/reference-upload", {
     method: "POST",
@@ -612,10 +638,11 @@ const uploadReferenceFile = async (file) => {
     throw new Error("upload_signature_failed");
   }
 
+  const uploadParams = getCloudinaryUploadParams(signature);
   const formData = new FormData();
   formData.append("file", file);
   formData.append("api_key", signature.apiKey);
-  Object.entries(signature.uploadParams || {}).forEach(([key, value]) => {
+  Object.entries(uploadParams).forEach(([key, value]) => {
     formData.append(key, value);
   });
   formData.append("signature", signature.signature);
