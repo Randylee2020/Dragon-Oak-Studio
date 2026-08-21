@@ -58,6 +58,16 @@ const isAllowedFile = ({ fileName, fileSize, mimeType }) => {
 
 const getResourceType = (mimeType) => allowedTypes.get(clean(mimeType).toLowerCase())?.resourceType || "raw";
 
+const signUploadParams = (params, apiSecret) => {
+  const paramsToSign = Object.entries(params)
+    .filter(([_key, value]) => value !== undefined && value !== null && value !== "")
+    .sort(([left], [right]) => left.localeCompare(right))
+    .map(([key, value]) => `${key}=${value}`)
+    .join("&");
+
+  return crypto.createHash("sha1").update(`${paramsToSign}${apiSecret}`).digest("hex");
+};
+
 module.exports = async function referenceUploadHandler(request, response) {
   if (request.method !== "POST") {
     response.setHeader("Allow", "POST");
@@ -82,25 +92,27 @@ module.exports = async function referenceUploadHandler(request, response) {
   const folder = process.env.CLOUDINARY_UPLOAD_FOLDER || "dragon-oak/reference-files";
 
   if (!cloudName || !apiKey || !apiSecret) {
-    return json(response, 500, { ok: false, message: "Reference image upload is unavailable." });
+    return json(response, 500, { ok: false, message: "Reference file upload is unavailable." });
   }
 
   const timestamp = Math.floor(Date.now() / 1000);
   const extension = getExtension(payload.fileName);
   const resourceType = getResourceType(payload.mimeType);
   const randomId = crypto.randomBytes(12).toString("hex");
-  const publicId = `${timestamp}-${randomId}.${extension}`;
-  const paramsToSign = `folder=${folder}&public_id=${publicId}&timestamp=${timestamp}${apiSecret}`;
-  const signature = crypto.createHash("sha1").update(paramsToSign).digest("hex");
+  const publicId = resourceType === "raw" ? `${timestamp}-${randomId}.${extension}` : `${timestamp}-${randomId}`;
+  const uploadParams = {
+    folder,
+    public_id: publicId,
+    timestamp: String(timestamp),
+  };
+  const signature = signUploadParams(uploadParams, apiSecret);
 
   return json(response, 200, {
     ok: true,
     cloudName,
     apiKey,
-    folder,
-    publicId,
+    uploadParams,
     resourceType,
-    timestamp,
     signature,
   });
 };

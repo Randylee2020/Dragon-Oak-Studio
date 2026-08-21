@@ -615,9 +615,9 @@ const uploadReferenceFile = async (file) => {
   const formData = new FormData();
   formData.append("file", file);
   formData.append("api_key", signature.apiKey);
-  formData.append("timestamp", signature.timestamp);
-  formData.append("folder", signature.folder);
-  formData.append("public_id", signature.publicId);
+  Object.entries(signature.uploadParams || {}).forEach(([key, value]) => {
+    formData.append(key, value);
+  });
   formData.append("signature", signature.signature);
 
   const uploadResponse = await fetch(
