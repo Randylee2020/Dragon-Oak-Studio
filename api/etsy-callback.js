@@ -1,7 +1,12 @@
-const crypto = require("crypto");
-
-const REDIRECT_URI = "https://dragonoakstudio.com/api/etsy-callback";
-const TOKEN_URL = "https://api.etsy.com/v3/public/oauth/token";
+const {
+  exchangeAuthorizationCode,
+  getPgClient,
+  getRequiredConfig,
+  getShopForUser,
+  parseTokenUserId,
+  updateStoredShop,
+  upsertToken,
+} = require("./lib/etsy-oauth");
 
 const json = (response, statusCode, payload) => {
   response.statusCode = statusCode;
@@ -15,28 +20,15 @@ const html = (response, statusCode, content) => {
   response.end(content);
 };
 
-const timingSafeEqual = (a, b) => {
-  const aBuffer = Buffer.from(String(a || ""));
-  const bBuffer = Buffer.from(String(b || ""));
+const escapeHtml = (value) =>
+  String(value || "")
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
 
-  if (aBuffer.length !== bBuffer.length) {
-    return false;
-  }
-
-  return crypto.timingSafeEqual(aBuffer, bBuffer);
-};
-
-const getPgClient = async () => {
-  const { Client } = require("pg");
-
-  const client = new Client({
-    connectionString: process.env.DATABASE_URL,
-    ssl: { rejectUnauthorized: false },
-  });
-
-  await client.connect();
-  return client;
-};
+const getQueryValue = (value) => (Array.isArray(value) ? value[0] : value);
 
 module.exports = async function etsyCallbackHandler(request, response) {
   if (request.method !== "GET") {
@@ -48,18 +40,22 @@ module.exports = async function etsyCallbackHandler(request, response) {
   }
 
   const {
-    code,
-    state,
+    code: rawCode,
+    state: rawState,
     error,
     error_description: errorDescription,
   } = request.query || {};
+  const code = getQueryValue(rawCode);
+  const state = getQueryValue(rawState);
 
   if (error) {
+    const message = errorDescription || error;
+
     return html(
       response,
       400,
       `<h1>Etsy authorization failed</h1>
-       <p>${String(errorDescription || error)}</p>`
+       <p>${escapeHtml(message)}</p>`
     );
   }
 
@@ -71,10 +67,9 @@ module.exports = async function etsyCallbackHandler(request, response) {
     );
   }
 
-  if (
-    !process.env.ETSY_API_KEY ||
-    !process.env.DATABASE_URL
-  ) {
+  const config = getRequiredConfig();
+
+  if (!config.ok) {
     return html(
       response,
       500,
@@ -105,84 +100,17 @@ module.exports = async function etsyCallbackHandler(request, response) {
       );
     }
 
-    const codeVerifier = pendingResult.rows[0].code_verifier;
-
-    const tokenBody = new URLSearchParams({
-      grant_type: "authorization_code",
-      client_id: process.env.ETSY_API_KEY,
-      redirect_uri: REDIRECT_URI,
-      code: String(code),
-      code_verifier: codeVerifier,
-    });
-
-    const tokenResponse = await fetch(TOKEN_URL, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/x-www-form-urlencoded",
-      },
-      body: tokenBody.toString(),
-    });
-
-    if (!tokenResponse.ok) {
-      const failureText = await tokenResponse.text();
-      console.error("Etsy token exchange failed:", tokenResponse.status, failureText);
-
-      return html(
-        response,
-        502,
-        "<h1>Etsy connection failed</h1><p>Dragon Oak could not complete the Etsy token exchange.</p>"
-      );
-    }
-
-    const tokenData = await tokenResponse.json();
-
-    if (
-      !tokenData.access_token ||
-      !tokenData.refresh_token ||
-      !tokenData.expires_in
-    ) {
-      console.error("Unexpected Etsy token response.");
-      return html(
-        response,
-        502,
-        "<h1>Etsy connection failed</h1><p>Etsy returned an unexpected authorization response.</p>"
-      );
-    }
-
-    const userId = String(tokenData.access_token).split(".")[0];
-
-    const expiresAt = new Date(
-      Date.now() + Number(tokenData.expires_in) * 1000
+    const tokenData = await exchangeAuthorizationCode(
+      code,
+      pendingResult.rows[0].code_verifier
     );
-
-    await client.query(
-      `
-        INSERT INTO etsy_oauth_tokens (
-          id,
-          shop_id,
-          access_token,
-          refresh_token,
-          expires_at,
-          scope,
-          created_at,
-          updated_at
-        )
-        VALUES (1, NULL, $1, $2, $3, $4, NOW(), NOW())
-        ON CONFLICT (id)
-        DO UPDATE SET
-          access_token = EXCLUDED.access_token,
-          refresh_token = EXCLUDED.refresh_token,
-          expires_at = EXCLUDED.expires_at,
-          scope = EXCLUDED.scope,
-          updated_at = NOW()
-      `,
-      [
-        tokenData.access_token,
-        tokenData.refresh_token,
-        expiresAt,
-        tokenData.scope || null,
-      ]
-    );
+    const shop = await getShopForUser(tokenData.access_token);
+    const token = await upsertToken(client, tokenData, shop && shop.shop_id);
+    await updateStoredShop(client, shop);
+    const userId = parseTokenUserId(token.accessToken);
+    const connectedDetail = shop && shop.shop_name
+      ? `Shop ${escapeHtml(shop.shop_name)} is connected.`
+      : "Dragon Oak Studio has successfully authorized Etsy.";
 
     return html(
       response,
@@ -194,15 +122,23 @@ module.exports = async function etsyCallbackHandler(request, response) {
          <title>Dragon Oak Studio — Etsy Connected</title>
        </head>
        <body style="font-family:Arial,sans-serif;background:#101418;color:#fff;padding:48px;">
-         <h1>🐉 Etsy connected.</h1>
-         <p>Dragon Oak Studio has successfully authorized Etsy.</p>
-         <p>User ${userId} is connected.</p>
+         <h1>Etsy connected.</h1>
+         <p>${connectedDetail}</p>
+         ${userId ? `<p>Etsy user ${escapeHtml(userId)} is connected.</p>` : ""}
          <p>You can close this window.</p>
        </body>
        </html>`
     );
   } catch (error) {
-    console.error("Etsy OAuth callback error:", error);
+    console.error("Etsy OAuth callback error:", error.message);
+
+    if (error.status) {
+      return html(
+        response,
+        502,
+        "<h1>Etsy connection failed</h1><p>Dragon Oak could not complete the Etsy token exchange.</p>"
+      );
+    }
 
     return html(
       response,
