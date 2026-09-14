@@ -118,6 +118,8 @@ const safeFetchEtsyJson = async (path, accessToken, notes, label) => {
   try {
     return await fetchEtsyJson(path, accessToken);
   } catch (error) {
+    error.step = label;
+
     if (error.status === 404) {
       notes.push(`${label} was not found or is not available from Etsy for this shop.`);
       return null;
@@ -499,6 +501,15 @@ module.exports = async function etsyFinancesHandler(request, response) {
   } catch (error) {
     console.error("Etsy finance trace failed:", error.message);
 
+    const etsyDiagnostic = error.status
+      ? {
+          step: error.step || "Etsy API request",
+          status: error.status,
+          category: error.etsy && error.etsy.category ? error.etsy.category : "etsy_request_error",
+          message: error.etsy && error.etsy.message ? error.etsy.message : "Etsy API request failed.",
+        }
+      : null;
+
     if (error.status === 404) {
       return json(response, 404, {
         ok: false,
@@ -507,6 +518,7 @@ module.exports = async function etsyFinancesHandler(request, response) {
         receiptId,
         transactionId,
         message: "The requested Etsy receipt or financial record was not found.",
+        etsy: etsyDiagnostic,
       });
     }
 
@@ -518,6 +530,7 @@ module.exports = async function etsyFinancesHandler(request, response) {
         receiptId,
         transactionId,
         message: "Unable to fetch Etsy finance data right now.",
+        etsy: etsyDiagnostic,
       });
     }
 

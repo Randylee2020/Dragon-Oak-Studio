@@ -259,12 +259,49 @@ const fetchEtsyApi = async (path, accessToken, options = {}) => {
   return response;
 };
 
+const sanitizeEtsyErrorText = (value) =>
+  String(value || "")
+    .replace(/Bearer\s+[A-Za-z0-9._~+/=-]+/gi, "Bearer [redacted]")
+    .replace(/([A-Za-z0-9]{8,}):([A-Za-z0-9._~+/=-]{8,})/g, "[redacted-api-key]")
+    .slice(0, 240);
+
+const getSafeEtsyError = async (response) => {
+  const fallback = {
+    category: response.status >= 500 ? "etsy_server_error" : "etsy_request_error",
+    message: response.statusText || "Etsy API request failed.",
+  };
+
+  try {
+    const contentType = response.headers.get("content-type") || "";
+
+    if (contentType.includes("application/json")) {
+      const payload = await response.json();
+      const message = payload.error || payload.message || payload.error_description || payload.detail;
+
+      return {
+        category: sanitizeEtsyErrorText(payload.error || payload.type || fallback.category),
+        message: sanitizeEtsyErrorText(message || fallback.message),
+      };
+    }
+
+    const text = await response.text();
+
+    return {
+      ...fallback,
+      message: sanitizeEtsyErrorText(text || fallback.message),
+    };
+  } catch {
+    return fallback;
+  }
+};
+
 const fetchEtsyJson = async (path, accessToken, options = {}) => {
   const response = await fetchEtsyApi(path, accessToken, options);
 
   if (!response.ok) {
     const error = new Error("Etsy API request failed.");
     error.status = response.status;
+    error.etsy = await getSafeEtsyError(response);
     throw error;
   }
 
