@@ -318,6 +318,7 @@ module.exports = {
   createPkcePair,
   createState,
   exchangeAuthorizationCode,
+  fetchEtsyApi,
   getPgClient,
   getRequiredConfig,
   getShopForUser,
