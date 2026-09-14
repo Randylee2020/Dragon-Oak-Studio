@@ -259,6 +259,24 @@ const fetchEtsyApi = async (path, accessToken, options = {}) => {
   return response;
 };
 
+const fetchEtsyJson = async (path, accessToken, options = {}) => {
+  const response = await fetchEtsyApi(path, accessToken, options);
+
+  if (!response.ok) {
+    const error = new Error("Etsy API request failed.");
+    error.status = response.status;
+    throw error;
+  }
+
+  try {
+    return await response.json();
+  } catch {
+    const error = new Error("Etsy returned an invalid API response.");
+    error.status = 502;
+    throw error;
+  }
+};
+
 const getShopForUser = async (accessToken) => {
   const userId = parseTokenUserId(accessToken);
 
@@ -319,6 +337,7 @@ module.exports = {
   createState,
   exchangeAuthorizationCode,
   fetchEtsyApi,
+  fetchEtsyJson,
   getPgClient,
   getRequiredConfig,
   getShopForUser,
