@@ -8,7 +8,7 @@ const {
 const DEFAULT_RECEIPT_ID = "4155757603";
 const DEFAULT_TRANSACTION_ID = "5192982656";
 const MIN_ETSY_TIMESTAMP = 946684800;
-const LEDGER_WINDOW_SECONDS = 45 * 24 * 60 * 60;
+const LEDGER_HALF_WINDOW_SECONDS = 15 * 24 * 60 * 60;
 
 const json = (response, statusCode, payload) => {
   response.statusCode = statusCode;
@@ -241,7 +241,7 @@ const getDepositCandidates = (entries) =>
     return text.includes("deposit") || text.includes("payout") || text.includes("disbursement");
   });
 
-const getLedgerWindow = (records) => {
+const getLedgerWindows = (records) => {
   const timestamps = records
     .flatMap((record) => [
       getTimestamp(record, ["created_timestamp", "create_timestamp", "create_date"]),
@@ -251,16 +251,15 @@ const getLedgerWindow = (records) => {
     .filter(Boolean);
 
   if (!timestamps.length) {
-    return null;
+    return [];
   }
 
-  const minCreated = Math.max(MIN_ETSY_TIMESTAMP, Math.min(...timestamps) - LEDGER_WINDOW_SECONDS);
-  const maxCreated = Math.min(
-    Math.max(...timestamps) + LEDGER_WINDOW_SECONDS,
-    Math.floor(Date.now() / 1000) + 24 * 60 * 60
-  );
+  const tomorrow = Math.floor(Date.now() / 1000) + 24 * 60 * 60;
 
-  return { minCreated, maxCreated };
+  return uniqueValues(timestamps).map((timestamp) => ({
+    minCreated: Math.max(MIN_ETSY_TIMESTAMP, timestamp - LEDGER_HALF_WINDOW_SECONDS),
+    maxCreated: Math.min(timestamp + LEDGER_HALF_WINDOW_SECONDS, tomorrow),
+  }));
 };
 
 const getFinancialTrace = async (shopId, accessToken, receiptId, transactionId) => {
@@ -268,6 +267,7 @@ const getFinancialTrace = async (shopId, accessToken, receiptId, transactionId) 
     "Etsy Seller App APIs expose receipt, payment, and payment account ledger records for shops authorized with transactions_r.",
     "Etsy payment records expose gross, fee, net, posted, and adjusted amounts when the payment exists.",
     "Etsy payment account ledger entries expose ledger amounts, descriptions, reference IDs, and adjustments; they do not expose bank account destination details.",
+    "Etsy rejects payment account ledger entry requests with a min_created/max_created window greater than 31 days, so this endpoint queries narrower timestamp windows.",
   ];
 
   const receipt = await safeFetchEtsyJson(
@@ -315,30 +315,37 @@ const getFinancialTrace = async (shopId, accessToken, receiptId, transactionId) 
   }
 
   const ledgerRecords = [receipt, payment, ...transactions].filter(Boolean);
-  const ledgerWindow = getLedgerWindow(ledgerRecords);
+  const ledgerWindows = getLedgerWindows(ledgerRecords);
   let ledgerEntries = [];
   let linkedPayments = [];
 
-  if (ledgerWindow) {
-    const params = new URLSearchParams({
-      min_created: String(ledgerWindow.minCreated),
-      max_created: String(ledgerWindow.maxCreated),
-      limit: "100",
-      offset: "0",
-    });
-    const ledgerData = await safeFetchEtsyJson(
-      `/shops/${shopId}/payment-account/ledger-entries?${params.toString()}`,
-      accessToken,
-      notes,
-      "Payment account ledger entries"
-    );
+  if (ledgerWindows.length) {
+    const ledgerResults = [];
+
+    for (const ledgerWindow of ledgerWindows) {
+      const params = new URLSearchParams({
+        min_created: String(ledgerWindow.minCreated),
+        max_created: String(ledgerWindow.maxCreated),
+        limit: "100",
+        offset: "0",
+      });
+      const ledgerData = await safeFetchEtsyJson(
+        `/shops/${shopId}/payment-account/ledger-entries?${params.toString()}`,
+        accessToken,
+        notes,
+        "Payment account ledger entries"
+      );
+
+      ledgerResults.push(...getArray(ledgerData && ledgerData.results));
+    }
 
     const traceIds = new Set([
       receiptId,
       transactionId,
       ...payments.map((record) => String(record.payment_id || "")).filter(Boolean),
     ]);
-    ledgerEntries = getArray(ledgerData && ledgerData.results)
+    ledgerEntries = uniqueValues(ledgerResults.map((entry) => entry.entry_id))
+      .map((entryId) => ledgerResults.find((entry) => entry.entry_id === entryId))
       .filter((entry) => entryMatchesTrace(entry, traceIds))
       .map(normalizeLedgerEntry);
 
