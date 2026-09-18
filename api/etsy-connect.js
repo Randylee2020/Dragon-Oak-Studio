@@ -4,7 +4,7 @@ const {
   createState,
   getPgClient,
   getRequiredConfig,
-} = require("./lib/etsy-oauth");
+} = require("./_lib/etsy-oauth");
 
 const json = (response, statusCode, payload) => {
   response.statusCode = statusCode;

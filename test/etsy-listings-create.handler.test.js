@@ -1,7 +1,7 @@
 const test = require("node:test");
 const assert = require("node:assert/strict");
 
-const LIB_PATH = require.resolve("../api/lib/etsy-oauth");
+const LIB_PATH = require.resolve("../api/_lib/etsy-oauth");
 const HANDLER_PATH = require.resolve("../api/etsy-listings-create");
 
 const VALID_INPUT = {

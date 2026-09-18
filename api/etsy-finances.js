@@ -3,7 +3,7 @@ const {
   getPgClient,
   getRequiredConfig,
   getStoredToken,
-} = require("./lib/etsy-oauth");
+} = require("./_lib/etsy-oauth");
 
 const DEFAULT_RECEIPT_ID = "4155757603";
 const DEFAULT_TRANSACTION_ID = "5192982656";
