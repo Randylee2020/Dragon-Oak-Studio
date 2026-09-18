@@ -19,11 +19,25 @@ const ALLOWED_EXTENSION_MIME_TYPES = new Map([
 ]);
 const DATA_URL_PATTERN = /^data:([^;]+);base64,(.*)$/s;
 
+// Files delivered by fileUrl are fetched server-side, so the host is restricted to the
+// existing Cloudinary account this project already uploads reference files to (see
+// api/reference-upload.js) rather than allowing arbitrary caller-supplied URLs.
+const ALLOWED_URL_HOSTS = new Set(["res.cloudinary.com"]);
+
 const isBlank = (value) => value === undefined || value === null || value === "";
 
 const getExtension = (fileName) => {
   const extension = String(fileName || "").trim().split(".").pop();
   return extension ? extension.toLowerCase() : "";
+};
+
+const parseHttpsUrl = (value) => {
+  try {
+    const parsed = new URL(value);
+    return parsed.protocol === "https:" ? parsed : null;
+  } catch {
+    return null;
+  }
 };
 
 const validateFileInput = (input) => {
@@ -39,8 +53,20 @@ const validateFileInput = (input) => {
     errors.push("listingId must be a positive number.");
   }
 
-  if (isBlank(input.fileBase64) || typeof input.fileBase64 !== "string") {
-    errors.push("Missing required field: fileBase64");
+  const hasBase64 = !isBlank(input.fileBase64) && typeof input.fileBase64 === "string";
+  const hasUrl = !isBlank(input.fileUrl) && typeof input.fileUrl === "string";
+
+  if (!hasBase64 && !hasUrl) {
+    errors.push("Provide either fileBase64 or fileUrl.");
+  } else if (hasBase64 && hasUrl) {
+    errors.push("Provide only one of fileBase64 or fileUrl, not both.");
+  } else if (hasUrl) {
+    const parsed = parseHttpsUrl(input.fileUrl);
+    if (!parsed) {
+      errors.push("fileUrl must be a valid https URL.");
+    } else if (!ALLOWED_URL_HOSTS.has(parsed.hostname)) {
+      errors.push(`fileUrl host must be one of: ${[...ALLOWED_URL_HOSTS].join(", ")}`);
+    }
   }
 
   if (isBlank(input.fileName) || typeof input.fileName !== "string") {
@@ -80,6 +106,43 @@ const decodeFileBuffer = (input) => {
 
   return { buffer, mimeType };
 };
+
+const fetchRemoteFileBuffer = async (input) => {
+  let response;
+  try {
+    response = await fetch(input.fileUrl);
+  } catch (error) {
+    return { error: `Unable to fetch fileUrl: ${error.message}` };
+  }
+
+  if (!response.ok) {
+    return { error: `fileUrl request failed with HTTP ${response.status}` };
+  }
+
+  const buffer = Buffer.from(await response.arrayBuffer());
+
+  if (!buffer.length) {
+    return { error: "fileUrl resolved to an empty file." };
+  }
+
+  if (buffer.length > MAX_FILE_BYTES) {
+    return { error: `File exceeds Etsy's ${MAX_FILE_BYTES / (1024 * 1024)}MB digital file limit.` };
+  }
+
+  const extension = getExtension(input.fileName);
+  const contentType = response.headers.get("content-type");
+  const mimeType = String(
+    input.mimeType || contentType || ALLOWED_EXTENSION_MIME_TYPES.get(extension) || ""
+  ).toLowerCase();
+
+  return { buffer, mimeType };
+};
+
+// Resolves the file bytes from whichever source the caller provided. fileUrl is fetched
+// server-side (not subject to Vercel's ~4.5MB inbound request body limit, unlike relaying
+// the bytes through this function's own JSON request body via fileBase64).
+const resolveFileBuffer = (input) =>
+  isBlank(input.fileUrl) ? Promise.resolve(decodeFileBuffer(input)) : fetchRemoteFileBuffer(input);
 
 const buildUploadForm = (buffer, mimeType, input) => {
   const form = new FormData();
@@ -157,7 +220,7 @@ module.exports = async function etsyListingFileUploadHandler(request, response) 
     });
   }
 
-  const decoded = decodeFileBuffer(input);
+  const decoded = await resolveFileBuffer(input);
 
   if (decoded.error) {
     return json(response, 400, {
@@ -235,6 +298,9 @@ module.exports = async function etsyListingFileUploadHandler(request, response) 
 
 module.exports.validateFileInput = validateFileInput;
 module.exports.decodeFileBuffer = decodeFileBuffer;
+module.exports.fetchRemoteFileBuffer = fetchRemoteFileBuffer;
+module.exports.resolveFileBuffer = resolveFileBuffer;
 module.exports.buildUploadForm = buildUploadForm;
 module.exports.normalizeListingFile = normalizeListingFile;
 module.exports.getExtension = getExtension;
+module.exports.parseHttpsUrl = parseHttpsUrl;

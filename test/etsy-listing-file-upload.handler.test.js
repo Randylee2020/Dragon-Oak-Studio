@@ -75,7 +75,7 @@ test("handler returns 400 with field errors for invalid input", async (t) => {
   await handler(fakeRequest({ body: { listingId: 4577566790 } }), res);
 
   assert.equal(res.statusCode, 400);
-  assert.ok(res.body.errors.includes("Missing required field: fileBase64"));
+  assert.ok(res.body.errors.includes("Provide either fileBase64 or fileUrl."));
 });
 
 test("handler returns 400 for an unsupported extension", async (t) => {
@@ -182,6 +182,78 @@ test("handler surfaces Etsy rejection errors as 502 with diagnostic detail", asy
 
   assert.equal(res.statusCode, 502);
   assert.equal(res.body.etsy.category, "invalid_request");
+});
+
+test("handler fetches a Cloudinary fileUrl server-side and uploads those bytes to Etsy", async (t) => {
+  const remoteBytes = Buffer.from("remote fetched zip bytes");
+  const originalFetch = globalThis.fetch;
+  globalThis.fetch = async (url) => {
+    assert.equal(url, "https://res.cloudinary.com/dragon-oak/raw/upload/v1/set01.zip");
+    return {
+      ok: true,
+      status: 200,
+      headers: { get: () => "application/zip" },
+      arrayBuffer: async () => remoteBytes.buffer.slice(remoteBytes.byteOffset, remoteBytes.byteOffset + remoteBytes.byteLength),
+    };
+  };
+
+  let capturedOptions;
+  const handler = stubLib({
+    fetchEtsyJson: async (path, accessToken, options) => {
+      capturedOptions = options;
+      return {
+        listing_file_id: 555444,
+        listing_id: 4577566790,
+        rank: 1,
+        filename: "dragon-oak-set01.zip",
+        create_timestamp: 1789700000,
+      };
+    },
+  });
+  t.after(() => {
+    globalThis.fetch = originalFetch;
+    restoreLib();
+  });
+
+  const res = fakeResponse();
+  await handler(
+    fakeRequest({
+      body: {
+        listingId: 4577566790,
+        fileUrl: "https://res.cloudinary.com/dragon-oak/raw/upload/v1/set01.zip",
+        fileName: "dragon-oak-set01.zip",
+        rank: 1,
+      },
+    }),
+    res
+  );
+
+  const uploadedFile = capturedOptions.body.get("file");
+  const roundTripped = Buffer.from(await uploadedFile.arrayBuffer());
+  assert.ok(roundTripped.equals(remoteBytes));
+
+  assert.equal(res.statusCode, 201);
+  assert.equal(res.body.file.listingFileId, 555444);
+});
+
+test("handler returns 400 when fileUrl host is not the allowed Cloudinary host", async (t) => {
+  const handler = stubLib();
+  t.after(restoreLib);
+
+  const res = fakeResponse();
+  await handler(
+    fakeRequest({
+      body: {
+        listingId: 4577566790,
+        fileUrl: "https://evil.example.com/set01.zip",
+        fileName: "dragon-oak-set01.zip",
+      },
+    }),
+    res
+  );
+
+  assert.equal(res.statusCode, 400);
+  assert.ok(res.body.errors.some((error) => error.startsWith("fileUrl host must be one of")));
 });
 
 test("handler surfaces a 404 when Etsy cannot find the listing", async (t) => {
