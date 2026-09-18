@@ -2,6 +2,7 @@ const test = require("node:test");
 const assert = require("node:assert/strict");
 
 const LIB_PATH = require.resolve("../api/_lib/etsy-oauth");
+const CLOUDINARY_LIB_PATH = require.resolve("../api/_lib/cloudinary");
 const HANDLER_PATH = require.resolve("../api/etsy-listing-file-upload");
 
 const TEST_ZIP_CONTENT_BASE64 = Buffer.from("PK\x03\x04 fake but non-empty test zip bytes").toString("base64");
@@ -13,7 +14,7 @@ const VALID_INPUT = {
   rank: 1,
 };
 
-const stubLib = (overrides = {}) => {
+const stubLib = (overrides = {}, cloudinaryOverrides = {}) => {
   const stub = {
     getRequiredConfig: () => ({ ok: true, apiKey: "k", sharedSecret: "s", databaseUrl: "postgres://x" }),
     getPgClient: async () => ({ end: async () => {} }),
@@ -28,14 +29,27 @@ const stubLib = (overrides = {}) => {
     },
     ...overrides,
   };
+  const cloudinaryStub = {
+    createSignedUpload: () => {
+      throw new Error("createSignedUpload stub was not overridden for this test");
+    },
+    ...cloudinaryOverrides,
+  };
 
   require.cache[LIB_PATH] = { id: LIB_PATH, filename: LIB_PATH, loaded: true, exports: stub };
+  require.cache[CLOUDINARY_LIB_PATH] = {
+    id: CLOUDINARY_LIB_PATH,
+    filename: CLOUDINARY_LIB_PATH,
+    loaded: true,
+    exports: cloudinaryStub,
+  };
   delete require.cache[HANDLER_PATH];
   return require(HANDLER_PATH);
 };
 
 const restoreLib = () => {
   delete require.cache[LIB_PATH];
+  delete require.cache[CLOUDINARY_LIB_PATH];
   delete require.cache[HANDLER_PATH];
 };
 
@@ -65,6 +79,67 @@ test("handler rejects non-POST methods", async (t) => {
 
   assert.equal(res.statusCode, 405);
   assert.equal(res.body.ok, false);
+});
+
+test("handler sign-upload action returns signed Cloudinary params without needing an Etsy connection", async (t) => {
+  const handler = stubLib(
+    {
+      getStoredToken: async () => {
+        throw new Error("sign-upload must not touch the Etsy token/DB path");
+      },
+    },
+    {
+      createSignedUpload: ({ fileName, resourceType, folder }) => {
+        assert.equal(fileName, "dragon-oak-set01.zip");
+        assert.equal(resourceType, "raw");
+        assert.equal(folder, "dragon-oak/etsy-digital-files");
+        return {
+          ok: true,
+          cloudName: "demo",
+          apiKey: "key123",
+          folder,
+          publicId: "123-abc.zip",
+          timestamp: "123",
+          resourceType,
+          signature: "deadbeef",
+        };
+      },
+    }
+  );
+  t.after(restoreLib);
+
+  const res = fakeResponse();
+  await handler(fakeRequest({ body: { action: "sign-upload", fileName: "dragon-oak-set01.zip" } }), res);
+
+  assert.equal(res.statusCode, 200);
+  assert.equal(res.body.ok, true);
+  assert.equal(res.body.signature, "deadbeef");
+  assert.equal(res.body.resourceType, "raw");
+});
+
+test("handler sign-upload action validates fileName before signing", async (t) => {
+  const handler = stubLib();
+  t.after(restoreLib);
+
+  const res = fakeResponse();
+  await handler(fakeRequest({ body: { action: "sign-upload", fileName: "malware.exe" } }), res);
+
+  assert.equal(res.statusCode, 400);
+  assert.ok(res.body.errors.some((error) => error.startsWith("fileName must end in one of")));
+});
+
+test("handler sign-upload action surfaces a 500 when Cloudinary is not configured", async (t) => {
+  const handler = stubLib(
+    {},
+    { createSignedUpload: () => ({ ok: false, error: "Cloudinary is not configured." }) }
+  );
+  t.after(restoreLib);
+
+  const res = fakeResponse();
+  await handler(fakeRequest({ body: { action: "sign-upload", fileName: "preview.png" } }), res);
+
+  assert.equal(res.statusCode, 500);
+  assert.match(res.body.message, /not configured/);
 });
 
 test("handler returns 400 with field errors for invalid input", async (t) => {

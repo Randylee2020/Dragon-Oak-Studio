@@ -4,6 +4,7 @@ const {
   getRequiredConfig,
   getStoredToken,
 } = require("./_lib/etsy-oauth");
+const { createSignedUpload } = require("./_lib/cloudinary");
 
 const json = (response, statusCode, payload) => {
   response.statusCode = statusCode;
@@ -23,6 +24,15 @@ const DATA_URL_PATTERN = /^data:([^;]+);base64,(.*)$/s;
 // existing Cloudinary account this project already uploads reference files to (see
 // api/reference-upload.js) rather than allowing arbitrary caller-supplied URLs.
 const ALLOWED_URL_HOSTS = new Set(["res.cloudinary.com"]);
+
+// A separate Cloudinary folder/signing path from api/reference-upload.js (which is
+// intentionally left untouched, including its 5MB cap for the public project-inquiry
+// form). This one is sized for full-resolution production digital-download files.
+const ETSY_DIGITAL_FILES_FOLDER = "dragon-oak/etsy-digital-files";
+const CLOUDINARY_RESOURCE_TYPES_BY_EXTENSION = new Map([
+  ["png", "image"],
+  ["zip", "raw"],
+]);
 
 const isBlank = (value) => value === undefined || value === null || value === "";
 
@@ -183,6 +193,25 @@ const getRequestBody = (request) => {
   return request.body;
 };
 
+// Validates a { action: "sign-upload", fileName, mimeType } request and returns the
+// Cloudinary resourceType to sign for, independent of any Etsy connection state.
+const validateSignUploadInput = (input) => {
+  if (isBlank(input.fileName) || typeof input.fileName !== "string") {
+    return { errors: ["Missing required field: fileName"] };
+  }
+
+  const extension = getExtension(input.fileName);
+  const resourceType = CLOUDINARY_RESOURCE_TYPES_BY_EXTENSION.get(extension);
+
+  if (!resourceType) {
+    return {
+      errors: [`fileName must end in one of: ${[...ALLOWED_EXTENSION_MIME_TYPES.keys()].map((ext) => `.${ext}`).join(", ")}`],
+    };
+  }
+
+  return { errors: [], resourceType };
+};
+
 module.exports = async function etsyListingFileUploadHandler(request, response) {
   if (request.method !== "POST") {
     response.setHeader("Allow", "POST");
@@ -192,21 +221,41 @@ module.exports = async function etsyListingFileUploadHandler(request, response) 
     });
   }
 
-  const config = getRequiredConfig();
-
-  if (!config.ok) {
-    return json(response, 500, {
-      ok: false,
-      message: "Etsy connection is not configured.",
-    });
-  }
-
   const input = getRequestBody(request);
 
   if (input === null) {
     return json(response, 400, {
       ok: false,
       message: "Request body must be valid JSON.",
+    });
+  }
+
+  if (input && input.action === "sign-upload") {
+    const { errors, resourceType } = validateSignUploadInput(input);
+
+    if (errors.length) {
+      return json(response, 400, { ok: false, message: "Invalid sign-upload input.", errors });
+    }
+
+    const signed = createSignedUpload({
+      fileName: input.fileName,
+      resourceType,
+      folder: ETSY_DIGITAL_FILES_FOLDER,
+    });
+
+    if (!signed.ok) {
+      return json(response, 500, { ok: false, message: signed.error || "Unable to sign Cloudinary upload." });
+    }
+
+    return json(response, 200, signed);
+  }
+
+  const config = getRequiredConfig();
+
+  if (!config.ok) {
+    return json(response, 500, {
+      ok: false,
+      message: "Etsy connection is not configured.",
     });
   }
 
@@ -304,3 +353,4 @@ module.exports.buildUploadForm = buildUploadForm;
 module.exports.normalizeListingFile = normalizeListingFile;
 module.exports.getExtension = getExtension;
 module.exports.parseHttpsUrl = parseHttpsUrl;
+module.exports.validateSignUploadInput = validateSignUploadInput;

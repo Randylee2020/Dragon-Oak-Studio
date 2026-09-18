@@ -10,6 +10,7 @@ const {
   normalizeListingFile,
   getExtension,
   parseHttpsUrl,
+  validateSignUploadInput,
 } = require("../api/etsy-listing-file-upload");
 
 const TEST_ZIP_CONTENT_BASE64 = Buffer.from("PK\x03\x04 fake but non-empty test zip bytes").toString("base64");
@@ -273,6 +274,21 @@ test("resolveFileBuffer uses the base64 path when no fileUrl is given", async ()
   const result = await resolveFileBuffer(VALID_ZIP_INPUT);
   assert.equal(result.error, undefined);
   assert.ok(Buffer.isBuffer(result.buffer));
+});
+
+test("validateSignUploadInput requires fileName", () => {
+  assert.deepEqual(validateSignUploadInput({}), { errors: ["Missing required field: fileName"] });
+});
+
+test("validateSignUploadInput maps .zip to raw and .png to image", () => {
+  assert.deepEqual(validateSignUploadInput({ fileName: "set01.zip" }), { errors: [], resourceType: "raw" });
+  assert.deepEqual(validateSignUploadInput({ fileName: "preview.png" }), { errors: [], resourceType: "image" });
+});
+
+test("validateSignUploadInput rejects an unsupported extension", () => {
+  const result = validateSignUploadInput({ fileName: "malware.exe" });
+  assert.equal(result.resourceType, undefined);
+  assert.ok(result.errors.some((error) => error.startsWith("fileName must end in one of")));
 });
 
 test("resolveFileBuffer uses the remote-fetch path when fileUrl is given", async () => {
