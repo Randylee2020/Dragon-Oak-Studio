@@ -50,8 +50,9 @@ const getRequestBody = (request) => {
   return request.body;
 };
 
-const getListing = (shopId, listingId, accessToken) =>
-  fetchEtsyJson(`/shops/${shopId}/listings/${listingId}`, accessToken);
+// Etsy's read-single-listing endpoint is shop-agnostic (no shop_id in the path); only
+// the update/activate PATCH below is scoped under /shops/{shop_id}/listings/{listing_id}.
+const getListing = (listingId, accessToken) => fetchEtsyJson(`/listings/${listingId}`, accessToken);
 
 const activateListing = (shopId, listingId, accessToken) =>
   fetchEtsyJson(`/shops/${shopId}/listings/${listingId}`, accessToken, {
@@ -126,7 +127,7 @@ module.exports = async function etsyListingActivateHandler(request, response) {
     let currentListing;
 
     try {
-      currentListing = await getListing(token.shopId, listingId, token.accessToken);
+      currentListing = await getListing(listingId, token.accessToken);
     } catch (error) {
       if (error.status === 404) {
         return json(response, 404, {
@@ -138,6 +139,18 @@ module.exports = async function etsyListingActivateHandler(request, response) {
         });
       }
       throw error;
+    }
+
+    // getListing is shop-agnostic, so confirm the listing actually belongs to the
+    // connected shop before treating it as a valid activation target.
+    if (Number(currentListing.shop_id) !== Number(token.shopId)) {
+      return json(response, 404, {
+        ok: false,
+        connected: true,
+        shopId: token.shopId,
+        listingId,
+        message: "Listing was not found in this shop.",
+      });
     }
 
     if (currentListing.state !== "draft") {

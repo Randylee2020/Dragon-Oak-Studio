@@ -110,13 +110,26 @@ test("handler returns 404 when the precondition GET cannot find the listing", as
   assert.equal(res.body.listingId, 4577566790);
 });
 
+test("handler returns 404 when the listing belongs to a different shop", async (t) => {
+  const handler = stubLib({
+    fetchEtsyJson: async () => ({ listing_id: 4577566790, shop_id: 99999999, state: "draft" }),
+  });
+  t.after(restoreLib);
+
+  const res = fakeResponse();
+  await handler(fakeRequest(), res);
+
+  assert.equal(res.statusCode, 404);
+  assert.equal(res.body.message, "Listing was not found in this shop.");
+});
+
 test("handler refuses to activate a listing that is not currently draft", async (t) => {
   let callCount = 0;
   const handler = stubLib({
     fetchEtsyJson: async (path, accessToken, options) => {
       callCount += 1;
       assert.equal(options, undefined, "the precondition check must be a plain GET");
-      return { listing_id: 4577566790, state: "active" };
+      return { listing_id: 4577566790, shop_id: 64473522, state: "active" };
     },
   });
   t.after(restoreLib);
@@ -130,14 +143,14 @@ test("handler refuses to activate a listing that is not currently draft", async 
   assert.match(res.body.message, /not in draft state/);
 });
 
-test("handler GETs the listing, confirms draft state, then PATCHes it active", async (t) => {
+test("handler GETs the listing (shop-agnostic path), confirms draft state and ownership, then PATCHes it active", async (t) => {
   const calls = [];
 
   const handler = stubLib({
     fetchEtsyJson: async (path, accessToken, options) => {
       calls.push({ path, accessToken, options });
       if (calls.length === 1) {
-        return { listing_id: 4577566790, state: "draft" };
+        return { listing_id: 4577566790, shop_id: 64473522, state: "draft" };
       }
       return {
         listing_id: 4577566790,
@@ -153,7 +166,7 @@ test("handler GETs the listing, confirms draft state, then PATCHes it active", a
   await handler(fakeRequest(), res);
 
   assert.equal(calls.length, 2);
-  assert.equal(calls[0].path, "/shops/64473522/listings/4577566790");
+  assert.equal(calls[0].path, "/listings/4577566790");
   assert.equal(calls[0].options, undefined);
   assert.equal(calls[1].path, "/shops/64473522/listings/4577566790");
   assert.equal(calls[1].options.method, "PATCH");
@@ -171,7 +184,7 @@ test("handler surfaces Etsy rejection errors from the activation PATCH as 502", 
   const handler = stubLib({
     fetchEtsyJson: async (path, accessToken, options) => {
       if (!options) {
-        return { listing_id: 4577566790, state: "draft" };
+        return { listing_id: 4577566790, shop_id: 64473522, state: "draft" };
       }
       const error = new Error("Etsy API request failed.");
       error.status = 400;
