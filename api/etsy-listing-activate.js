@@ -4,6 +4,7 @@ const {
   getRequiredConfig,
   getStoredToken,
 } = require("./_lib/etsy-oauth");
+const { requireBridgeAuth } = require("./_lib/bridge-auth");
 
 const json = (response, statusCode, payload) => {
   response.statusCode = statusCode;
@@ -62,6 +63,10 @@ const activateListing = (shopId, listingId, accessToken) =>
   });
 
 module.exports = async function etsyListingActivateHandler(request, response) {
+  if (!requireBridgeAuth(request, response)) {
+    return;
+  }
+
   if (request.method !== "POST") {
     response.setHeader("Allow", "POST");
     return json(response, 405, {

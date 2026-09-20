@@ -5,6 +5,7 @@ const {
   getRequiredConfig,
   getStoredToken,
 } = require("./_lib/etsy-oauth");
+const { requireBridgeAuth } = require("./_lib/bridge-auth");
 const { createSignedUpload } = require("./_lib/cloudinary");
 
 const json = (response, statusCode, payload) => {
@@ -412,6 +413,10 @@ const handleChunkedAction = async (input, response) => {
 };
 
 module.exports = async function etsyListingFileUploadHandler(request, response) {
+  if (!requireBridgeAuth(request, response)) {
+    return;
+  }
+
   if (request.method !== "POST") {
     response.setHeader("Allow", "POST");
     return json(response, 405, {

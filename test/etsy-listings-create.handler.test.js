@@ -1,4 +1,5 @@
 const test = require("node:test");
+const { testAuthHeaders } = require("./_bridge-auth-test-helper");
 const assert = require("node:assert/strict");
 
 const LIB_PATH = require.resolve("../api/_lib/etsy-oauth");
@@ -43,7 +44,7 @@ const restoreLib = () => {
   delete require.cache[HANDLER_PATH];
 };
 
-const fakeRequest = ({ method = "POST", body = VALID_INPUT } = {}) => ({ method, body });
+const fakeRequest = ({ method = "POST", body = VALID_INPUT } = {}) => ({ method, body, headers: testAuthHeaders() });
 
 const fakeResponse = () => {
   const res = {

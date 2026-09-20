@@ -1,4 +1,5 @@
 const test = require("node:test");
+const { testAuthHeaders } = require("./_bridge-auth-test-helper");
 const assert = require("node:assert/strict");
 const crypto = require("crypto");
 
@@ -60,7 +61,7 @@ const restore = () => {
 
 const call = async (handler, body) => {
   const res = { statusCode: null, headers: {}, body: null, setHeader(k, v) { this.headers[k] = v; }, end(payload) { this.body = JSON.parse(payload); } };
-  await handler({ method: "POST", body }, res);
+  await handler({ method: "POST", body, headers: testAuthHeaders() }, res);
   return res;
 };
 

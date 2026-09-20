@@ -6,6 +6,7 @@ const {
   normalizeScope,
   updateStoredShop,
 } = require("./_lib/etsy-oauth");
+const { requireBridgeAuth } = require("./_lib/bridge-auth");
 
 const json = (response, statusCode, payload) => {
   response.statusCode = statusCode;
@@ -23,6 +24,10 @@ const publicTokenStatus = (token, shop) => ({
 });
 
 module.exports = async function etsyStatusHandler(request, response) {
+  if (!requireBridgeAuth(request, response)) {
+    return;
+  }
+
   if (request.method !== "GET") {
     response.setHeader("Allow", "GET");
     return json(response, 405, {

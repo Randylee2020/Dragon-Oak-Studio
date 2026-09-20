@@ -4,6 +4,7 @@ const {
   getRequiredConfig,
   getStoredToken,
 } = require("./_lib/etsy-oauth");
+const { requireBridgeAuth } = require("./_lib/bridge-auth");
 
 const json = (response, statusCode, payload) => {
   response.statusCode = statusCode;
@@ -124,6 +125,10 @@ const getRequestBody = (request) => {
 };
 
 module.exports = async function etsyListingsCreateHandler(request, response) {
+  if (!requireBridgeAuth(request, response)) {
+    return;
+  }
+
   if (request.method !== "POST") {
     response.setHeader("Allow", "POST");
     return json(response, 405, {

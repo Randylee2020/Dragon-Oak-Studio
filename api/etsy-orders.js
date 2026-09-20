@@ -4,6 +4,7 @@ const {
   getRequiredConfig,
   getStoredToken,
 } = require("./_lib/etsy-oauth");
+const { requireBridgeAuth } = require("./_lib/bridge-auth");
 
 const json = (response, statusCode, payload) => {
   response.statusCode = statusCode;
@@ -108,6 +109,10 @@ const getRecentOrders = async (shopId, accessToken) => {
 };
 
 module.exports = async function etsyOrdersHandler(request, response) {
+  if (!requireBridgeAuth(request, response)) {
+    return;
+  }
+
   if (request.method !== "GET") {
     response.setHeader("Allow", "GET");
     return json(response, 405, {

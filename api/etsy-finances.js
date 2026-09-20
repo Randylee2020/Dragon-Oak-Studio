@@ -4,6 +4,7 @@ const {
   getRequiredConfig,
   getStoredToken,
 } = require("./_lib/etsy-oauth");
+const { requireBridgeAuth } = require("./_lib/bridge-auth");
 
 const DEFAULT_RECEIPT_ID = "4155757603";
 const DEFAULT_TRANSACTION_ID = "5192982656";
@@ -419,6 +420,10 @@ const getFinancialTrace = async (shopId, accessToken, receiptId, transactionId) 
 };
 
 module.exports = async function etsyFinancesHandler(request, response) {
+  if (!requireBridgeAuth(request, response)) {
+    return;
+  }
+
   if (request.method !== "GET") {
     response.setHeader("Allow", "GET");
     return json(response, 405, {

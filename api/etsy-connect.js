@@ -5,6 +5,7 @@ const {
   getPgClient,
   getRequiredConfig,
 } = require("./_lib/etsy-oauth");
+const { requireBridgeAuth } = require("./_lib/bridge-auth");
 
 const json = (response, statusCode, payload) => {
   response.statusCode = statusCode;
@@ -13,6 +14,10 @@ const json = (response, statusCode, payload) => {
 };
 
 module.exports = async function etsyConnectHandler(request, response) {
+  if (!requireBridgeAuth(request, response)) {
+    return;
+  }
+
   if (request.method !== "GET") {
     response.setHeader("Allow", "GET");
     return json(response, 405, {
