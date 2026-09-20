@@ -1,3 +1,4 @@
+const crypto = require("crypto");
 const {
   fetchEtsyJson,
   getPgClient,
@@ -212,6 +213,204 @@ const validateSignUploadInput = (input) => {
   return { errors: [], resourceType };
 };
 
+// ---- Chunked upload (generic path for files above the ~4.5MB Vercel request-body limit and the Cloudinary relay's
+// 10MB cap, up to Etsy's per-file limit). The client sends the file as several small "chunk-put" requests; chunks are
+// parked in Postgres, then "chunk-finalize" assembles them, verifies size/md5, and posts the file to Etsy. Kept inside
+// this existing function file because the project is at Vercel's function-count limit.
+const CHUNK_MAX_RAW_BYTES = 3 * 1024 * 1024; // base64 of this stays well under Vercel's 4.5MB body limit
+const CHUNK_MAX_COUNT = 16;
+const CHUNK_MAX_STORED_ROWS = 64; // global cap so the endpoint cannot be used to fill the database
+const CHUNK_TTL_INTERVAL = "2 hours";
+const UPLOAD_ID_PATTERN = /^[A-Za-z0-9_-]{16,64}$/;
+const MD5_PATTERN = /^[a-f0-9]{32}$/i;
+
+const ensureChunkTable = (client) =>
+  client.query(`CREATE TABLE IF NOT EXISTS etsy_upload_chunks (
+    upload_id text NOT NULL,
+    idx integer NOT NULL,
+    data bytea NOT NULL,
+    created_at timestamptz NOT NULL DEFAULT now(),
+    PRIMARY KEY (upload_id, idx)
+  )`);
+
+const validateChunkPutInput = (input) => {
+  const errors = [];
+  if (!UPLOAD_ID_PATTERN.test(String(input.uploadId || ""))) {
+    errors.push("uploadId must be 16-64 characters of A-Z a-z 0-9 _ -.");
+  }
+  const total = Number(input.totalChunks);
+  if (!Number.isInteger(total) || total < 1 || total > CHUNK_MAX_COUNT) {
+    errors.push(`totalChunks must be an integer from 1 to ${CHUNK_MAX_COUNT}.`);
+  }
+  const index = Number(input.index);
+  if (!Number.isInteger(index) || index < 0 || (Number.isInteger(total) && index >= total)) {
+    errors.push("index must be an integer from 0 to totalChunks-1.");
+  }
+  if (isBlank(input.chunkBase64) || typeof input.chunkBase64 !== "string") {
+    errors.push("Missing required field: chunkBase64");
+  }
+  return errors;
+};
+
+const validateChunkFinalizeInput = (input) => {
+  const errors = validateFileInput({ ...input, fileBase64: "x" }).filter((message) => !/fileBase64|fileUrl/.test(message));
+  if (!UPLOAD_ID_PATTERN.test(String(input.uploadId || ""))) {
+    errors.push("uploadId must be 16-64 characters of A-Z a-z 0-9 _ -.");
+  }
+  const total = Number(input.totalChunks);
+  if (!Number.isInteger(total) || total < 1 || total > CHUNK_MAX_COUNT) {
+    errors.push(`totalChunks must be an integer from 1 to ${CHUNK_MAX_COUNT}.`);
+  }
+  if (isBlank(input.md5) || !MD5_PATTERN.test(String(input.md5))) {
+    errors.push("md5 (hex digest of the complete file) is required.");
+  }
+  if (isBlank(input.sizeBytes) || !Number.isInteger(Number(input.sizeBytes)) || Number(input.sizeBytes) <= 0) {
+    errors.push("sizeBytes (total file size) is required.");
+  }
+  return errors;
+};
+
+const handleChunkedAction = async (input, response) => {
+  const config = getRequiredConfig();
+
+  if (!config.ok) {
+    return json(response, 500, { ok: false, message: "Etsy connection is not configured." });
+  }
+
+  const isPut = input.action === "chunk-put";
+  const errors = isPut ? validateChunkPutInput(input) : validateChunkFinalizeInput(input);
+
+  if (errors.length) {
+    return json(response, 400, { ok: false, message: "Invalid chunked upload input.", errors });
+  }
+
+  let chunk;
+  if (isPut) {
+    chunk = Buffer.from(String(input.chunkBase64), "base64");
+    if (!chunk.length) {
+      return json(response, 400, { ok: false, message: "chunkBase64 decoded to an empty chunk." });
+    }
+    if (chunk.length > CHUNK_MAX_RAW_BYTES) {
+      return json(response, 400, { ok: false, message: `Chunk exceeds ${CHUNK_MAX_RAW_BYTES} bytes.` });
+    }
+  }
+
+  let client;
+
+  try {
+    client = await getPgClient();
+
+    const token = await getStoredToken(client);
+
+    if (!token || !token.shopId) {
+      return json(response, 409, {
+        ok: false,
+        connected: Boolean(token),
+        message: "Etsy is not connected to a shop. Complete OAuth before uploading digital files.",
+      });
+    }
+
+    await ensureChunkTable(client);
+    await client.query(`DELETE FROM etsy_upload_chunks WHERE created_at < now() - interval '${CHUNK_TTL_INTERVAL}'`);
+
+    if (isPut) {
+      const { rows } = await client.query("SELECT count(*)::int AS n FROM etsy_upload_chunks");
+      if (rows[0].n >= CHUNK_MAX_STORED_ROWS) {
+        return json(response, 429, { ok: false, message: "Too many chunks are stored right now. Try again later." });
+      }
+      await client.query(
+        `INSERT INTO etsy_upload_chunks (upload_id, idx, data) VALUES ($1, $2, $3)
+         ON CONFLICT (upload_id, idx) DO UPDATE SET data = EXCLUDED.data, created_at = now()`,
+        [input.uploadId, Number(input.index), chunk]
+      );
+      return json(response, 200, {
+        ok: true,
+        uploadId: input.uploadId,
+        index: Number(input.index),
+        bytes: chunk.length,
+      });
+    }
+
+    // chunk-finalize
+    const { rows } = await client.query("SELECT idx, data FROM etsy_upload_chunks WHERE upload_id = $1 ORDER BY idx", [
+      input.uploadId,
+    ]);
+    const total = Number(input.totalChunks);
+
+    if (rows.length !== total || rows.some((row, position) => row.idx !== position)) {
+      return json(response, 409, {
+        ok: false,
+        message: `Expected chunks 0..${total - 1}, found ${rows.length} stored.`,
+      });
+    }
+
+    const buffer = Buffer.concat(rows.map((row) => row.data));
+
+    if (buffer.length > MAX_FILE_BYTES) {
+      await client.query("DELETE FROM etsy_upload_chunks WHERE upload_id = $1", [input.uploadId]);
+      return json(response, 400, {
+        ok: false,
+        message: `File exceeds Etsy's ${MAX_FILE_BYTES / (1024 * 1024)}MB digital file limit.`,
+      });
+    }
+
+    if (buffer.length !== Number(input.sizeBytes)) {
+      return json(response, 409, {
+        ok: false,
+        message: `Assembled size ${buffer.length} does not match sizeBytes ${input.sizeBytes}.`,
+      });
+    }
+
+    const digest = crypto.createHash("md5").update(buffer).digest("hex");
+
+    if (digest.toLowerCase() !== String(input.md5).toLowerCase()) {
+      return json(response, 409, { ok: false, message: "Assembled file md5 does not match the supplied md5." });
+    }
+
+    const listingId = Number(input.listingId);
+    const extension = getExtension(input.fileName);
+    const form = buildUploadForm(buffer, ALLOWED_EXTENSION_MIME_TYPES.get(extension), input);
+
+    const file = await fetchEtsyJson(`/shops/${token.shopId}/listings/${listingId}/files`, token.accessToken, {
+      method: "POST",
+      body: form,
+    });
+
+    await client.query("DELETE FROM etsy_upload_chunks WHERE upload_id = $1", [input.uploadId]);
+
+    return json(response, 201, {
+      ok: true,
+      connected: true,
+      shopId: token.shopId,
+      listingId,
+      md5: digest,
+      file: normalizeListingFile(file),
+    });
+  } catch (error) {
+    console.error("Etsy chunked digital file upload failed:", error.message);
+
+    if (error.status) {
+      return json(response, error.status === 404 ? 404 : 502, {
+        ok: false,
+        connected: true,
+        message: "Etsy rejected the digital file upload.",
+        etsy: error.etsy || null,
+        status: error.status,
+      });
+    }
+
+    return json(response, 500, { ok: false, message: "Unable to process the chunked digital file upload." });
+  } finally {
+    if (client) {
+      try {
+        await client.end();
+      } catch {
+        // Ignore cleanup errors.
+      }
+    }
+  }
+};
+
 module.exports = async function etsyListingFileUploadHandler(request, response) {
   if (request.method !== "POST") {
     response.setHeader("Allow", "POST");
@@ -248,6 +447,10 @@ module.exports = async function etsyListingFileUploadHandler(request, response) 
     }
 
     return json(response, 200, signed);
+  }
+
+  if (input && (input.action === "chunk-put" || input.action === "chunk-finalize")) {
+    return handleChunkedAction(input, response);
   }
 
   const config = getRequiredConfig();
