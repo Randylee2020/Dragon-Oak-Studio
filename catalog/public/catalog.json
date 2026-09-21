@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "collections": [
+    {
+      "slug": "halloween",
+      "name": "Halloween",
+      "tagline": "Haunting designs for the spooky season.",
+      "description": "Halloween pieces from Dragon Oak Studio: original spooky designs as printable digital downloads and finished physical products.",
+      "url": "/shop/halloween/",
+      "count": 1
+    },
+    {
+      "slug": "christmas",
+      "name": "Christmas",
+      "tagline": "Festive designs for the holidays.",
+      "description": "Christmas pieces from Dragon Oak Studio: original holiday designs as printable digital downloads and finished physical products.",
+      "url": "/shop/christmas/",
+      "count": 0
+    },
+    {
+      "slug": "cute-bookmarks",
+      "name": "Cute Bookmarks",
+      "tagline": "Charming little bookmarks for readers of every age.",
+      "description": "Cute bookmark designs from Dragon Oak Studio, offered as printable digital downloads and finished physical bookmarks.",
+      "url": "/shop/cute-bookmarks/",
+      "count": 0
+    },
+    {
+      "slug": "wine-hill-country",
+      "name": "Wine & Hill Country",
+      "tagline": "Inspired by Texas Hill Country wine country.",
+      "description": "Designs inspired by Texas Hill Country and its wine country, from Dragon Oak Studio in Fredericksburg, Texas.",
+      "url": "/shop/wine-hill-country/",
+      "count": 0
+    },
+    {
+      "slug": "other-seasonal",
+      "name": "Other Seasonal",
+      "tagline": "Designs for every other season and celebration.",
+      "description": "Seasonal and celebration designs from Dragon Oak Studio beyond Halloween and Christmas.",
+      "url": "/shop/other-seasonal/",
+      "count": 0
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-do-hal-0001",
+      "sku": "DO-HAL-0001",
+      "title": "Halloween Themed Custom Tumbler",
+      "slug": "halloween-themed-custom-tumbler",
+      "url": "/product/halloween-themed-custom-tumbler/",
+      "description": "A Halloween themed custom tumbler with full-color UV printed artwork, made by Dragon Oak Studio.",
+      "collection": "halloween",
+      "subcollection": "tumblers",
+      "productType": "physical_product",
+      "tags": [
+        "halloween",
+        "tumbler",
+        "uv printed"
+      ],
+      "price": null,
+      "images": [
+        {
+          "path": "assets/halloween-tumbler.webp",
+          "alt": "Halloween themed custom tumbler"
+        }
+      ],
+      "featured": true,
+      "buyUrl": null,
+      "updatedAt": "2026-09-21T12:00:00Z"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "example-wne-0001",
+  "sku": "EXAMPLE-WNE-0001",
+  "title": "Example Hill Country Wine Coaster (Physical Product)",
+  "slug": "example-hill-country-wine-coaster",
+  "description": "EXAMPLE ONLY. A physical product in the Wine & Hill Country collection.",
+  "collection": "wine-hill-country",
+  "subcollection": "coasters",
+  "productType": "physical_product",
+  "tags": ["wine", "hill country", "coaster"],
+  "price": { "amountCents": 1800, "currency": "USD" },
+  "images": [
+    { "path": "assets/products/EXAMPLE-WNE-0001/1.webp", "alt": "Example Hill Country wine coaster" }
+  ],
+  "digitalFiles": [],
+  "etsy": {
+    "listingId": 1000000002,
+    "url": "https://www.etsy.com/listing/1000000002/example",
+    "state": "inactive",
+    "syncedAt": "2026-09-21T12:00:00Z"
+  },
+  "siteState": "published",
+  "featured": true,
+  "createdAt": "2026-09-21T12:00:00Z",
+  "updatedAt": "2026-09-21T12:00:00Z"
+}

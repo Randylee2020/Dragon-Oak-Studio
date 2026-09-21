@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "example-bkm-0001",
+  "sku": "EXAMPLE-BKM-0001",
+  "title": "Example Cute Bookmark (Digital Download)",
+  "slug": "example-cute-bookmark",
+  "description": "EXAMPLE ONLY. A printable bookmark in the Cute Bookmarks collection, not yet on Etsy, so the site offers an inquiry button instead of Buy on Etsy.",
+  "collection": "cute-bookmarks",
+  "subcollection": null,
+  "productType": "digital_download",
+  "tags": ["bookmark", "printable", "reader gift"],
+  "price": { "amountCents": 299, "currency": "USD" },
+  "images": [
+    { "path": "assets/products/EXAMPLE-BKM-0001/1.webp", "alt": "Example cute bookmark design preview" }
+  ],
+  "digitalFiles": [
+    { "ref": "adrian:factory/EXAMPLE-BKM-0001/bookmark.pdf", "label": "Printable bookmark (PDF)", "kind": "pdf" }
+  ],
+  "etsy": {
+    "listingId": null,
+    "url": null,
+    "state": "not_listed",
+    "syncedAt": null
+  },
+  "siteState": "draft",
+  "featured": false,
+  "createdAt": "2026-09-21T12:00:00Z",
+  "updatedAt": "2026-09-21T12:00:00Z"
+}

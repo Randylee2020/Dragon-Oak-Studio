@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "example-chr-0001",
+  "sku": "EXAMPLE-CHR-0001",
+  "title": "Example Christmas Ornament Design (Digital Download)",
+  "slug": "example-christmas-ornament-design",
+  "description": "EXAMPLE ONLY. A digital download product in the Christmas collection, listed on Etsy. Copy this file to catalog/products/<SKU>.json and replace every value to create a real product.",
+  "collection": "christmas",
+  "subcollection": "ornaments",
+  "productType": "digital_download",
+  "tags": ["christmas", "ornament", "svg", "laser cut"],
+  "price": { "amountCents": 499, "currency": "USD" },
+  "images": [
+    { "path": "assets/products/EXAMPLE-CHR-0001/1.webp", "alt": "Example Christmas ornament design preview" }
+  ],
+  "digitalFiles": [
+    { "ref": "adrian:factory/EXAMPLE-CHR-0001/design.zip", "label": "Design files (ZIP)", "kind": "zip" }
+  ],
+  "etsy": {
+    "listingId": 1000000001,
+    "url": "https://www.etsy.com/listing/1000000001/example",
+    "state": "active",
+    "syncedAt": "2026-09-21T12:00:00Z"
+  },
+  "siteState": "published",
+  "featured": false,
+  "createdAt": "2026-09-21T12:00:00Z",
+  "updatedAt": "2026-09-21T12:00:00Z"
+}

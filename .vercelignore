@@ -1,0 +1,6 @@
+# Keep build inputs and private canonical data out of the deployed (public) site.
+# The public site only needs the GENERATED files: shop/, product/, catalog/public/, sitemap.xml, index.html.
+/tools
+/catalog/products
+/catalog/examples
+/catalog/import

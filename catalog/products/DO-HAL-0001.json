@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "prod-do-hal-0001",
+  "sku": "DO-HAL-0001",
+  "title": "Halloween Themed Custom Tumbler",
+  "slug": "halloween-themed-custom-tumbler",
+  "description": "A Halloween themed custom tumbler with full-color UV printed artwork, made by Dragon Oak Studio.",
+  "collection": "halloween",
+  "subcollection": "tumblers",
+  "productType": "physical_product",
+  "tags": ["halloween", "tumbler", "uv printed"],
+  "price": null,
+  "images": [
+    { "path": "assets/halloween-tumbler.webp", "alt": "Halloween themed custom tumbler" }
+  ],
+  "digitalFiles": [],
+  "etsy": {
+    "listingId": null,
+    "url": null,
+    "state": "not_listed",
+    "syncedAt": null
+  },
+  "siteState": "published",
+  "featured": true,
+  "createdAt": "2026-09-21T12:00:00Z",
+  "updatedAt": "2026-09-21T12:00:00Z",
+  "provenance": "seeded from the existing site image assets/halloween-tumbler.webp; replace this placeholder SKU with the real one when the product is mapped to Etsy"
+}

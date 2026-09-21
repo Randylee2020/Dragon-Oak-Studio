@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "collections": [
+    {
+      "slug": "halloween",
+      "name": "Halloween",
+      "tagline": "Haunting designs for the spooky season.",
+      "description": "Halloween pieces from Dragon Oak Studio: original spooky designs as printable digital downloads and finished physical products.",
+      "order": 1
+    },
+    {
+      "slug": "christmas",
+      "name": "Christmas",
+      "tagline": "Festive designs for the holidays.",
+      "description": "Christmas pieces from Dragon Oak Studio: original holiday designs as printable digital downloads and finished physical products.",
+      "order": 2
+    },
+    {
+      "slug": "cute-bookmarks",
+      "name": "Cute Bookmarks",
+      "tagline": "Charming little bookmarks for readers of every age.",
+      "description": "Cute bookmark designs from Dragon Oak Studio, offered as printable digital downloads and finished physical bookmarks.",
+      "order": 3
+    },
+    {
+      "slug": "wine-hill-country",
+      "name": "Wine & Hill Country",
+      "tagline": "Inspired by Texas Hill Country wine country.",
+      "description": "Designs inspired by Texas Hill Country and its wine country, from Dragon Oak Studio in Fredericksburg, Texas.",
+      "order": 4
+    },
+    {
+      "slug": "other-seasonal",
+      "name": "Other Seasonal",
+      "tagline": "Designs for every other season and celebration.",
+      "description": "Seasonal and celebration designs from Dragon Oak Studio beyond Halloween and Christmas.",
+      "order": 5
+    }
+  ]
+}
