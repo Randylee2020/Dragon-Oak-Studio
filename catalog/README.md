@@ -70,6 +70,64 @@ How listings are matched: by **Etsy listing ID** first, then by **SKU**. Never b
 `?detail=full`, `state`, `limit` and `offset` are optional read-only parameters on `/api/etsy-listings`. With no
 parameters that endpoint behaves exactly as before.
 
+## One-command Etsy sync (dry run) for ADRIAN
+
+```
+npm run etsy:sync -- --dry-run          (same thing: node tools/etsy-sync.js --dry-run)
+```
+
+This is the command ADRIAN / local automation runs. It **only reads and reports**. It cannot write a file or change Etsy:
+there is no write option (`--write`, `--download-images`, `--publish` are refused), and tests fail if a file is written or
+any request other than a read (GET) is made. `--dry-run` is required so nobody mistakes it for a real sync.
+
+What it does: it finds the bridge secret in ADRIAN's own private setup, asks the existing protected `/api/etsy-listings`
+endpoint for **every** listing state (active, inactive, draft, sold out, expired), runs the existing mapper, and prints one line per
+listing (Etsy listing ID, SKU, title, Etsy state, suggested collection, digital/physical, flags) followed by three lists:
+listings that cannot be confidently classified, SKU problems (missing, badly formatted, duplicated), and conflicts with the
+existing catalog. Add `--json` to get the same report as JSON for ADRIAN to read.
+
+**Where the secret comes from (nobody copies or pastes it into a command).** The secret is set once, in ADRIAN's own private setup.
+The command looks in this order:
+
+1. the `ADRIAN_BRIDGE_SECRET` environment variable of the process that runs the command (ADRIAN sets it for the command),
+2. a plain-text file whose path is in `ADRIAN_BRIDGE_SECRET_FILE` (works everywhere, but on Windows it has no owner-only protection, so it is not recommended there),
+3. **Windows:** the protected file `%LOCALAPPDATA%\ADRIAN\bridge-secret.dpapi`. **macOS/Linux:** the file `.adrian/bridge-secret` in the home folder (`chmod 600`).
+
+Windows does **not** use a plain-text `.adrian\bridge-secret` file. It uses Windows' own protected storage (DPAPI): the secret is
+encrypted by Windows for your Windows account, and the command asks Windows PowerShell (built into Windows 10 and 11) to unlock it.
+The file is useless if copied to another PC or another user, committed to Git, or found in a backup. It does not protect against a
+program that is already running as you (the same is true of Windows Credential Manager), and the secret is never on a command line,
+in shell history, in source, in logs, or in browser code.
+
+One-time setup on Windows (run in PowerShell as the same Windows user that will run ADRIAN; the secret is typed or pasted into a
+hidden prompt, so it is not echoed and not saved in history):
+
+```
+$dir = Join-Path $env:LOCALAPPDATA 'ADRIAN'
+New-Item -ItemType Directory -Force -Path $dir | Out-Null
+Read-Host 'Bridge secret (hidden)' -AsSecureString | ConvertFrom-SecureString | Set-Content -Path (Join-Path $dir 'bridge-secret.dpapi')
+```
+
+Do not store it with `setx`, in a `.env` file, or in a script: those keep it in plain text. If ADRIAN obtains the secret some other
+way, it can create the same file by replacing `Read-Host 'Bridge secret (hidden)' -AsSecureString` with
+`ConvertTo-SecureString -String $value -AsPlainText -Force`, where `$value` is held only in ADRIAN's memory (never typed into a command).
+
+Rules for every system: it can **never** be given on the command line; a plain-text secret file must be plain text (UTF-8) with only the
+secret on one line, outside this Git repository, and (macOS/Linux) readable only by its owner; the secret is never printed, logged,
+or written by this tool, and any text that echoes it back is redacted. It is only sent to `dragonoakstudio.com`,
+`www.dragonoakstudio.com` or localhost. To point the command at a Vercel preview, name that exact host:
+
+```
+npm run etsy:sync -- --dry-run --site https://<preview-host> --trust-host <preview-host>
+```
+
+The site being asked must be running the storefront-v1 version of `/api/etsy-listings` (the one that understands
+`?detail=full`); if it is not, the command stops and says so instead of reporting listings that all look SKU-less. Redirects
+are never followed, so the secret cannot be forwarded to another address. Use `--file saved.json` to run the same report
+offline from a saved response (no secret, no network).
+
+To actually create draft catalog files from the listings later, use the separate importer (`npm run etsy:import`, with `--write`).
+
 ## Distributing to Etsy later
 
 This phase is **read/import only**. A later phase can publish an approved catalog product to Etsy using the existing

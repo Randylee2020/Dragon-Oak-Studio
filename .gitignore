@@ -1,0 +1,7 @@
+# Never commit credentials. The bridge secret belongs in ADRIAN's private setup, outside this repository.
+.adrian/
+bridge-secret
+*.secret
+.env
+.env.*
+*.dpapi

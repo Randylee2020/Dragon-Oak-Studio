@@ -6,7 +6,8 @@
     "test": "node --test test/*.test.js",
     "catalog:build": "node tools/build-storefront.js",
     "catalog:check": "node tools/build-storefront.js --check",
-    "etsy:import": "node tools/import-etsy.js"
+    "etsy:import": "node tools/import-etsy.js",
+    "etsy:sync": "node tools/etsy-sync.js"
   },
   "dependencies": {
     "pg": "^8.16.3"

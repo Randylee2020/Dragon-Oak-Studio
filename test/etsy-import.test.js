@@ -227,12 +227,12 @@ test("import fails clearly and never echoes the secret", async () => {
   await assert.rejects(() => fetchAllListings({ site: "https://x.example", secret: "", states: ["active"], fetchImpl: fakeFetch([]) }), /ADRIAN_BRIDGE_SECRET/);
 
   await assert.rejects(
-    () => fetchAllListings({ site: "https://x.example", secret, states: ["active"], fetchImpl: fakeFetch([{ status: 403, body: { ok: false, message: "Invalid credentials." } }]) }),
+    () => fetchAllListings({ site: "https://x.example", trustHosts: ["x.example"], secret, states: ["active"], fetchImpl: fakeFetch([{ status: 403, body: { ok: false, message: "Invalid credentials." } }]) }),
     (error) => /HTTP 403/.test(error.message) && !error.message.includes(secret)
   );
 
   await assert.rejects(
-    () => fetchAllListings({ site: "https://x.example", secret, states: ["active"], fetchImpl: fakeFetch([{ body: { ok: true, connected: false, listings: [] } }]) }),
+    () => fetchAllListings({ site: "https://x.example", trustHosts: ["x.example"], secret, states: ["active"], fetchImpl: fakeFetch([{ body: { ok: true, connected: false, listings: [] } }]) }),
     /not connected/
   );
 });

@@ -29,12 +29,23 @@ const slugify = (value, maxLength = LIMITS.slug) =>
     .slice(0, maxLength)
     .replace(/-+$/g, "");
 
-const guessCollection = (listing) => {
+// Which collection a listing belongs in, and how sure we are. "confidence" is:
+//   clear      exactly one collection's keywords match
+//   ambiguous  keywords of more than one collection match (e.g. a Halloween bookmark); the first in priority order is
+//              suggested, but a person should decide
+//   none       nothing matched; "other-seasonal" is only a default, not evidence
+const classifyListing = (listing) => {
   const haystack = `${listing.title || ""} ${(listing.tags || []).join(" ")}`.toLowerCase();
-  const match = COLLECTION_KEYWORDS.find(([, pattern]) => pattern.test(haystack));
+  const matches = COLLECTION_KEYWORDS.filter(([, pattern]) => pattern.test(haystack)).map(([slug]) => slug);
 
-  return match ? match[0] : "other-seasonal";
+  if (matches.length === 0) {
+    return { collection: "other-seasonal", confidence: "none", matches };
+  }
+
+  return { collection: matches[0], confidence: matches.length === 1 ? "clear" : "ambiguous", matches };
 };
+
+const guessCollection = (listing) => classifyListing(listing).collection;
 
 const toProductType = (listing) => {
   const type = String(listing.listingType || "").toLowerCase();
@@ -297,4 +308,4 @@ const mapEtsyListings = ({ listings, products, now }) => {
   return report;
 };
 
-module.exports = { guessCollection, mapEtsyListings, priceToCents, slugify };
+module.exports = { SKU_PATTERN, classifyListing, guessCollection, mapEtsyListings, priceToCents, slugify, toProductType };

@@ -12,12 +12,14 @@
 //
 // This tool can only READ: every network request it makes is an HTTP GET (to your own bridge endpoint, and to Etsy's
 // public image CDN when --download-images is used). It never creates, edits, deactivates or deletes an Etsy listing.
-// The bridge secret is read from the ADRIAN_BRIDGE_SECRET environment variable, sent only as a Bearer header to the
-// bridge, and is never printed or written to disk.
+// The bridge secret is found by tools/bridge-secret.js (the ADRIAN_BRIDGE_SECRET environment variable, or a private secret
+// file), sent only as a Bearer header to a trusted host, and is never printed or written to disk by this tool.
+// For the one-command report ADRIAN runs, see tools/etsy-sync.js.
 const fs = require("fs");
 const path = require("path");
 const { loadCatalog } = require("../api/_lib/catalog");
 const { mapEtsyListings } = require("../api/_lib/etsy-import");
+const { assertSiteMaySeeSecret, parseTrustedHost, resolveBridgeSecret } = require("./bridge-secret");
 
 const PAGE_LIMIT = 100;
 const MAX_PAGES = 50;
@@ -29,7 +31,7 @@ const IMAGE_EXTENSIONS = { "image/jpeg": "jpg", "image/png": "png", "image/webp"
 const IMPORT_STATES = ["active", "inactive", "draft", "sold_out", "expired"];
 
 const parseArgs = (argv) => {
-  const options = { site: "https://dragonoakstudio.com", states: ["active"], write: false, downloadImages: false, file: null, root: null };
+  const options = { site: "https://dragonoakstudio.com", states: ["active"], write: false, downloadImages: false, file: null, root: null, trustHosts: [] };
 
   for (let index = 0; index < argv.length; index += 1) {
     const arg = argv[index];
@@ -42,6 +44,8 @@ const parseArgs = (argv) => {
       options.file = argv[(index += 1)];
     } else if (arg === "--root") {
       options.root = argv[(index += 1)];
+    } else if (arg === "--trust-host") {
+      options.trustHosts.push(parseTrustedHost(argv[(index += 1)]));
     } else if (arg === "--write") {
       options.write = true;
     } else if (arg === "--download-images") {
@@ -81,12 +85,16 @@ const normalizeSiteUrl = (site) => {
 };
 
 // GET every page of listings for each requested state. `fetchImpl` is injectable so tests never touch the network.
-const fetchAllListings = async ({ site, secret, states, fetchImpl = fetch }) => {
+const fetchAllListings = async ({ site, secret, states, fetchImpl = fetch, trustHosts = [] }) => {
   if (!secret) {
     throw new Error("Set the ADRIAN_BRIDGE_SECRET environment variable first (it is never printed or saved).");
   }
 
   const base = normalizeSiteUrl(site);
+
+  // This function is the ONLY place the secret leaves this program, so this is where the trusted-host rule is enforced
+  // (callers check earlier too, but nothing depends on that).
+  assertSiteMaySeeSecret(base, trustHosts);
   const listings = [];
 
   for (const state of states) {
@@ -94,9 +102,11 @@ const fetchAllListings = async ({ site, secret, states, fetchImpl = fetch }) => 
 
     for (let page = 0; page < MAX_PAGES; page += 1) {
       const url = `${base}/api/etsy-listings?detail=full&state=${encodeURIComponent(state)}&limit=${PAGE_LIMIT}&offset=${offset}`;
+      // redirect: "manual" so the secret can never follow a redirect to another address.
       const response = await fetchImpl(url, {
         method: "GET",
         headers: { Authorization: `Bearer ${secret}`, Accept: "application/json" },
+        redirect: "manual",
       });
       let body = null;
 
@@ -104,6 +114,10 @@ const fetchAllListings = async ({ site, secret, states, fetchImpl = fetch }) => 
         body = await response.json();
       } catch {
         // handled below
+      }
+
+      if (response.status >= 300 && response.status < 400) {
+        throw new Error(`The site redirected the request (HTTP ${response.status}) and it was not followed, so the secret stays with the address you gave. Use the exact final address for --site (for example with or without www).`);
       }
 
       if (!response.ok || !body || body.ok !== true) {
@@ -125,6 +139,16 @@ const fetchAllListings = async ({ site, secret, states, fetchImpl = fetch }) => 
   }
 
   return listings;
+};
+
+// The detailed fields (SKU, product type, tags) only exist on a bridge that has the ?detail=full change. Without them every
+// listing would look as if it had no SKU, which would be a misleading report, so stop instead.
+const assertDetailedListings = (listings) => {
+  if (listings.length > 0 && listings.every((listing) => !("skus" in listing) && !("listingType" in listing))) {
+    throw new Error(
+      "The site answered with basic listing data (no SKUs or product types). It is not running the storefront-v1 version of /api/etsy-listings yet. Point --site at the storefront-v1 preview (with --trust-host <its host name>) or wait until that version is deployed."
+    );
+  }
 };
 
 // Downloads a new listing's photos from Etsy's public image CDN (GET only) into assets/products/<SKU>/.
@@ -201,7 +225,8 @@ const summarize = (report) => {
   return lines.join("\n");
 };
 
-const runImport = async (options, { fetchImpl = fetch, env = process.env, now = new Date() } = {}) => {
+// deps.secret lets a caller that already resolved the secret (tools/etsy-sync.js) hand it over; otherwise it is resolved here.
+const runImport = async (options, { fetchImpl = fetch, env = process.env, now = new Date(), secret, homedir } = {}) => {
   const root = path.resolve(options.root || path.join(__dirname, ".."));
   const loaded = loadCatalog(root);
 
@@ -215,7 +240,12 @@ const runImport = async (options, { fetchImpl = fetch, env = process.env, now = 
     const parsed = JSON.parse(fs.readFileSync(path.resolve(options.file), "utf8"));
     listings = Array.isArray(parsed) ? parsed : parsed.listings;
   } else {
-    listings = await fetchAllListings({ site: options.site, secret: env.ADRIAN_BRIDGE_SECRET, states: options.states, fetchImpl });
+    assertSiteMaySeeSecret(options.site, options.trustHosts || []);
+
+    const bridgeSecret = secret !== undefined ? secret : resolveBridgeSecret({ env, ...(homedir ? { homedir } : {}) }).secret;
+
+    listings = await fetchAllListings({ site: options.site, secret: bridgeSecret, states: options.states, fetchImpl, trustHosts: options.trustHosts || [] });
+    assertDetailedListings(listings);
   }
 
   const timestamp = now.toISOString().replace(/\.\d{3}Z$/, "Z");
@@ -246,7 +276,7 @@ const runImport = async (options, { fetchImpl = fetch, env = process.env, now = 
     );
   }
 
-  return { report, summary: summarize(report), wrote: options.write };
+  return { report, summary: summarize(report), wrote: options.write, listings };
 };
 
 const main = async () => {
@@ -270,4 +300,4 @@ if (require.main === module) {
   main();
 }
 
-module.exports = { downloadImages, fetchAllListings, normalizeSiteUrl, parseArgs, runImport, summarize };
+module.exports = { assertDetailedListings, downloadImages, fetchAllListings, normalizeSiteUrl, parseArgs, runImport, summarize };
