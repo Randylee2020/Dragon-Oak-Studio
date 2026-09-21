@@ -246,7 +246,7 @@ const renderShopIndex = (catalog) => {
   return layout({
     title: "Shop",
     description:
-      "Shop Dragon Oak Studio by collection: Halloween, Christmas, Cute Bookmarks, Wine & Hill Country and Other Seasonal designs.",
+      "Shop Dragon Oak Studio by collection: Halloween, Christmas, Cute Bookmarks, Wine & Hill Country, and Parties & Celebrations.",
     canonicalPath: "/shop/",
     activeNav: "shop",
     jsonLd: [breadcrumbJsonLd([{ name: "Home", path: "/" }, { name: "Shop", path: "/shop/" }])],

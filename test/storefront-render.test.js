@@ -15,7 +15,7 @@ const {
 
 const collections = REQUIRED_COLLECTION_SLUGS.map((slug, index) => ({
   slug,
-  name: { halloween: "Halloween", christmas: "Christmas", "cute-bookmarks": "Cute Bookmarks", "wine-hill-country": "Wine & Hill Country", "other-seasonal": "Other Seasonal" }[slug],
+  name: { halloween: "Halloween", christmas: "Christmas", "cute-bookmarks": "Cute Bookmarks", "wine-hill-country": "Wine & Hill Country", "other-seasonal": "Parties & Celebrations" }[slug],
   tagline: `Tagline for ${slug}.`,
   description: `Description for ${slug}.`,
   order: index + 1,
@@ -184,6 +184,7 @@ test("shop index links all five collections", () => {
   });
 
   assert.match(html, /Wine &amp; Hill Country/);
+  assert.match(html, /Parties &amp; Celebrations/);
 });
 
 test("empty collection shows a friendly state, is noindex, and stays navigable", () => {
