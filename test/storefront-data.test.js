@@ -2,7 +2,7 @@ const test = require("node:test");
 const assert = require("node:assert/strict");
 const fs = require("fs");
 const path = require("path");
-const { loadCatalog, validateProduct } = require("../api/_lib/catalog");
+const { isTrustedImageUrl, loadCatalog, validateProduct } = require("../api/_lib/catalog");
 const { buildOutputs, checkOutputs, listFilesUnder } = require("../tools/build-storefront");
 
 const ROOT = path.join(__dirname, "..");
@@ -33,7 +33,14 @@ test("every published product's images exist on disk", () => {
     .filter((product) => product.siteState === "published")
     .forEach((product) => {
       assert.ok(product.images.length > 0, `${product.sku} has an image`);
-      product.images.forEach((image) => assert.ok(fs.existsSync(path.join(ROOT, image.path)), `${product.sku}: ${image.path}`));
+      product.images.forEach((image) => {
+        if (isTrustedImageUrl(image.path)) {
+          assert.ok(true, `${product.sku}: ${image.path}`);
+          return;
+        }
+
+        assert.ok(fs.existsSync(path.join(ROOT, image.path)), `${product.sku}: ${image.path}`);
+      });
     });
 });
 

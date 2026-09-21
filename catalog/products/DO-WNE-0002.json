@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "id": "prod-do-wne-0002",
+  "sku": "DO-WNE-0002",
+  "title": "Wine Tasting Journal Template PDF 4\" x 9\"",
+  "slug": "wine-tasting-journal-template-pdf-4-x-9",
+  "description": "Elevate your wine experience.\n\nThis professionally designed 21-page Wine Tasting Journal blends beauty and function — helping you taste intentionally, record details like a sommelier, and create a keepsake you’ll treasure.",
+  "collection": "wine-hill-country",
+  "subcollection": "wine-journals",
+  "productType": "digital_download",
+  "tags": [
+    "wine_tasting_notes",
+    "wine_tasting_record",
+    "Wine_Journal",
+    "Digital",
+    "Journal_Templates",
+    "Wine_Tasting_Journal",
+    "Template",
+    "Printable",
+    "PDF",
+    "downloadable",
+    "Design_and_Templates",
+    "4_x_9_inches"
+  ],
+  "price": {
+    "amountCents": 599,
+    "currency": "USD"
+  },
+  "images": [
+    {
+      "path": "https://i.etsystatic.com/64473522/r/il/5b15e7/7744225255/il_fullxfull.7744225255_gbk3.jpg",
+      "alt": "Wine Tasting Journal Template PDF 4\" x 9\""
+    },
+    {
+      "path": "https://i.etsystatic.com/64473522/r/il/c62b1f/7744216581/il_fullxfull.7744216581_g5kl.jpg",
+      "alt": "Wine Tasting Journal Template PDF 4\" x 9\""
+    },
+    {
+      "path": "https://i.etsystatic.com/64473522/r/il/f4e5bf/7696270574/il_fullxfull.7696270574_t4hc.jpg",
+      "alt": "Wine Tasting Journal Template PDF 4\" x 9\""
+    },
+    {
+      "path": "https://i.etsystatic.com/64473522/r/il/421e95/7696270576/il_fullxfull.7696270576_ej9p.jpg",
+      "alt": "Wine Tasting Journal Template PDF 4\" x 9\""
+    },
+    {
+      "path": "https://i.etsystatic.com/64473522/r/il/b1595f/7696270586/il_fullxfull.7696270586_f0v4.jpg",
+      "alt": "Wine Tasting Journal Template PDF 4\" x 9\""
+    },
+    {
+      "path": "https://i.etsystatic.com/64473522/r/il/04ee36/7696274636/il_fullxfull.7696274636_79iu.jpg",
+      "alt": "Wine Tasting Journal Template PDF 4\" x 9\""
+    }
+  ],
+  "digitalFiles": [],
+  "etsy": {
+    "listingId": null,
+    "url": null,
+    "state": "not_listed",
+    "syncedAt": null
+  },
+  "siteState": "published",
+  "featured": false,
+  "createdAt": "2026-09-21T12:00:00Z",
+  "updatedAt": "2026-09-21T12:00:00Z",
+  "provenance": "Imported from EtsyListingsDownload.csv for Storefront V1; CSV does not include reliable Etsy listing IDs or product URLs."
+}

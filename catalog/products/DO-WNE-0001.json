@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "prod-do-wne-0001",
+  "sku": "DO-WNE-0001",
+  "title": "Wine Tasting Journal PDF Template 8.5\" x 11\"",
+  "slug": "wine-tasting-journal-pdf-template-8-5-x-11",
+  "description": "Elevate your wine experience.\n\nThis professionally designed 20-page Wine Tasting Journal blends beauty and function — helping you taste intentionally, record details like a sommelier, and create a keepsake you’ll treasure.",
+  "collection": "wine-hill-country",
+  "subcollection": "wine-journals",
+  "productType": "digital_download",
+  "tags": [
+    "Wine_Tasting_Notes",
+    "Wine_Tasting_Record",
+    "Template",
+    "Journal_Template",
+    "wine_journal",
+    "wine_lover_gift",
+    "Fredericksburg_TX",
+    "Texas_wine_tour",
+    "wine_tasting_book",
+    "winery_trip_planner",
+    "wine_gift_for_her",
+    "bachelorette_wine",
+    "wine_tour_journal"
+  ],
+  "price": {
+    "amountCents": 599,
+    "currency": "USD"
+  },
+  "images": [
+    {
+      "path": "https://i.etsystatic.com/64473522/r/il/63e047/7736640971/il_fullxfull.7736640971_hy9i.jpg",
+      "alt": "Wine Tasting Journal PDF Template 8.5\" x 11\""
+    },
+    {
+      "path": "https://i.etsystatic.com/64473522/r/il/760215/7736640229/il_fullxfull.7736640229_9nfj.jpg",
+      "alt": "Wine Tasting Journal PDF Template 8.5\" x 11\""
+    },
+    {
+      "path": "https://i.etsystatic.com/64473522/r/il/dd5109/7736640455/il_fullxfull.7736640455_7zwg.jpg",
+      "alt": "Wine Tasting Journal PDF Template 8.5\" x 11\""
+    },
+    {
+      "path": "https://i.etsystatic.com/64473522/r/il/014adf/7688696916/il_fullxfull.7688696916_c3y0.jpg",
+      "alt": "Wine Tasting Journal PDF Template 8.5\" x 11\""
+    },
+    {
+      "path": "https://i.etsystatic.com/64473522/r/il/6c0aa3/7696214952/il_fullxfull.7696214952_9j9t.jpg",
+      "alt": "Wine Tasting Journal PDF Template 8.5\" x 11\""
+    },
+    {
+      "path": "https://i.etsystatic.com/64473522/r/il/5eee4f/7688962878/il_fullxfull.7688962878_h12o.jpg",
+      "alt": "Wine Tasting Journal PDF Template 8.5\" x 11\""
+    }
+  ],
+  "digitalFiles": [],
+  "etsy": {
+    "listingId": null,
+    "url": null,
+    "state": "not_listed",
+    "syncedAt": null
+  },
+  "siteState": "published",
+  "featured": false,
+  "createdAt": "2026-09-21T12:00:00Z",
+  "updatedAt": "2026-09-21T12:00:00Z",
+  "provenance": "Imported from EtsyListingsDownload.csv for Storefront V1; CSV does not include reliable Etsy listing IDs or product URLs."
+}

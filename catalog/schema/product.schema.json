@@ -45,7 +45,11 @@
       "items": {
         "type": "object", "required": ["path", "alt"],
         "properties": {
-          "path": { "type": "string", "pattern": "^assets/[A-Za-z0-9._\\-/]+\\.(webp|jpg|jpeg|png)$", "description": "Relative path inside this repo. The same file is used for the website and for Etsy uploads." },
+          "path": {
+            "type": "string",
+            "pattern": "^(assets/[A-Za-z0-9._\\-/]+\\.(webp|jpg|jpeg|png)|https://i\\.etsystatic\\.com/.+\\.(webp|jpg|jpeg|png))$",
+            "description": "Relative path inside this repo, or a trusted Etsy public image CDN URL imported from the Etsy CSV."
+          },
           "alt": { "type": "string", "minLength": 1 }
         }
       }

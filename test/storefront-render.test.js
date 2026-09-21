@@ -150,6 +150,19 @@ test("product page has canonical, Open Graph, Twitter and Product JSON-LD metada
   assert.match(html, /"sku":"TEST-0001"/);
 });
 
+test("trusted Etsy CDN product images render as absolute image URLs", () => {
+  const url = "https://i.etsystatic.com/64473522/r/il/c34365/8549844100/il_fullxfull.8549844100_pf78.jpg";
+  const catalog = catalogFor([product({ images: [{ path: url, alt: "Etsy product image" }] })]);
+  const productHtml = renderProductPage(catalog.products[0], collectionOf(catalog, "halloween"), catalog);
+  const collectionHtml = renderCollectionPage(collectionOf(catalog, "halloween"), catalog);
+
+  assert.match(productHtml, new RegExp(`<img src="${url}`));
+  assert.match(productHtml, new RegExp(`<meta property="og:image" content="${url}`));
+  assert.match(productHtml, new RegExp(`"image":\\["${url}`));
+  assert.match(collectionHtml, new RegExp(`<img src="${url}`));
+  assert.ok(!productHtml.includes("https://dragonoakstudio.com/https://i.etsystatic.com"));
+});
+
 test("every page shares the site header, footer, styles and scripts, and keeps the site's identity", () => {
   const catalog = catalogFor([product()]);
   const html = renderShopIndex(catalog);

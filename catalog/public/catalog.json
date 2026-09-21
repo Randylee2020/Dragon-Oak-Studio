@@ -7,7 +7,7 @@
       "tagline": "Haunting designs for the spooky season.",
       "description": "Halloween pieces from Dragon Oak Studio: original spooky designs as printable digital downloads and finished physical products.",
       "url": "/shop/halloween/",
-      "count": 1
+      "count": 17
     },
     {
       "slug": "christmas",
@@ -23,7 +23,7 @@
       "tagline": "Charming little bookmarks for readers of every age.",
       "description": "Cute bookmark designs from Dragon Oak Studio, offered as printable digital downloads and finished physical bookmarks.",
       "url": "/shop/cute-bookmarks/",
-      "count": 0
+      "count": 5
     },
     {
       "slug": "wine-hill-country",
@@ -31,7 +31,7 @@
       "tagline": "Inspired by Texas Hill Country wine country.",
       "description": "Designs inspired by Texas Hill Country and its wine country, from Dragon Oak Studio in Fredericksburg, Texas.",
       "url": "/shop/wine-hill-country/",
-      "count": 0
+      "count": 2
     },
     {
       "slug": "other-seasonal",
@@ -39,33 +39,1473 @@
       "tagline": "Designs for every other season and celebration.",
       "description": "Seasonal and celebration designs from Dragon Oak Studio beyond Halloween and Christmas.",
       "url": "/shop/other-seasonal/",
-      "count": 0
+      "count": 2
     }
   ],
   "products": [
     {
-      "id": "prod-do-hal-0001",
-      "sku": "DO-HAL-0001",
-      "title": "Halloween Themed Custom Tumbler",
-      "slug": "halloween-themed-custom-tumbler",
-      "url": "/product/halloween-themed-custom-tumbler/",
-      "description": "A Halloween themed custom tumbler with full-color UV printed artwork, made by Dragon Oak Studio.",
-      "collection": "halloween",
-      "subcollection": "tumblers",
-      "productType": "physical_product",
+      "id": "prod-do-pty-0001",
+      "sku": "DO-PTY-0001",
+      "title": "Bachelorette Party Games Bundle PDF File",
+      "slug": "bachelorette-party-games-bundle-pdf-file",
+      "url": "/product/bachelorette-party-games-bundle-pdf-file/",
+      "description": "Make the bride-to-be’s celebration unforgettable with this fun and interactive Bachelorette Party Games Bundle! Perfect for girls’ nights, winery trips, bridal showers, or bachelorette weekends. These printable games will keep everyone laughing, bonding, and creating unforgettable memories.\n\nThis bundle includes three exciting party games that are easy to print and play anywhere.\n\nWhat’s Included:\n\n• Lingerie Bingo – A hilarious game where guests guess what lingerie the bride will receive.\n• Bachelorette Scavenger Hunt – A fun challenge that gets the whole party involved while exploring bars, wineries, or the city.\n• Dare Cards – Bold, silly, and exciting dares that guarantee laughter and unforgettable moments.\n\nPerfect For:\n\n• Bachelorette Parties\n• Girls Night Out\n• Winery Tours\n• Bridal Showers\n• Weekend Getaways\n• Party Icebreakers\n\nProduct Details:\n• Instant digital download PDF file\n1. Bachelorette Lingerie Bingo and Scavenger Hunt Card\n- Print using A4 cardboard paper size and cut the middle\n2. Dare Cards \n- The size of card is 3.5 inches by 2.7 inches and print using A4 cardboard paper size and use the cutter board or scissors to cut the card. Each paper has 6 cards and total of 30 cards\n- It has legal size for other option to print with 10 cards each page\n\n• Print at home or at your local print shop\n• Print as many copies as you need\n\nHow It Works:\n\n1. Purchase the listing\n2. Download the files instantly from Etsy\n3. Print and enjoy the games with your party group\n\nImportant:\nThis is a digital download only. No physical items will be shipped.\n\nMake your bachelorette party fun, unforgettable, and full of laughs with these easy-to-play printable games!",
+      "collection": "other-seasonal",
+      "subcollection": "bachelorette-party",
+      "productType": "digital_download",
       "tags": [
-        "halloween",
-        "tumbler",
-        "uv printed"
+        "Pink_Motif",
+        "Bachelorette_Games",
+        "Bundle",
+        "Night_Games",
+        "Party_Games",
+        "Digital",
+        "PDF_Files",
+        "Instant_Download",
+        "Digital_Products",
+        "Printable"
       ],
-      "price": null,
+      "price": {
+        "amountCents": 1399,
+        "currency": "USD",
+        "display": "$13.99"
+      },
       "images": [
         {
-          "path": "assets/halloween-tumbler.webp",
-          "alt": "Halloween themed custom tumbler"
+          "path": "https://i.etsystatic.com/64473522/r/il/c3e3e4/7773595856/il_fullxfull.7773595856_dpnq.jpg",
+          "alt": "Bachelorette Party Games Bundle PDF File"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/6ba2ec/7821306595/il_fullxfull.7821306595_c0oa.jpg",
+          "alt": "Bachelorette Party Games Bundle PDF File"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/2f5560/7773373712/il_fullxfull.7773373712_kxo7.jpg",
+          "alt": "Bachelorette Party Games Bundle PDF File"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/61ce76/7773373726/il_fullxfull.7773373726_m2cl.jpg",
+          "alt": "Bachelorette Party Games Bundle PDF File"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/b1507b/7821306617/il_fullxfull.7821306617_1r2o.jpg",
+          "alt": "Bachelorette Party Games Bundle PDF File"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/4191e1/7773581308/il_fullxfull.7773581308_j7o1.jpg",
+          "alt": "Bachelorette Party Games Bundle PDF File"
         }
       ],
-      "featured": true,
+      "featured": false,
+      "buyUrl": null,
+      "updatedAt": "2026-09-21T12:00:00Z"
+    },
+    {
+      "id": "prod-do-pty-0002",
+      "sku": "DO-PTY-0002",
+      "title": "Bachelorette Party Trivia Card PDF Template 2.5 x 3.5 in",
+      "slug": "bachelorette-party-trivia-card-pdf-template-2-5-x-3-5-in",
+      "url": "/product/bachelorette-party-trivia-card-pdf-template-2-5-x-3-5-in/",
+      "description": "Bachelorette Party Trivia Card Game – 50 Questions – Printable 2.5” x 3.5” Glam Pink Deck\n\nMake the bride blush, laugh, and spill the tea 🍾\n\nThis Bachelorette Party Trivia Card Game includes 50 fun, flirty, and unforgettable questions designed to get the whole bridal squad talking! \n\nSized at 2.5 x 3.5 inches (standard poker card size), these printable cards are easy to cut, shuffle, and pass around during the party.\n\nWhat’s Included\n\n✔ 50 Unique Bride-Themed Trivia Question Cards\n✔ Glam Pink Bachelorette Design\n✔ “How to Play” Instruction Card\n✔ Cover Card\n✔ Instant Digital Download (Print as many as you need!)\n\nInstant Download\nThis is a digital product.\nNo physical item will be shipped.\n\nAfter purchase:\n• Go to Your Account → Purchases & Reviews\n• Click Download Files\n• Print at home or your local print shop\n\nPrint on cardstock for best results.",
+      "collection": "other-seasonal",
+      "subcollection": "bachelorette-party",
+      "productType": "digital_download",
+      "tags": [
+        "Pink",
+        "Bachelorette_Party",
+        "Fun_Game",
+        "Bridal_Shower",
+        "Game",
+        "Card_Template",
+        "digital",
+        "Bachelorette_Trivia",
+        "printable_party_game",
+        "instant_download",
+        "Bridal_Shower_Game"
+      ],
+      "price": {
+        "amountCents": 999,
+        "currency": "USD",
+        "display": "$9.99"
+      },
+      "images": [
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/1692c2/7702981184/il_fullxfull.7702981184_7za1.jpg",
+          "alt": "Bachelorette Party Trivia Card PDF Template 2.5 x 3.5 in"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/6ede17/7750920457/il_fullxfull.7750920457_puks.jpg",
+          "alt": "Bachelorette Party Trivia Card PDF Template 2.5 x 3.5 in"
+        }
+      ],
+      "featured": false,
+      "buyUrl": null,
+      "updatedAt": "2026-09-21T12:00:00Z"
+    },
+    {
+      "id": "prod-do-hal-0006",
+      "sku": "DO-HAL-0006",
+      "title": "Blood Moon Halloween Coaster PNG Bundle, Set of 4 Horror Night Designs, Vampire Scarecrow Owl, Digital Download UV Print Files",
+      "slug": "blood-moon-halloween-coaster-png-bundle-set-of-4-horror-night-designs-vampire-sc",
+      "url": "/product/blood-moon-halloween-coaster-png-bundle-set-of-4-horror-night-designs-vampire-sc/",
+      "description": "A blood-red quartet built around a rising crimson moon: a great horned owl watching over misty woods, a vampire's clawed hand emerging from an open coffin, a field of scarecrows standing guard under the red sky, and an abandoned, fog-wrapped fairground with a haunted Ferris wheel.\n\n✦ WHAT YOU GET\n• 4 separate high-resolution PNG files (2400 x 2400 px, 300 DPI)\n• Ready for sublimation coasters, UV DTF printing, tumblers, and more\n• Instant digital download — no physical item is shipped\n\n✦ DESIGN NOTES\nThe shared blood-moon sky unifies four very different horror scenes into one striking, high-contrast collection.\n\n✦ AI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of my creative process, then hand-curated, cleaned up, and prepared for print. This listing is a digital file only; no physical product is shipped.\n\n✦ USAGE\nFor personal use and small-batch commercial use on physical items you make and sell (coasters, tumblers, apparel, etc.). Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "halloween",
+      "subcollection": "coaster-bundles",
+      "productType": "digital_download",
+      "tags": [
+        "blood_moon_png",
+        "vampire_coffin_art",
+        "scarecrow_horror",
+        "haunted_fairground",
+        "horned_owl_png",
+        "coaster_sublimation",
+        "uv_printer_file",
+        "halloween_coaster",
+        "spooky_clipart",
+        "horror_night_art",
+        "digital_download",
+        "png_bundle",
+        "instant_download"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/a143d7/8592982781/il_fullxfull.8592982781_7k1t.jpg",
+          "alt": "Blood Moon Halloween Coaster PNG Bundle, Set of 4 Horror Night Designs, Vampire Scarecrow Owl, Digital Download UV Print Files"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/07baa0/8592982843/il_fullxfull.8592982843_czly.jpg",
+          "alt": "Blood Moon Halloween Coaster PNG Bundle, Set of 4 Horror Night Designs, Vampire Scarecrow Owl, Digital Download UV Print Files"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/a1a0f8/8592982853/il_fullxfull.8592982853_ff3j.jpg",
+          "alt": "Blood Moon Halloween Coaster PNG Bundle, Set of 4 Horror Night Designs, Vampire Scarecrow Owl, Digital Download UV Print Files"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/166ad3/8545115838/il_fullxfull.8545115838_9p2e.jpg",
+          "alt": "Blood Moon Halloween Coaster PNG Bundle, Set of 4 Horror Night Designs, Vampire Scarecrow Owl, Digital Download UV Print Files"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/f197aa/8592982855/il_fullxfull.8592982855_76po.jpg",
+          "alt": "Blood Moon Halloween Coaster PNG Bundle, Set of 4 Horror Night Designs, Vampire Scarecrow Owl, Digital Download UV Print Files"
+        }
+      ],
+      "featured": false,
+      "buyUrl": null,
+      "updatedAt": "2026-09-21T12:00:00Z"
+    },
+    {
+      "id": "prod-do-hal-0002",
+      "sku": "DO-HAL-0002",
+      "title": "Chibi Halloween Coaster PNG Bundle Vol. 2, Set of 4 Cute Kawaii Bat, Pumpkin, Witch & Skeleton Girls, Digital Download",
+      "slug": "chibi-halloween-coaster-png-bundle-vol-2-set-of-4-cute-kawaii-bat-pumpkin-witch",
+      "url": "/product/chibi-halloween-coaster-png-bundle-vol-2-set-of-4-cute-kawaii-bat-pumpkin-witch/",
+      "description": "An adorable chibi quartet for Halloween lovers: a curly-haired bat-costume girl striking a superhero pose with a bag of candy, a sweet pumpkin-patch girl scooping seeds beside a grinning jack-o'-lantern, a starry witch stirring a bubbling green cauldron with her black cat, and a giggling skeleton-pajama girl dancing in a misty graveyard with friendly ghost lights.\n\n✦ WHAT YOU GET\n• 4 separate high-resolution PNG files (1254 x 1254 px)\n• Ready for sublimation coasters, UV DTF printing, tumblers, and more\n• Instant digital download — no physical item is shipped\n\n✦ DESIGN NOTES\nKawaii chibi-style art with big sparkling eyes and warm autumn lighting give this set a cute, collectible feel that's a little different from our gothic-horror collections — perfect for anyone who wants their Halloween sweet instead of spooky.\n\n✦ AI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of my creative process, then hand-curated, cleaned up, and prepared for print. This listing is a digital file only; no physical product is shipped.\n\n✦ USAGE\nFor personal use and small-batch commercial use on physical items you make and sell (coasters, tumblers, apparel, etc.). Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "halloween",
+      "subcollection": "coaster-bundles",
+      "productType": "digital_download",
+      "tags": [
+        "chibi_halloween_png",
+        "kawaii_halloween_art",
+        "bat_girl_png",
+        "pumpkin_girl_art",
+        "chibi_witch_girl",
+        "skeleton_girl_png",
+        "coaster_sublimation",
+        "uv_printer_file",
+        "halloween_coaster",
+        "anime_halloween_art",
+        "digital_download",
+        "png_bundle",
+        "instant_download"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/2a95c8/8597612251/il_fullxfull.8597612251_h1rx.jpg",
+          "alt": "Chibi Halloween Coaster PNG Bundle Vol. 2, Set of 4 Cute Kawaii Bat, Pumpkin, Witch & Skeleton Girls, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/836e85/8597612321/il_fullxfull.8597612321_br3l.jpg",
+          "alt": "Chibi Halloween Coaster PNG Bundle Vol. 2, Set of 4 Cute Kawaii Bat, Pumpkin, Witch & Skeleton Girls, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/c55e27/8597612367/il_fullxfull.8597612367_mi9y.jpg",
+          "alt": "Chibi Halloween Coaster PNG Bundle Vol. 2, Set of 4 Cute Kawaii Bat, Pumpkin, Witch & Skeleton Girls, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/243cd8/8549738398/il_fullxfull.8549738398_q7u8.jpg",
+          "alt": "Chibi Halloween Coaster PNG Bundle Vol. 2, Set of 4 Cute Kawaii Bat, Pumpkin, Witch & Skeleton Girls, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/710ca5/8597612491/il_fullxfull.8597612491_22iy.jpg",
+          "alt": "Chibi Halloween Coaster PNG Bundle Vol. 2, Set of 4 Cute Kawaii Bat, Pumpkin, Witch & Skeleton Girls, Digital Download"
+        }
+      ],
+      "featured": false,
+      "buyUrl": null,
+      "updatedAt": "2026-09-21T12:00:00Z"
+    },
+    {
+      "id": "prod-do-hal-0001",
+      "sku": "DO-HAL-0001",
+      "title": "Chibi Halloween Coaster PNG Bundle Vol. 3, Set of 4 Cute Kawaii Spiderweb, Witch, Candy Corn & Cat Girls, Digital Download",
+      "slug": "chibi-halloween-coaster-png-bundle-vol-3-set-of-4-cute-kawaii-spiderweb-witch-ca",
+      "url": "/product/chibi-halloween-coaster-png-bundle-vol-3-set-of-4-cute-kawaii-spiderweb-witch-ca/",
+      "description": "An adorable chibi quartet for Halloween lovers: a spooky-sweet girl swinging through a sparkling spiderweb under a giant moon, a flying witch with purple bat wings trailing a ribbon of stardust over a lantern-lit village, a candy corn girl hugging a jack-o'-lantern bucket overflowing with treats, and a black cat-costume girl pouncing beside a glowing pumpkin and yarn balls.\n\n✦ WHAT YOU GET\n• 4 separate high-resolution PNG files (1254 x 1254 px)\n• Ready for sublimation coasters, UV DTF printing, tumblers, and more\n• Instant digital download — no physical item is shipped\n\n✦ DESIGN NOTES\nKawaii chibi-style art with big sparkling eyes and warm autumn lighting give this set a cute, collectible feel that's a little different from our gothic-horror collections — perfect for anyone who wants their Halloween sweet instead of spooky.\n\n✦ AI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of my creative process, then hand-curated, cleaned up, and prepared for print. This listing is a digital file only; no physical product is shipped.\n\n✦ USAGE\nFor personal use and small-batch commercial use on physical items you make and sell (coasters, tumblers, apparel, etc.). Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "halloween",
+      "subcollection": "coaster-bundles",
+      "productType": "digital_download",
+      "tags": [
+        "chibi_halloween_png",
+        "kawaii_halloween_art",
+        "spider_web_girl_png",
+        "flying_witch_png",
+        "candy_corn_girl_art",
+        "black_cat_girl_png",
+        "coaster_sublimation",
+        "uv_printer_file",
+        "halloween_coaster",
+        "anime_halloween_art",
+        "digital_download",
+        "png_bundle",
+        "instant_download"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/22601f/8549739076/il_fullxfull.8549739076_md97.jpg",
+          "alt": "Chibi Halloween Coaster PNG Bundle Vol. 3, Set of 4 Cute Kawaii Spiderweb, Witch, Candy Corn & Cat Girls, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/59edbc/8597613115/il_fullxfull.8597613115_a7i2.jpg",
+          "alt": "Chibi Halloween Coaster PNG Bundle Vol. 3, Set of 4 Cute Kawaii Spiderweb, Witch, Candy Corn & Cat Girls, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/049b3a/8549739142/il_fullxfull.8549739142_jag2.jpg",
+          "alt": "Chibi Halloween Coaster PNG Bundle Vol. 3, Set of 4 Cute Kawaii Spiderweb, Witch, Candy Corn & Cat Girls, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/3a9f3c/8597613181/il_fullxfull.8597613181_8thj.jpg",
+          "alt": "Chibi Halloween Coaster PNG Bundle Vol. 3, Set of 4 Cute Kawaii Spiderweb, Witch, Candy Corn & Cat Girls, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/c578ee/8549739224/il_fullxfull.8549739224_ktr2.jpg",
+          "alt": "Chibi Halloween Coaster PNG Bundle Vol. 3, Set of 4 Cute Kawaii Spiderweb, Witch, Candy Corn & Cat Girls, Digital Download"
+        }
+      ],
+      "featured": false,
+      "buyUrl": null,
+      "updatedAt": "2026-09-21T12:00:00Z"
+    },
+    {
+      "id": "prod-do-hal-0003",
+      "sku": "DO-HAL-0003",
+      "title": "Chibi Halloween Coaster PNG Bundle, Set of 4 Cute Kawaii Girl Designs, Digital Download UV Print Files",
+      "slug": "chibi-halloween-coaster-png-bundle-set-of-4-cute-kawaii-girl-designs-digital-dow",
+      "url": "/product/chibi-halloween-coaster-png-bundle-set-of-4-cute-kawaii-girl-designs-digital-dow/",
+      "description": "An adorable chibi quartet for Halloween lovers: a giggling redhead mummy girl unwrapping her bandages beside an ancient Egyptian temple, a sweet ghost-costume girl waving hello between two ghost friends and glowing jack-o'-lanterns, a gothic vampire girl in a red-and-black gown holding a heart lollipop outside a candlelit castle, and a freckle-faced scarecrow girl in patchwork overalls with a crow on her shoulder in a golden cornfield.\n\n✦ WHAT YOU GET\n• 4 separate high-resolution PNG files (1254 x 1254 px)\n• Ready for sublimation coasters, UV DTF printing, tumblers, and more\n• Instant digital download — no physical item is shipped\n\n✦ DESIGN NOTES\nKawaii chibi-style art with big sparkling eyes and warm autumn lighting give this set a cute, collectible feel that's a little different from our gothic-horror collections — perfect for anyone who wants their Halloween sweet instead of spooky.\n\n✦ AI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of my creative process, then hand-curated, cleaned up, and prepared for print. This listing is a digital file only; no physical product is shipped.\n\n✦ USAGE\nFor personal use and small-batch commercial use on physical items you make and sell (coasters, tumblers, apparel, etc.). Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "halloween",
+      "subcollection": "coaster-bundles",
+      "productType": "digital_download",
+      "tags": [
+        "chibi_halloween_png",
+        "kawaii_halloween_art",
+        "mummy_girl_png",
+        "cute_ghost_art",
+        "chibi_vampire_girl",
+        "scarecrow_girl_png",
+        "coaster_sublimation",
+        "uv_printer_file",
+        "halloween_coaster",
+        "anime_halloween_art",
+        "digital_download",
+        "png_bundle",
+        "instant_download"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/526903/8547199126/il_fullxfull.8547199126_9tpp.jpg",
+          "alt": "Chibi Halloween Coaster PNG Bundle, Set of 4 Cute Kawaii Girl Designs, Digital Download UV Print Files"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/f9fa5b/8547199116/il_fullxfull.8547199116_fk2r.jpg",
+          "alt": "Chibi Halloween Coaster PNG Bundle, Set of 4 Cute Kawaii Girl Designs, Digital Download UV Print Files"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/5f6634/8595067567/il_fullxfull.8595067567_js1q.jpg",
+          "alt": "Chibi Halloween Coaster PNG Bundle, Set of 4 Cute Kawaii Girl Designs, Digital Download UV Print Files"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/cd5bcf/8595067587/il_fullxfull.8595067587_et17.jpg",
+          "alt": "Chibi Halloween Coaster PNG Bundle, Set of 4 Cute Kawaii Girl Designs, Digital Download UV Print Files"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/22eb6a/8595067581/il_fullxfull.8595067581_ksyi.jpg",
+          "alt": "Chibi Halloween Coaster PNG Bundle, Set of 4 Cute Kawaii Girl Designs, Digital Download UV Print Files"
+        }
+      ],
+      "featured": false,
+      "buyUrl": null,
+      "updatedAt": "2026-09-21T12:00:00Z"
+    },
+    {
+      "id": "prod-do-bkm-0001",
+      "sku": "DO-BKM-0001",
+      "title": "Complete Wine Girl Magnetic Bookmark Printable Collection, 20 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download",
+      "slug": "complete-wine-girl-magnetic-bookmark-printable-collection-20-designs-2x6-inch-pn",
+      "url": "/product/complete-wine-girl-magnetic-bookmark-printable-collection-20-designs-2x6-inch-pn/",
+      "description": "The complete collection: ALL 20 wine-lover magnetic bookmark designs in one instant download, ready to print at home or at a print shop. Stylish women enjoying a glass of wine, each with a wine-themed journaling quote on the back panel. Print, cut, fold, and add magnets for bookmarks, wine journal accessories, party favors, or gifts.\n\n✦ BEST VALUE\nIncludes all four of our 5-design wine bookmark bundles: Bundle 1 (Designs 01–05), Bundle 2 (Designs 06–10), Bundle 3 (Designs 11–15), Bundle 4 (Designs 16–20). Buying the four bundles separately is $19.96; the complete 20-design collection is $12.99.\n\n✦ WHAT YOU GET\n• 20 PNG designs delivered as 5 ZIP files (4 designs per ZIP). Download all 5 ZIP files and unzip them; together they contain all 20 designs.\n• Each design: 1200 x 3600 px, 600 PPI, 2 x 6 inches flat / 2 x 3 inches folded\n• A short printing-instructions text file is included in each ZIP\n• Instant digital download, no physical item shipped\n\n✦ THE DESIGNS\nDesigns 01–20 feature a variety of wine-lover portraits and backdrops — florals, watercolors, marble, golden light, sunset skies, tropical blooms, city lights, and more. See the listing photos for every design.\n\n✦ HOW TO USE\n• Print at 100% / Actual Size (do not use \"Fit to Page\")\n• Each bookmark prints flat at 2 x 6 inches and folds to 2 x 3 inches at the center bridge\n• Cut around the bookmark outline, fold at the center, and add small magnets to the inside ends to make a magnetic bookmark (magnets, paper, and printer are not included)\n• The upside-down quote on the back panel is intentional; it reads correctly once the bookmark is folded\n\n✦ FILE DETAILS\n• Format: PNG, RGB (sRGB color)\n• Size: 1200 x 3600 px per design (2 x 6 inches at 600 PPI)\n• The artwork is supplied on a solid black (white on Design 16) background outside the bookmark outline (no transparent background) — cut along the bookmark edge\n• Original artwork files; the ZIP packaging (if any) does not compress or change the images\n\n✦ INSTANT DIGITAL DOWNLOAD\nYour files are available to download from Etsy immediately after payment is confirmed. This is a DIGITAL PRODUCT: no physical bookmark, magnets, or printed item will be shipped, and nothing is sent to you manually.\n\n✦ AI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of my creative process, then hand-curated, cleaned up, and prepared for print.\n\n✦ USAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital files themselves is not permitted.\n\n✦ PLEASE NOTE\nPrinted colors can vary by monitor, printer, ink, and paper. Preview images carry a watermark; the files you download do not.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "cute-bookmarks",
+      "subcollection": "wine-magnetic-bookmarks",
+      "productType": "digital_download",
+      "tags": [
+        "magnetic_bookmark",
+        "printable_bookmark",
+        "bookmark_png",
+        "wine_bookmark",
+        "wine_lover_gift",
+        "wine_journal",
+        "wine_girl_art",
+        "digital_download",
+        "instant_download",
+        "bookmark_bundle",
+        "diy_bookmark",
+        "book_lover_gift",
+        "bookmark_collection"
+      ],
+      "price": {
+        "amountCents": 1299,
+        "currency": "USD",
+        "display": "$12.99"
+      },
+      "images": [
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/c34365/8549844100/il_fullxfull.8549844100_pf78.jpg",
+          "alt": "Complete Wine Girl Magnetic Bookmark Printable Collection, 20 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/202537/8597718523/il_fullxfull.8597718523_mkxy.jpg",
+          "alt": "Complete Wine Girl Magnetic Bookmark Printable Collection, 20 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/c5c4d6/8549844234/il_fullxfull.8549844234_fret.jpg",
+          "alt": "Complete Wine Girl Magnetic Bookmark Printable Collection, 20 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/e3ca30/8597718635/il_fullxfull.8597718635_t509.jpg",
+          "alt": "Complete Wine Girl Magnetic Bookmark Printable Collection, 20 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/f8e8f3/8549844386/il_fullxfull.8549844386_4y0e.jpg",
+          "alt": "Complete Wine Girl Magnetic Bookmark Printable Collection, 20 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        }
+      ],
+      "featured": false,
+      "buyUrl": null,
+      "updatedAt": "2026-09-21T12:00:00Z"
+    },
+    {
+      "id": "prod-do-hal-0009",
+      "sku": "DO-HAL-0009",
+      "title": "Cozy Halloween Pumpkin Patch Coaster Bundle, Autumn Designs (Digital Download)",
+      "slug": "cozy-halloween-pumpkin-patch-coaster-bundle-autumn-designs-digital-download",
+      "url": "/product/cozy-halloween-pumpkin-patch-coaster-bundle-autumn-designs-digital-download/",
+      "description": "A warm, welcoming autumn quartet for coasters and sublimation: the Deadwood Station steam train rolling in under a full moon, a glowing jack-o'-lantern pyramid with a watchful crow, a lantern-lit trick-or-treat path through the pumpkin patch, and a cozy front porch decked out for Halloween with a black cat in the window.\n\n✦ WHAT YOU GET\n• 4 separate high-resolution PNG files (2400 x 2400 px, 300 DPI)\n• Ready for sublimation coasters, UV DTF printing, tumblers, and more\n• Instant digital download — no physical item is shipped\n\n✦ DESIGN NOTES\nGlowing jack-o'-lanterns, string lights, and autumn leaves give this set a friendly, welcoming Halloween feel that's great for fall decor and trick-or-treat season.\n\n✦ AI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of my creative process, then hand-curated, cleaned up, and prepared for print. This listing is a digital file only; no physical product is shipped.\n\n✦ USAGE\nFor personal use and small-batch commercial use on physical items you make and sell (coasters, tumblers, apparel, etc.). Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "halloween",
+      "subcollection": "coaster-bundles",
+      "productType": "digital_download",
+      "tags": [
+        "pumpkin_patch_png",
+        "trick_or_treat",
+        "jack_o_lantern",
+        "autumn_halloween",
+        "cozy_fall_decor",
+        "coaster_sublimation",
+        "uv_printer_file",
+        "halloween_coaster",
+        "fall_clipart",
+        "black_cat_png",
+        "digital_download",
+        "png_bundle",
+        "instant_download"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/934027/8545083654/il_fullxfull.8545083654_9sl0.jpg",
+          "alt": "Cozy Halloween Pumpkin Patch Coaster Bundle, Autumn Designs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/bb416d/8592950301/il_fullxfull.8592950301_1tpq.jpg",
+          "alt": "Cozy Halloween Pumpkin Patch Coaster Bundle, Autumn Designs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/52424d/8592950293/il_fullxfull.8592950293_9hs3.jpg",
+          "alt": "Cozy Halloween Pumpkin Patch Coaster Bundle, Autumn Designs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/0d71a0/8592950299/il_fullxfull.8592950299_isco.jpg",
+          "alt": "Cozy Halloween Pumpkin Patch Coaster Bundle, Autumn Designs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/1dc7b9/8592950291/il_fullxfull.8592950291_julv.jpg",
+          "alt": "Cozy Halloween Pumpkin Patch Coaster Bundle, Autumn Designs (Digital Download)"
+        }
+      ],
+      "featured": false,
+      "buyUrl": null,
+      "updatedAt": "2026-09-21T12:00:00Z"
+    },
+    {
+      "id": "prod-do-hal-0012",
+      "sku": "DO-HAL-0012",
+      "title": "Cozy Halloween Village Coaster Bundle, Witch Cottage, Autumn Scenes (Digital Download)",
+      "slug": "cozy-halloween-village-coaster-bundle-witch-cottage-autumn-scenes-digital-downlo",
+      "url": "/product/cozy-halloween-village-coaster-bundle-witch-cottage-autumn-scenes-digital-downlo/",
+      "description": "A warm, storybook quartet set in a charming Halloween village: a lantern-lit town square beneath a glowing clock tower, a witch's cozy cottage with a bubbling cauldron and sleepy black cat, a black cat arching on a fence under a blood-red moon, and a covered bridge draped in autumn leaves and jack-o'-lanterns.\n\n✦ WHAT YOU GET\n• 4 separate high-resolution PNG files (2400 x 2400 px, 300 DPI)\n• Ready for sublimation coasters, UV DTF printing, tumblers, and more\n• Instant digital download — no physical item is shipped\n\n✦ DESIGN NOTES\nGlowing lanterns, cobblestones, and cozy cottages give this set a friendlier, storybook take on Halloween.\n\n✦ AI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of my creative process, then hand-curated, cleaned up, and prepared for print. This listing is a digital file only; no physical product is shipped.\n\n✦ USAGE\nFor personal use and small-batch commercial use on physical items you make and sell (coasters, tumblers, apparel, etc.). Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "halloween",
+      "subcollection": "coaster-bundles",
+      "productType": "digital_download",
+      "tags": [
+        "halloween_village",
+        "witch_cottage_art",
+        "black_cat_moon",
+        "covered_bridge_png",
+        "autumn_town_square",
+        "coaster_sublimation",
+        "uv_printer_file",
+        "halloween_coaster",
+        "fall_clipart",
+        "cozy_halloween_art",
+        "digital_download",
+        "png_bundle",
+        "instant_download"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/f30d1f/8545165974/il_fullxfull.8545165974_rxl8.jpg",
+          "alt": "Cozy Halloween Village Coaster Bundle, Witch Cottage, Autumn Scenes (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/74ca54/8593033465/il_fullxfull.8593033465_aiz1.jpg",
+          "alt": "Cozy Halloween Village Coaster Bundle, Witch Cottage, Autumn Scenes (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/2f8616/8593033459/il_fullxfull.8593033459_dpam.jpg",
+          "alt": "Cozy Halloween Village Coaster Bundle, Witch Cottage, Autumn Scenes (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/425da4/8545166050/il_fullxfull.8545166050_pgrk.jpg",
+          "alt": "Cozy Halloween Village Coaster Bundle, Witch Cottage, Autumn Scenes (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/a6f6cd/8593033461/il_fullxfull.8593033461_p2ug.jpg",
+          "alt": "Cozy Halloween Village Coaster Bundle, Witch Cottage, Autumn Scenes (Digital Download)"
+        }
+      ],
+      "featured": false,
+      "buyUrl": null,
+      "updatedAt": "2026-09-21T12:00:00Z"
+    },
+    {
+      "id": "prod-do-hal-0010",
+      "sku": "DO-HAL-0010",
+      "title": "Gothic Castle Skeleton Knight Coaster Bundle, Dark Fantasy Cemetery Designs (Digital Download)",
+      "slug": "gothic-castle-skeleton-knight-coaster-bundle-dark-fantasy-cemetery-designs-digit",
+      "url": "/product/gothic-castle-skeleton-knight-coaster-bundle-dark-fantasy-cemetery-designs-digit/",
+      "description": "A dark-fantasy quartet built around a towering gothic castle and its undead guardian: a moonlit stone mausoleum draped in ivy, a mountaintop castle glowing above a waterfall with bats overhead, and two views of an armored skeleton knight standing watch at a crypt door and inside a candlelit cathedral hall.\n\n✦ WHAT YOU GET\n• 4 separate high-resolution PNG files (2400 x 2400 px, 300 DPI)\n• Ready for sublimation coasters, UV DTF printing, tumblers, and more\n• Instant digital download — no physical item is shipped\n\n✦ DESIGN NOTES\nRich armor detail, candlelight, and gothic architecture give this set a storybook dark-fantasy feel that pairs naturally as a four-piece collection.\n\n✦ AI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of my creative process, then hand-curated, cleaned up, and prepared for print. This listing is a digital file only; no physical product is shipped.\n\n✦ USAGE\nFor personal use and small-batch commercial use on physical items you make and sell (coasters, tumblers, apparel, etc.). Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "halloween",
+      "subcollection": "coaster-bundles",
+      "productType": "digital_download",
+      "tags": [
+        "gothic_castle_png",
+        "skeleton_knight",
+        "dark_fantasy_art",
+        "crypt_cemetery",
+        "halloween_castle",
+        "coaster_sublimation",
+        "uv_printer_file",
+        "halloween_coaster",
+        "spooky_clipart",
+        "medieval_gothic",
+        "digital_download",
+        "png_bundle",
+        "instant_download"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/ffebd2/8545077494/il_fullxfull.8545077494_djpb.jpg",
+          "alt": "Gothic Castle Skeleton Knight Coaster Bundle, Dark Fantasy Cemetery Designs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/e77279/8545077576/il_fullxfull.8545077576_5u56.jpg",
+          "alt": "Gothic Castle Skeleton Knight Coaster Bundle, Dark Fantasy Cemetery Designs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/b1322c/8592943865/il_fullxfull.8592943865_drth.jpg",
+          "alt": "Gothic Castle Skeleton Knight Coaster Bundle, Dark Fantasy Cemetery Designs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/023cfe/8545077586/il_fullxfull.8545077586_1330.jpg",
+          "alt": "Gothic Castle Skeleton Knight Coaster Bundle, Dark Fantasy Cemetery Designs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/384d2f/8545077584/il_fullxfull.8545077584_avye.jpg",
+          "alt": "Gothic Castle Skeleton Knight Coaster Bundle, Dark Fantasy Cemetery Designs (Digital Download)"
+        }
+      ],
+      "featured": false,
+      "buyUrl": null,
+      "updatedAt": "2026-09-21T12:00:00Z"
+    },
+    {
+      "id": "prod-do-hal-0017",
+      "sku": "DO-HAL-0017",
+      "title": "Gothic Cemetery Coaster PNG Bundle, Halloween Sublimation Files (Digital Download)",
+      "slug": "gothic-cemetery-coaster-png-bundle-halloween-sublimation-files-digital-download",
+      "url": "/product/gothic-cemetery-coaster-png-bundle-halloween-sublimation-files-digital-download/",
+      "description": "Bring haunted graveyard charm to your Halloween crafting with this set of 4 high-resolution gothic cemetery designs - ready for sublimation, UV printing, and coaster production.\n\nThis instant digital download includes 4 unique 2400x2400px (600 DPI) PNG files:\n1. Dancing Skeletons - a lively graveyard party under the full moon\n2. Graveyard Gate - a gothic iron gate watched over by stone gargoyles and a raven\n3. Midnight Hearse - a skeletal horse-drawn hearse winding through the fog\n4. Rest In Peace - a moonlit cemetery scene with a watchful raven and glowing jack-o-lanterns\n\nPrint-ready for 4-inch square coasters, sublimation blanks, UV DTF, and similar small-batch production methods.\n\nWHAT YOU GET\n- 4 PNG files, 2400x2400px, 600 DPI, sRGB\n- Instant digital download - no physical item will be shipped\n- Files delivered individually after purchase\n\nLICENSE / USAGE TERMS\n- For personal use and small-batch handmade/commercial production (for example, coasters you make and sell)\n- You may NOT resell, redistribute, or share the digital files themselves, in original or edited form\n- You may NOT use these files in print-on-demand marketplaces or mass-manufactured goods\n- Credit is appreciated but not required\n\nDragon Oak Studio - laser crafted, UV printed, and digital designs.",
+      "collection": "halloween",
+      "subcollection": "coaster-bundles",
+      "productType": "digital_download",
+      "tags": [
+        "halloween_decor",
+        "graveyard_art",
+        "skeleton_print",
+        "printable_coaster",
+        "digital_download",
+        "coaster_design",
+        "spooky_decor",
+        "sublimation_png",
+        "instant_download",
+        "diy_coaster",
+        "halloween_print",
+        "cemetery_art",
+        "dragon_oak_studio"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/ffe419/8593045353/il_fullxfull.8593045353_3r7p.jpg",
+          "alt": "Gothic Cemetery Coaster PNG Bundle, Halloween Sublimation Files (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/20b6fd/8545177996/il_fullxfull.8545177996_eqoj.jpg",
+          "alt": "Gothic Cemetery Coaster PNG Bundle, Halloween Sublimation Files (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/9042b1/8545178008/il_fullxfull.8545178008_6cvn.jpg",
+          "alt": "Gothic Cemetery Coaster PNG Bundle, Halloween Sublimation Files (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/e7def7/8593045437/il_fullxfull.8593045437_q9b2.jpg",
+          "alt": "Gothic Cemetery Coaster PNG Bundle, Halloween Sublimation Files (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/9df6ce/8545178012/il_fullxfull.8545178012_o4m7.jpg",
+          "alt": "Gothic Cemetery Coaster PNG Bundle, Halloween Sublimation Files (Digital Download)"
+        }
+      ],
+      "featured": false,
+      "buyUrl": null,
+      "updatedAt": "2026-09-21T12:00:00Z"
+    },
+    {
+      "id": "prod-do-hal-0011",
+      "sku": "DO-HAL-0011",
+      "title": "Gothic Coastal Horror Coaster Bundle, Ghost Ship, Haunted Lighthouse, Hell Hound, Bats (Digital Download)",
+      "slug": "gothic-coastal-horror-coaster-bundle-ghost-ship-haunted-lighthouse-hell-hound-ba",
+      "url": "/product/gothic-coastal-horror-coaster-bundle-ghost-ship-haunted-lighthouse-hell-hound-ba/",
+      "description": "A stormy, gothic quartet for coaster and sublimation projects: a spectral hell hound charging past ancient ruins, a cursed ghost pirate ship crashing through moonlit waves, a lonely haunted lighthouse standing against lightning, and a cave full of bats pouring out at blood-orange sunset.\n\n✦ WHAT YOU GET\n• 4 separate high-resolution PNG files (2400 x 2400 px, 300 DPI)\n• Each design sold as one bundle, ready for sublimation coasters, UV DTF printing, tumblers, and more\n• Instant digital download — no physical item is shipped\n\n✦ DESIGN NOTES\nEvery scene in this set leans into moody, coastal gothic horror: fog, moonlight, and crashing surf tie the four pieces together as a cohesive collection for horror and dark-fantasy lovers.\n\n✦ AI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of my creative process, then hand-curated, cleaned up, and prepared for print. This listing is a digital file only; no physical product is shipped.\n\n✦ USAGE\nFor personal use and small-batch commercial use on physical items you make and sell (coasters, tumblers, apparel, etc.). Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "halloween",
+      "subcollection": "coaster-bundles",
+      "productType": "digital_download",
+      "tags": [
+        "gothic_halloween",
+        "ghost_pirate_ship",
+        "haunted_lighthouse",
+        "hell_hound_art",
+        "bat_swarm_png",
+        "coaster_sublimation",
+        "uv_printer_file",
+        "halloween_coaster",
+        "spooky_clipart",
+        "dark_fantasy_art",
+        "digital_download",
+        "png_bundle",
+        "instant_download"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/290ae7/8592927043/il_fullxfull.8592927043_k80s.jpg",
+          "alt": "Gothic Coastal Horror Coaster Bundle, Ghost Ship, Haunted Lighthouse, Hell Hound, Bats (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/ca3323/8545060618/il_fullxfull.8545060618_1liu.jpg",
+          "alt": "Gothic Coastal Horror Coaster Bundle, Ghost Ship, Haunted Lighthouse, Hell Hound, Bats (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/78f7ef/8592927063/il_fullxfull.8592927063_g7xy.jpg",
+          "alt": "Gothic Coastal Horror Coaster Bundle, Ghost Ship, Haunted Lighthouse, Hell Hound, Bats (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/3945be/8592927069/il_fullxfull.8592927069_9dc1.jpg",
+          "alt": "Gothic Coastal Horror Coaster Bundle, Ghost Ship, Haunted Lighthouse, Hell Hound, Bats (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/6b24cf/8545060630/il_fullxfull.8545060630_h7xp.jpg",
+          "alt": "Gothic Coastal Horror Coaster Bundle, Ghost Ship, Haunted Lighthouse, Hell Hound, Bats (Digital Download)"
+        }
+      ],
+      "featured": false,
+      "buyUrl": null,
+      "updatedAt": "2026-09-21T12:00:00Z"
+    },
+    {
+      "id": "prod-do-hal-0008",
+      "sku": "DO-HAL-0008",
+      "title": "Haunted House Ghost Story PNG Bundle, Creepy Mansion Designs (Digital Download)",
+      "slug": "haunted-house-ghost-story-png-bundle-creepy-mansion-designs-digital-download",
+      "url": "/product/haunted-house-ghost-story-png-bundle-creepy-mansion-designs-digital-download/",
+      "description": "A classic ghost-story quartet: a pale hand reaching from an old stone well deep in the woods, a ghostly face watching from a weathered attic window, a black cat perched on a bone throne of skulls, and a spectral woman reflected in an antique mirror.\n\n✦ WHAT YOU GET\n• 4 separate high-resolution PNG files (2400 x 2400 px, 300 DPI)\n• Ready for sublimation coasters, UV DTF printing, tumblers, and more\n• Instant digital download — no physical item is shipped\n\n✦ DESIGN NOTES\nEerie interiors and quiet dread run through all four scenes, making this a great pick for classic haunted-house and ghost-story fans.\n\n✦ AI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of my creative process, then hand-curated, cleaned up, and prepared for print. This listing is a digital file only; no physical product is shipped.\n\n✦ USAGE\nFor personal use and small-batch commercial use on physical items you make and sell (coasters, tumblers, apparel, etc.). Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "halloween",
+      "subcollection": "coaster-bundles",
+      "productType": "digital_download",
+      "tags": [
+        "haunted_house_png",
+        "ghost_coaster_art",
+        "creepy_mansion",
+        "haunted_mirror",
+        "skull_throne_png",
+        "coaster_sublimation",
+        "uv_printer_file",
+        "halloween_coaster",
+        "spooky_clipart",
+        "black_cat_png",
+        "digital_download",
+        "png_bundle",
+        "instant_download"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/43678c/8592973735/il_fullxfull.8592973735_72y4.jpg",
+          "alt": "Haunted House Ghost Story PNG Bundle, Creepy Mansion Designs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/930208/8545106808/il_fullxfull.8545106808_l3pk.jpg",
+          "alt": "Haunted House Ghost Story PNG Bundle, Creepy Mansion Designs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/320db6/8592973785/il_fullxfull.8592973785_8xau.jpg",
+          "alt": "Haunted House Ghost Story PNG Bundle, Creepy Mansion Designs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/1c62ab/8545106988/il_fullxfull.8545106988_q6cg.jpg",
+          "alt": "Haunted House Ghost Story PNG Bundle, Creepy Mansion Designs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/c1cec3/8592973791/il_fullxfull.8592973791_5guq.jpg",
+          "alt": "Haunted House Ghost Story PNG Bundle, Creepy Mansion Designs (Digital Download)"
+        }
+      ],
+      "featured": false,
+      "buyUrl": null,
+      "updatedAt": "2026-09-21T12:00:00Z"
+    },
+    {
+      "id": "prod-do-hal-0016",
+      "sku": "DO-HAL-0016",
+      "title": "Haunted Manor & Monsters Coaster PNG Bundle, Set of 4 Frankenstein Swamp Designs, Halloween Digital Download UV Print Files",
+      "slug": "haunted-manor-and-monsters-coaster-png-bundle-set-of-4-frankenstein-swamp-design",
+      "url": "/product/haunted-manor-and-monsters-coaster-png-bundle-set-of-4-frankenstein-swamp-design/",
+      "description": "A classic-monster quartet for horror collectors: a skeletal hayride wagon rolling past the pumpkin patch, a grand haunted Victorian mansion glowing above its own gated cemetery, an eerie glowing swamp watched over by a lone heron and a forgotten skull, and a mad scientist's lab crackling to life around Frankenstein's monster.\n\n✦ WHAT YOU GET\n• 4 separate high-resolution PNG files (2400 x 2400 px, 300 DPI)\n• Ready for sublimation coasters, UV DTF printing, tumblers, and more\n• Instant digital download — no physical item is shipped\n\n✦ DESIGN NOTES\nThis set brings together four classic haunted-house and monster-movie staples into one cohesive collection.\n\n✦ AI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of my creative process, then hand-curated, cleaned up, and prepared for print. This listing is a digital file only; no physical product is shipped.\n\n✦ USAGE\nFor personal use and small-batch commercial use on physical items you make and sell (coasters, tumblers, apparel, etc.). Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "halloween",
+      "subcollection": "coaster-bundles",
+      "productType": "digital_download",
+      "tags": [
+        "haunted_mansion_png",
+        "frankenstein_art",
+        "haunted_hayride",
+        "glowing_swamp_png",
+        "mad_scientist_art",
+        "coaster_sublimation",
+        "uv_printer_file",
+        "halloween_coaster",
+        "spooky_clipart",
+        "monster_horror_art",
+        "digital_download",
+        "png_bundle",
+        "instant_download"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/60b9ba/8593037817/il_fullxfull.8593037817_6oa9.jpg",
+          "alt": "Haunted Manor & Monsters Coaster PNG Bundle, Set of 4 Frankenstein Swamp Designs, Halloween Digital Download UV Print Files"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/bdbd12/8593037899/il_fullxfull.8593037899_dsvj.jpg",
+          "alt": "Haunted Manor & Monsters Coaster PNG Bundle, Set of 4 Frankenstein Swamp Designs, Halloween Digital Download UV Print Files"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/20c883/8545170378/il_fullxfull.8545170378_5ts2.jpg",
+          "alt": "Haunted Manor & Monsters Coaster PNG Bundle, Set of 4 Frankenstein Swamp Designs, Halloween Digital Download UV Print Files"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/d551ee/8545170376/il_fullxfull.8545170376_ls1x.jpg",
+          "alt": "Haunted Manor & Monsters Coaster PNG Bundle, Set of 4 Frankenstein Swamp Designs, Halloween Digital Download UV Print Files"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/c3a2a5/8593037905/il_fullxfull.8593037905_t36w.jpg",
+          "alt": "Haunted Manor & Monsters Coaster PNG Bundle, Set of 4 Frankenstein Swamp Designs, Halloween Digital Download UV Print Files"
+        }
+      ],
+      "featured": false,
+      "buyUrl": null,
+      "updatedAt": "2026-09-21T12:00:00Z"
+    },
+    {
+      "id": "prod-do-hal-0014",
+      "sku": "DO-HAL-0014",
+      "title": "Midnight Gothic Cemetery Coaster Bundle, Clock Tower, Spider, Church (Digital Download)",
+      "slug": "midnight-gothic-cemetery-coaster-bundle-clock-tower-spider-church-digital-downlo",
+      "url": "/product/midnight-gothic-cemetery-coaster-bundle-clock-tower-spider-church-digital-downlo/",
+      "description": "A witching-hour quartet set at the stroke of midnight: a gothic clock tower striking twelve beneath a bat-filled sky, a giant dew-covered spider guarding its web, a candlelit gothic church rising over its own cemetery, and a moss-covered graveyard path watched over by a solitary crow.\n\n✦ WHAT YOU GET\n• 4 separate high-resolution PNG files (2400 x 2400 px, 300 DPI)\n• Ready for sublimation coasters, UV DTF printing, tumblers, and more\n• Instant digital download — no physical item is shipped\n\n✦ DESIGN NOTES\nGothic architecture and midnight fog connect all four scenes into one atmospheric graveyard collection.\n\n✦ AI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of my creative process, then hand-curated, cleaned up, and prepared for print. This listing is a digital file only; no physical product is shipped.\n\n✦ USAGE\nFor personal use and small-batch commercial use on physical items you make and sell (coasters, tumblers, apparel, etc.). Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "halloween",
+      "subcollection": "coaster-bundles",
+      "productType": "digital_download",
+      "tags": [
+        "gothic_clock_tower",
+        "spider_web_png",
+        "gothic_church_art",
+        "cemetery_crow_png",
+        "midnight_graveyard",
+        "coaster_sublimation",
+        "uv_printer_file",
+        "halloween_coaster",
+        "spooky_clipart",
+        "dark_gothic_art",
+        "digital_download",
+        "png_bundle",
+        "instant_download"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/884623/8545156848/il_fullxfull.8545156848_egfh.jpg",
+          "alt": "Midnight Gothic Cemetery Coaster Bundle, Clock Tower, Spider, Church (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/6f375c/8545156844/il_fullxfull.8545156844_g1oe.jpg",
+          "alt": "Midnight Gothic Cemetery Coaster Bundle, Clock Tower, Spider, Church (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/4da9e0/8545156876/il_fullxfull.8545156876_pozs.jpg",
+          "alt": "Midnight Gothic Cemetery Coaster Bundle, Clock Tower, Spider, Church (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/a43440/8593024357/il_fullxfull.8593024357_nhmh.jpg",
+          "alt": "Midnight Gothic Cemetery Coaster Bundle, Clock Tower, Spider, Church (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/4bad5c/8545156872/il_fullxfull.8545156872_7neh.jpg",
+          "alt": "Midnight Gothic Cemetery Coaster Bundle, Clock Tower, Spider, Church (Digital Download)"
+        }
+      ],
+      "featured": false,
+      "buyUrl": null,
+      "updatedAt": "2026-09-21T12:00:00Z"
+    },
+    {
+      "id": "prod-do-hal-0015",
+      "sku": "DO-HAL-0015",
+      "title": "Sleepy Hollow Headless Horseman Coaster PNG Bundle, Set of 4 Autumn Legend Designs, Halloween Digital Download UV Print Files",
+      "slug": "sleepy-hollow-headless-horseman-coaster-png-bundle-set-of-4-autumn-legend-design",
+      "url": "/product/sleepy-hollow-headless-horseman-coaster-png-bundle-set-of-4-autumn-legend-design/",
+      "description": "An autumn-legend quartet inspired by classic fall folklore: a black cat curled up in a glowing pumpkin patch at sunset, a foggy corn maze lit by lanterns and watchful crows, a witch's tower gate glowing green against the full moon, and the Headless Horseman himself galloping across a covered bridge, pumpkin in hand.\n\n✦ WHAT YOU GET\n• 4 separate high-resolution PNG files (2400 x 2400 px, 300 DPI)\n• Ready for sublimation coasters, UV DTF printing, tumblers, and more\n• Instant digital download — no physical item is shipped\n\n✦ DESIGN NOTES\nCorn mazes, covered bridges, and a galloping horseman give this set a distinct storybook-legend feel for fall.\n\n✦ AI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of my creative process, then hand-curated, cleaned up, and prepared for print. This listing is a digital file only; no physical product is shipped.\n\n✦ USAGE\nFor personal use and small-batch commercial use on physical items you make and sell (coasters, tumblers, apparel, etc.). Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "halloween",
+      "subcollection": "coaster-bundles",
+      "productType": "digital_download",
+      "tags": [
+        "headless_horseman",
+        "sleepy_hollow_png",
+        "corn_maze_art",
+        "covered_bridge_png",
+        "pumpkin_patch_cat",
+        "coaster_sublimation",
+        "uv_printer_file",
+        "halloween_coaster",
+        "fall_clipart",
+        "autumn_legend_art",
+        "digital_download",
+        "png_bundle",
+        "instant_download"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/acffee/8545152296/il_fullxfull.8545152296_5mse.jpg",
+          "alt": "Sleepy Hollow Headless Horseman Coaster PNG Bundle, Set of 4 Autumn Legend Designs, Halloween Digital Download UV Print Files"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/6dc766/8545152380/il_fullxfull.8545152380_sy5x.jpg",
+          "alt": "Sleepy Hollow Headless Horseman Coaster PNG Bundle, Set of 4 Autumn Legend Designs, Halloween Digital Download UV Print Files"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/501b15/8593019935/il_fullxfull.8593019935_horx.jpg",
+          "alt": "Sleepy Hollow Headless Horseman Coaster PNG Bundle, Set of 4 Autumn Legend Designs, Halloween Digital Download UV Print Files"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/628c33/8593019927/il_fullxfull.8593019927_bnrs.jpg",
+          "alt": "Sleepy Hollow Headless Horseman Coaster PNG Bundle, Set of 4 Autumn Legend Designs, Halloween Digital Download UV Print Files"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/c8efad/8545152392/il_fullxfull.8545152392_ht2t.jpg",
+          "alt": "Sleepy Hollow Headless Horseman Coaster PNG Bundle, Set of 4 Autumn Legend Designs, Halloween Digital Download UV Print Files"
+        }
+      ],
+      "featured": false,
+      "buyUrl": null,
+      "updatedAt": "2026-09-21T12:00:00Z"
+    },
+    {
+      "id": "prod-do-hal-0005",
+      "sku": "DO-HAL-0005",
+      "title": "Werewolf Full Moon Coaster Bundle, Wolf Pack & Cemetery Designs (Digital Download)",
+      "slug": "werewolf-full-moon-coaster-bundle-wolf-pack-and-cemetery-designs-digital-downloa",
+      "url": "/product/werewolf-full-moon-coaster-bundle-wolf-pack-and-cemetery-designs-digital-downloa/",
+      "description": "A wolf-themed quartet for horror lovers: a snowy cabin marked by mysterious paw prints in the moonlight, a quiet autumn cemetery watched over by a crow, a lone werewolf howling atop a cliff under a blood moon, and a wolf pack howling together beneath a giant winter moon.\n\n✦ WHAT YOU GET\n• 4 separate high-resolution PNG files (2400 x 2400 px, 300 DPI)\n• Ready for sublimation coasters, UV DTF printing, tumblers, and more\n• Instant digital download — no physical item is shipped\n\n✦ DESIGN NOTES\nFrom a single set of tracks in the snow to a full pack in full voice, this collection tells a wolf-moon story across four connected scenes.\n\n✦ AI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of my creative process, then hand-curated, cleaned up, and prepared for print. This listing is a digital file only; no physical product is shipped.\n\n✦ USAGE\nFor personal use and small-batch commercial use on physical items you make and sell (coasters, tumblers, apparel, etc.). Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "halloween",
+      "subcollection": "coaster-bundles",
+      "productType": "digital_download",
+      "tags": [
+        "werewolf_png_art",
+        "wolf_pack_moon",
+        "full_moon_howl",
+        "cemetery_crow_png",
+        "snowy_cabin_art",
+        "coaster_sublimation",
+        "uv_printer_file",
+        "halloween_coaster",
+        "spooky_clipart",
+        "wolf_moon_art",
+        "digital_download",
+        "png_bundle",
+        "instant_download"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/7df9a8/8592988193/il_fullxfull.8592988193_e26u.jpg",
+          "alt": "Werewolf Full Moon Coaster Bundle, Wolf Pack & Cemetery Designs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/2de8c2/8592988293/il_fullxfull.8592988293_4fiz.jpg",
+          "alt": "Werewolf Full Moon Coaster Bundle, Wolf Pack & Cemetery Designs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/6c0938/8592988291/il_fullxfull.8592988291_5xy9.jpg",
+          "alt": "Werewolf Full Moon Coaster Bundle, Wolf Pack & Cemetery Designs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/6d07ba/8592988285/il_fullxfull.8592988285_k10q.jpg",
+          "alt": "Werewolf Full Moon Coaster Bundle, Wolf Pack & Cemetery Designs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/de6982/8592988297/il_fullxfull.8592988297_by2h.jpg",
+          "alt": "Werewolf Full Moon Coaster Bundle, Wolf Pack & Cemetery Designs (Digital Download)"
+        }
+      ],
+      "featured": false,
+      "buyUrl": null,
+      "updatedAt": "2026-09-21T12:00:00Z"
+    },
+    {
+      "id": "prod-do-hal-0004",
+      "sku": "DO-HAL-0004",
+      "title": "Whimsical Skeleton Halloween Coaster Bundle, Graveyard Designs (Digital Download)",
+      "slug": "whimsical-skeleton-halloween-coaster-bundle-graveyard-designs-digital-download",
+      "url": "/product/whimsical-skeleton-halloween-coaster-bundle-graveyard-designs-digital-download/",
+      "description": "A playful skeleton quartet for lighthearted Halloween decor: a top-hatted skeleton at the piano surrounded by candlelight, a fishing skeleton \"still fishing for a better afterlife,\" a skeletal horse-drawn hearse rolling through the graveyard mist, and a classic moonlit cemetery scene watched over by a lone crow.\n\n✦ WHAT YOU GET\n• 4 separate high-resolution PNG files (2400 x 2400 px, 300 DPI)\n• Ready for sublimation coasters, UV DTF printing, tumblers, and more\n• Instant digital download — no physical item is shipped\n\n✦ DESIGN NOTES\nA wink of dark humor runs through this set, pairing whimsical skeleton characters with classic graveyard atmosphere.\n\n✦ AI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of my creative process, then hand-curated, cleaned up, and prepared for print. This listing is a digital file only; no physical product is shipped.\n\n✦ USAGE\nFor personal use and small-batch commercial use on physical items you make and sell (coasters, tumblers, apparel, etc.). Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "halloween",
+      "subcollection": "coaster-bundles",
+      "productType": "digital_download",
+      "tags": [
+        "funny_skeleton_png",
+        "skeleton_piano_art",
+        "skeleton_fishing",
+        "hearse_graveyard",
+        "cemetery_crow_png",
+        "coaster_sublimation",
+        "uv_printer_file",
+        "halloween_coaster",
+        "spooky_clipart",
+        "dark_humor_art",
+        "digital_download",
+        "png_bundle",
+        "instant_download"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/b39389/8593002473/il_fullxfull.8593002473_6973.jpg",
+          "alt": "Whimsical Skeleton Halloween Coaster Bundle, Graveyard Designs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/75ed9c/8545135154/il_fullxfull.8545135154_7p0q.jpg",
+          "alt": "Whimsical Skeleton Halloween Coaster Bundle, Graveyard Designs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/f4383e/8545135134/il_fullxfull.8545135134_jdvp.jpg",
+          "alt": "Whimsical Skeleton Halloween Coaster Bundle, Graveyard Designs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/92b3dc/8593002519/il_fullxfull.8593002519_f0ve.jpg",
+          "alt": "Whimsical Skeleton Halloween Coaster Bundle, Graveyard Designs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/2fa8ca/8593002533/il_fullxfull.8593002533_2ckx.jpg",
+          "alt": "Whimsical Skeleton Halloween Coaster Bundle, Graveyard Designs (Digital Download)"
+        }
+      ],
+      "featured": false,
+      "buyUrl": null,
+      "updatedAt": "2026-09-21T12:00:00Z"
+    },
+    {
+      "id": "prod-do-bkm-0005",
+      "sku": "DO-BKM-0005",
+      "title": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 1, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download",
+      "slug": "wine-girl-magnetic-bookmark-printable-bundle-vol-1-5-designs-2x6-inch-png-wine-l",
+      "url": "/product/wine-girl-magnetic-bookmark-printable-bundle-vol-1-5-designs-2x6-inch-png-wine-l/",
+      "description": "A set of 5 wine-lover magnetic bookmark designs, ready to print at home or at a print shop: stylish women enjoying a glass of wine, each with a wine-themed journaling quote on the back panel. Print, cut, fold, and add magnets for a pretty bookmark, wine journal accessory, or gift.\n\n✦ WHAT YOU GET\n• 5 separate PNG files (Designs 01–05 of the 20-design Virgie Wine Bookmark collection)\n• Each file: 1200 x 3600 px, 600 PPI, 2 x 6 inches flat / 2 x 3 inches folded\n• Instant digital download, no physical item shipped\n\n✦ THE 5 DESIGNS\n1. Design 01 — sparkling blue mosaic backdrop, woman in an emerald velvet dress holding champagne\n2. Design 02 — soft cream botanical backdrop, woman in a gold satin wrap blouse sipping red wine\n3. Design 03 — pastel watercolor florals, woman in a crimson blazer holding a glass of red wine\n4. Design 04 — woven rattan and warm neutrals, smiling woman with long braids in a yellow top raising a glass\n5. Design 05 — pink cherry blossoms, woman in a teal vest holding white wine\n\n✦ HOW TO USE\n• Print at 100% / Actual Size (do not use \"Fit to Page\")\n• Each bookmark prints flat at 2 x 6 inches and folds to 2 x 3 inches at the center bridge\n• Cut around the bookmark outline, fold at the center, and add small magnets to the inside ends to make a magnetic bookmark (magnets, paper, and printer are not included)\n• The upside-down quote on the back panel is intentional; it reads correctly once the bookmark is folded\n\n✦ FILE DETAILS\n• Format: PNG, RGB (sRGB color)\n• Size: 1200 x 3600 px per design (2 x 6 inches at 600 PPI)\n• The artwork is supplied on a solid black background outside the bookmark outline (no transparent background) — cut along the bookmark edge\n• Original artwork files; the ZIP packaging (if any) does not compress or change the images\n\n✦ INSTANT DIGITAL DOWNLOAD\nYour files are available to download from Etsy immediately after payment is confirmed. This is a DIGITAL PRODUCT: no physical bookmark, magnets, or printed item will be shipped, and nothing is sent to you manually.\n\n✦ AI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of my creative process, then hand-curated, cleaned up, and prepared for print.\n\n✦ USAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital files themselves is not permitted.\n\n✦ PLEASE NOTE\nPrinted colors can vary by monitor, printer, ink, and paper. Preview images carry a watermark; the files you download do not.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "cute-bookmarks",
+      "subcollection": "wine-magnetic-bookmarks",
+      "productType": "digital_download",
+      "tags": [
+        "magnetic_bookmark",
+        "printable_bookmark",
+        "bookmark_png",
+        "wine_bookmark",
+        "wine_lover_gift",
+        "wine_journal",
+        "wine_girl_art",
+        "digital_download",
+        "instant_download",
+        "bookmark_bundle",
+        "diy_bookmark",
+        "book_lover_gift",
+        "floral_bookmark"
+      ],
+      "price": {
+        "amountCents": 499,
+        "currency": "USD",
+        "display": "$4.99"
+      },
+      "images": [
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/b29f20/8549839082/il_fullxfull.8549839082_mb3b.jpg",
+          "alt": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 1, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/725223/8549839132/il_fullxfull.8549839132_5gvx.jpg",
+          "alt": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 1, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/3303ec/8597713465/il_fullxfull.8597713465_me7l.jpg",
+          "alt": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 1, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/cdcb67/8597713513/il_fullxfull.8597713513_lyot.jpg",
+          "alt": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 1, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/112ddd/8549839252/il_fullxfull.8549839252_t4i7.jpg",
+          "alt": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 1, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/f391fa/8597713615/il_fullxfull.8597713615_dbtq.jpg",
+          "alt": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 1, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        }
+      ],
+      "featured": false,
+      "buyUrl": null,
+      "updatedAt": "2026-09-21T12:00:00Z"
+    },
+    {
+      "id": "prod-do-bkm-0004",
+      "sku": "DO-BKM-0004",
+      "title": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 2, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download",
+      "slug": "wine-girl-magnetic-bookmark-printable-bundle-vol-2-5-designs-2x6-inch-png-wine-l",
+      "url": "/product/wine-girl-magnetic-bookmark-printable-bundle-vol-2-5-designs-2x6-inch-png-wine-l/",
+      "description": "A set of 5 wine-lover magnetic bookmark designs, ready to print at home or at a print shop: stylish women enjoying a glass of wine, each with a wine-themed journaling quote on the back panel. Print, cut, fold, and add magnets for a pretty bookmark, wine journal accessory, or gift.\n\n✦ WHAT YOU GET\n• 5 separate PNG files (Designs 06–10 of the 20-design Virgie Wine Bookmark collection)\n• Each file: 1200 x 3600 px, 600 PPI, 2 x 6 inches flat / 2 x 3 inches folded\n• Instant digital download, no physical item shipped\n\n✦ THE 5 DESIGNS\n1. Design 06 — rainbow watercolor blooms, curly-haired woman in a teal wrap dress sipping red wine\n2. Design 07 — warm bokeh restaurant lights, woman with dark curls in an emerald off-shoulder dress\n3. Design 08 — black and gold marble, woman in a pink satin blouse with a glass of wine\n4. Design 09 — fiery orange sunset sky, woman in a maroon embroidered outfit sipping red wine\n5. Design 10 — golden light rays, woman in a royal blue one-shoulder top holding champagne\n\n✦ HOW TO USE\n• Print at 100% / Actual Size (do not use \"Fit to Page\")\n• Each bookmark prints flat at 2 x 6 inches and folds to 2 x 3 inches at the center bridge\n• Cut around the bookmark outline, fold at the center, and add small magnets to the inside ends to make a magnetic bookmark (magnets, paper, and printer are not included)\n• The upside-down quote on the back panel is intentional; it reads correctly once the bookmark is folded\n\n✦ FILE DETAILS\n• Format: PNG, RGB (sRGB color)\n• Size: 1200 x 3600 px per design (2 x 6 inches at 600 PPI)\n• The artwork is supplied on a solid black background outside the bookmark outline (no transparent background) — cut along the bookmark edge\n• Original artwork files; the ZIP packaging (if any) does not compress or change the images\n\n✦ INSTANT DIGITAL DOWNLOAD\nYour files are available to download from Etsy immediately after payment is confirmed. This is a DIGITAL PRODUCT: no physical bookmark, magnets, or printed item will be shipped, and nothing is sent to you manually.\n\n✦ AI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of my creative process, then hand-curated, cleaned up, and prepared for print.\n\n✦ USAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital files themselves is not permitted.\n\n✦ PLEASE NOTE\nPrinted colors can vary by monitor, printer, ink, and paper. Preview images carry a watermark; the files you download do not.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "cute-bookmarks",
+      "subcollection": "wine-magnetic-bookmarks",
+      "productType": "digital_download",
+      "tags": [
+        "magnetic_bookmark",
+        "printable_bookmark",
+        "bookmark_png",
+        "wine_bookmark",
+        "wine_lover_gift",
+        "wine_journal",
+        "wine_girl_art",
+        "digital_download",
+        "instant_download",
+        "bookmark_bundle",
+        "diy_bookmark",
+        "book_lover_gift",
+        "black_gold_marble"
+      ],
+      "price": {
+        "amountCents": 499,
+        "currency": "USD",
+        "display": "$4.99"
+      },
+      "images": [
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/b3a4f5/8597714629/il_fullxfull.8597714629_kcp5.jpg",
+          "alt": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 2, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/c001a0/8597714675/il_fullxfull.8597714675_spca.jpg",
+          "alt": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 2, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/5d1352/8597714743/il_fullxfull.8597714743_9v1o.jpg",
+          "alt": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 2, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/f1a478/8549840434/il_fullxfull.8549840434_p3wh.jpg",
+          "alt": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 2, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/52edfb/8549840488/il_fullxfull.8549840488_4dak.jpg",
+          "alt": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 2, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/f58c84/8549840536/il_fullxfull.8549840536_eff2.jpg",
+          "alt": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 2, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        }
+      ],
+      "featured": false,
+      "buyUrl": null,
+      "updatedAt": "2026-09-21T12:00:00Z"
+    },
+    {
+      "id": "prod-do-bkm-0003",
+      "sku": "DO-BKM-0003",
+      "title": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 3, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download",
+      "slug": "wine-girl-magnetic-bookmark-printable-bundle-vol-3-5-designs-2x6-inch-png-wine-l",
+      "url": "/product/wine-girl-magnetic-bookmark-printable-bundle-vol-3-5-designs-2x6-inch-png-wine-l/",
+      "description": "A set of 5 wine-lover magnetic bookmark designs, ready to print at home or at a print shop: stylish women enjoying a glass of wine, each with a wine-themed journaling quote on the back panel. Print, cut, fold, and add magnets for a pretty bookmark, wine journal accessory, or gift.\n\n✦ WHAT YOU GET\n• 5 separate PNG files (Designs 11–15 of the 20-design Virgie Wine Bookmark collection)\n• Each file: 1200 x 3600 px, 600 PPI, 2 x 6 inches flat / 2 x 3 inches folded\n• Instant digital download, no physical item shipped\n\n✦ THE 5 DESIGNS\n1. Design 11 — burgundy glitter, woman in a coral off-shoulder blouse with white wine\n2. Design 12 — purple sunset sky, red-haired woman in a black turtleneck with a glass of white wine\n3. Design 13 — deep green backdrop with soft leaf shadows, woman in a green satin wrap blouse\n4. Design 14 — city skyline at dusk, woman in a maroon high-collar top sipping red wine\n5. Design 15 — bold tropical hibiscus florals, woman in a white halter top with a glass of wine\n\n✦ HOW TO USE\n• Print at 100% / Actual Size (do not use \"Fit to Page\")\n• Each bookmark prints flat at 2 x 6 inches and folds to 2 x 3 inches at the center bridge\n• Cut around the bookmark outline, fold at the center, and add small magnets to the inside ends to make a magnetic bookmark (magnets, paper, and printer are not included)\n• The upside-down quote on the back panel is intentional; it reads correctly once the bookmark is folded\n\n✦ FILE DETAILS\n• Format: PNG, RGB (sRGB color)\n• Size: 1200 x 3600 px per design (2 x 6 inches at 600 PPI)\n• The artwork is supplied on a solid black background outside the bookmark outline (no transparent background) — cut along the bookmark edge\n• Original artwork files; the ZIP packaging (if any) does not compress or change the images\n\n✦ INSTANT DIGITAL DOWNLOAD\nYour files are available to download from Etsy immediately after payment is confirmed. This is a DIGITAL PRODUCT: no physical bookmark, magnets, or printed item will be shipped, and nothing is sent to you manually.\n\n✦ AI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of my creative process, then hand-curated, cleaned up, and prepared for print.\n\n✦ USAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital files themselves is not permitted.\n\n✦ PLEASE NOTE\nPrinted colors can vary by monitor, printer, ink, and paper. Preview images carry a watermark; the files you download do not.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "cute-bookmarks",
+      "subcollection": "wine-magnetic-bookmarks",
+      "productType": "digital_download",
+      "tags": [
+        "magnetic_bookmark",
+        "printable_bookmark",
+        "bookmark_png",
+        "wine_bookmark",
+        "wine_lover_gift",
+        "wine_journal",
+        "wine_girl_art",
+        "digital_download",
+        "instant_download",
+        "bookmark_bundle",
+        "diy_bookmark",
+        "book_lover_gift",
+        "tropical_floral_art"
+      ],
+      "price": {
+        "amountCents": 499,
+        "currency": "USD",
+        "display": "$4.99"
+      },
+      "images": [
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/91a1e8/8597715979/il_fullxfull.8597715979_cviz.jpg",
+          "alt": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 3, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/2c0477/8549841626/il_fullxfull.8549841626_gh9m.jpg",
+          "alt": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 3, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/b14d2c/8597716103/il_fullxfull.8597716103_q78t.jpg",
+          "alt": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 3, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/697899/8597716145/il_fullxfull.8597716145_mu5u.jpg",
+          "alt": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 3, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/561a6c/8597716203/il_fullxfull.8597716203_62pq.jpg",
+          "alt": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 3, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/e8c858/8597716285/il_fullxfull.8597716285_5ra9.jpg",
+          "alt": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 3, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        }
+      ],
+      "featured": false,
+      "buyUrl": null,
+      "updatedAt": "2026-09-21T12:00:00Z"
+    },
+    {
+      "id": "prod-do-bkm-0002",
+      "sku": "DO-BKM-0002",
+      "title": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 4, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download",
+      "slug": "wine-girl-magnetic-bookmark-printable-bundle-vol-4-5-designs-2x6-inch-png-wine-l",
+      "url": "/product/wine-girl-magnetic-bookmark-printable-bundle-vol-4-5-designs-2x6-inch-png-wine-l/",
+      "description": "A set of 5 wine-lover magnetic bookmark designs, ready to print at home or at a print shop: stylish women enjoying a glass of wine, each with a wine-themed journaling quote on the back panel. Print, cut, fold, and add magnets for a pretty bookmark, wine journal accessory, or gift.\n\n✦ WHAT YOU GET\n• 5 separate PNG files (Designs 16–20 of the 20-design Virgie Wine Bookmark collection)\n• Each file: 1200 x 3600 px, 600 PPI, 2 x 6 inches flat / 2 x 3 inches folded\n• Instant digital download, no physical item shipped\n\n✦ THE 5 DESIGNS\n1. Design 16 — floral border on a soft sky backdrop, woman in a navy satin blouse with rose wine\n2. Design 17 — ornate archway at night, woman in a coral off-shoulder top holding white wine\n3. Design 18 — white and gold marble, blonde short-haired woman in a purple blazer sipping white wine\n4. Design 19 — navy backdrop with beams of light, silver-haired woman in red glasses and a blue satin blouse\n5. Design 20 — glass dome architecture and water droplets, woman in a plum blazer with red wine\n\n✦ HOW TO USE\n• Print at 100% / Actual Size (do not use \"Fit to Page\")\n• Each bookmark prints flat at 2 x 6 inches and folds to 2 x 3 inches at the center bridge\n• Cut around the bookmark outline, fold at the center, and add small magnets to the inside ends to make a magnetic bookmark (magnets, paper, and printer are not included)\n• The upside-down quote on the back panel is intentional; it reads correctly once the bookmark is folded\n\n✦ FILE DETAILS\n• Format: PNG, RGB (sRGB color)\n• Size: 1200 x 3600 px per design (2 x 6 inches at 600 PPI)\n• The artwork is supplied on a solid black (white on Design 16) background outside the bookmark outline (no transparent background) — cut along the bookmark edge\n• Original artwork files; the ZIP packaging (if any) does not compress or change the images\n\n✦ INSTANT DIGITAL DOWNLOAD\nYour files are available to download from Etsy immediately after payment is confirmed. This is a DIGITAL PRODUCT: no physical bookmark, magnets, or printed item will be shipped, and nothing is sent to you manually.\n\n✦ AI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of my creative process, then hand-curated, cleaned up, and prepared for print.\n\n✦ USAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital files themselves is not permitted.\n\n✦ PLEASE NOTE\nPrinted colors can vary by monitor, printer, ink, and paper. Preview images carry a watermark; the files you download do not.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "cute-bookmarks",
+      "subcollection": "wine-magnetic-bookmarks",
+      "productType": "digital_download",
+      "tags": [
+        "magnetic_bookmark",
+        "printable_bookmark",
+        "bookmark_png",
+        "wine_bookmark",
+        "wine_lover_gift",
+        "wine_journal",
+        "wine_girl_art",
+        "digital_download",
+        "instant_download",
+        "bookmark_bundle",
+        "diy_bookmark",
+        "book_lover_gift",
+        "white_gold_marble"
+      ],
+      "price": {
+        "amountCents": 499,
+        "currency": "USD",
+        "display": "$4.99"
+      },
+      "images": [
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/76549e/8549842780/il_fullxfull.8549842780_8enw.jpg",
+          "alt": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 4, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/b89771/8597717237/il_fullxfull.8597717237_ggc2.jpg",
+          "alt": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 4, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/716137/8597717291/il_fullxfull.8597717291_kykc.jpg",
+          "alt": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 4, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/a0a3cb/8597717341/il_fullxfull.8597717341_4vlt.jpg",
+          "alt": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 4, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/e1c414/8549842966/il_fullxfull.8549842966_gkwy.jpg",
+          "alt": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 4, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/a7a353/8549843006/il_fullxfull.8549843006_rwyz.jpg",
+          "alt": "Wine Girl Magnetic Bookmark Printable Bundle Vol. 4, 5 Designs, 2x6 Inch PNG, Wine Lover Gift, Digital Download"
+        }
+      ],
+      "featured": false,
+      "buyUrl": null,
+      "updatedAt": "2026-09-21T12:00:00Z"
+    },
+    {
+      "id": "prod-do-wne-0001",
+      "sku": "DO-WNE-0001",
+      "title": "Wine Tasting Journal PDF Template 8.5\" x 11\"",
+      "slug": "wine-tasting-journal-pdf-template-8-5-x-11",
+      "url": "/product/wine-tasting-journal-pdf-template-8-5-x-11/",
+      "description": "Elevate your wine experience.\n\nThis professionally designed 20-page Wine Tasting Journal blends beauty and function — helping you taste intentionally, record details like a sommelier, and create a keepsake you’ll treasure.",
+      "collection": "wine-hill-country",
+      "subcollection": "wine-journals",
+      "productType": "digital_download",
+      "tags": [
+        "Wine_Tasting_Notes",
+        "Wine_Tasting_Record",
+        "Template",
+        "Journal_Template",
+        "wine_journal",
+        "wine_lover_gift",
+        "Fredericksburg_TX",
+        "Texas_wine_tour",
+        "wine_tasting_book",
+        "winery_trip_planner",
+        "wine_gift_for_her",
+        "bachelorette_wine",
+        "wine_tour_journal"
+      ],
+      "price": {
+        "amountCents": 599,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "images": [
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/63e047/7736640971/il_fullxfull.7736640971_hy9i.jpg",
+          "alt": "Wine Tasting Journal PDF Template 8.5\" x 11\""
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/760215/7736640229/il_fullxfull.7736640229_9nfj.jpg",
+          "alt": "Wine Tasting Journal PDF Template 8.5\" x 11\""
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/dd5109/7736640455/il_fullxfull.7736640455_7zwg.jpg",
+          "alt": "Wine Tasting Journal PDF Template 8.5\" x 11\""
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/014adf/7688696916/il_fullxfull.7688696916_c3y0.jpg",
+          "alt": "Wine Tasting Journal PDF Template 8.5\" x 11\""
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/6c0aa3/7696214952/il_fullxfull.7696214952_9j9t.jpg",
+          "alt": "Wine Tasting Journal PDF Template 8.5\" x 11\""
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/5eee4f/7688962878/il_fullxfull.7688962878_h12o.jpg",
+          "alt": "Wine Tasting Journal PDF Template 8.5\" x 11\""
+        }
+      ],
+      "featured": false,
+      "buyUrl": null,
+      "updatedAt": "2026-09-21T12:00:00Z"
+    },
+    {
+      "id": "prod-do-wne-0002",
+      "sku": "DO-WNE-0002",
+      "title": "Wine Tasting Journal Template PDF 4\" x 9\"",
+      "slug": "wine-tasting-journal-template-pdf-4-x-9",
+      "url": "/product/wine-tasting-journal-template-pdf-4-x-9/",
+      "description": "Elevate your wine experience.\n\nThis professionally designed 21-page Wine Tasting Journal blends beauty and function — helping you taste intentionally, record details like a sommelier, and create a keepsake you’ll treasure.",
+      "collection": "wine-hill-country",
+      "subcollection": "wine-journals",
+      "productType": "digital_download",
+      "tags": [
+        "wine_tasting_notes",
+        "wine_tasting_record",
+        "Wine_Journal",
+        "Digital",
+        "Journal_Templates",
+        "Wine_Tasting_Journal",
+        "Template",
+        "Printable",
+        "PDF",
+        "downloadable",
+        "Design_and_Templates",
+        "4_x_9_inches"
+      ],
+      "price": {
+        "amountCents": 599,
+        "currency": "USD",
+        "display": "$5.99"
+      },
+      "images": [
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/5b15e7/7744225255/il_fullxfull.7744225255_gbk3.jpg",
+          "alt": "Wine Tasting Journal Template PDF 4\" x 9\""
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/c62b1f/7744216581/il_fullxfull.7744216581_g5kl.jpg",
+          "alt": "Wine Tasting Journal Template PDF 4\" x 9\""
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/f4e5bf/7696270574/il_fullxfull.7696270574_t4hc.jpg",
+          "alt": "Wine Tasting Journal Template PDF 4\" x 9\""
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/421e95/7696270576/il_fullxfull.7696270576_ej9p.jpg",
+          "alt": "Wine Tasting Journal Template PDF 4\" x 9\""
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/b1595f/7696270586/il_fullxfull.7696270586_f0v4.jpg",
+          "alt": "Wine Tasting Journal Template PDF 4\" x 9\""
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/04ee36/7696274636/il_fullxfull.7696274636_79iu.jpg",
+          "alt": "Wine Tasting Journal Template PDF 4\" x 9\""
+        }
+      ],
+      "featured": false,
+      "buyUrl": null,
+      "updatedAt": "2026-09-21T12:00:00Z"
+    },
+    {
+      "id": "prod-do-hal-0007",
+      "sku": "DO-HAL-0007",
+      "title": "Witchcraft Coaster PNG Bundle, Halloween Potion & Tarot Designs (Digital Download)",
+      "slug": "witchcraft-coaster-png-bundle-halloween-potion-and-tarot-designs-digital-downloa",
+      "url": "/product/witchcraft-coaster-png-bundle-halloween-potion-and-tarot-designs-digital-downloa/",
+      "description": "A spellbinding quartet for the witchy crowd: a shelf of glowing potion bottles with a sleepy black cat, three witches gathered around a bubbling cauldron, a lone witch silhouette flying her broom across a giant harvest moon, and a candlelit tarot table with a swirling crystal ball.\n\n✦ WHAT YOU GET\n• 4 separate high-resolution PNG files (2400 x 2400 px, 300 DPI)\n• Ready for sublimation coasters, UV DTF printing, tumblers, and more\n• Instant digital download — no physical item is shipped\n\n✦ DESIGN NOTES\nPurples, greens, and candlelight tie together potions, tarot, and broomstick flight into one cohesive witchcraft-themed set.\n\n✦ AI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of my creative process, then hand-curated, cleaned up, and prepared for print. This listing is a digital file only; no physical product is shipped.\n\n✦ USAGE\nFor personal use and small-batch commercial use on physical items you make and sell (coasters, tumblers, apparel, etc.). Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "halloween",
+      "subcollection": "coaster-bundles",
+      "productType": "digital_download",
+      "tags": [
+        "witch_coaster_png",
+        "witch_potion_art",
+        "tarot_card_png",
+        "cauldron_witches",
+        "flying_witch_png",
+        "coaster_sublimation",
+        "uv_printer_file",
+        "halloween_coaster",
+        "spooky_clipart",
+        "crystal_ball_art",
+        "digital_download",
+        "png_bundle",
+        "instant_download"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/8f5405/8592955895/il_fullxfull.8592955895_8xxt.jpg",
+          "alt": "Witchcraft Coaster PNG Bundle, Halloween Potion & Tarot Designs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/71e282/8545089384/il_fullxfull.8545089384_cwpa.jpg",
+          "alt": "Witchcraft Coaster PNG Bundle, Halloween Potion & Tarot Designs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/d46657/8592955937/il_fullxfull.8592955937_2uwa.jpg",
+          "alt": "Witchcraft Coaster PNG Bundle, Halloween Potion & Tarot Designs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/f1d09e/8545089390/il_fullxfull.8545089390_gj3t.jpg",
+          "alt": "Witchcraft Coaster PNG Bundle, Halloween Potion & Tarot Designs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/f0906c/8545089388/il_fullxfull.8545089388_cfan.jpg",
+          "alt": "Witchcraft Coaster PNG Bundle, Halloween Potion & Tarot Designs (Digital Download)"
+        }
+      ],
+      "featured": false,
+      "buyUrl": null,
+      "updatedAt": "2026-09-21T12:00:00Z"
+    },
+    {
+      "id": "prod-do-hal-0013",
+      "sku": "DO-HAL-0013",
+      "title": "Zombie Graveyard Carnival Coaster Bundle, 4 Halloween Horror PNGs (Digital Download)",
+      "slug": "zombie-graveyard-carnival-coaster-bundle-4-halloween-horror-pngs-digital-downloa",
+      "url": "/product/zombie-graveyard-carnival-coaster-bundle-4-halloween-horror-pngs-digital-downloa/",
+      "description": "A restless-dead quartet mixing classic graveyard horror with haunted carnival thrills: a decayed hand bursting up through the earth, a skeletal horse-drawn hearse rolling past the crypt, an abandoned moonlit carousel and Ferris wheel, and a scarecrow standing guard in the cornfield with a lit jack-o'-lantern at its feet.\n\n✦ WHAT YOU GET\n• 4 separate high-resolution PNG files (2400 x 2400 px, 300 DPI)\n• Ready for sublimation coasters, UV DTF printing, tumblers, and more\n• Instant digital download — no physical item is shipped\n\n✦ DESIGN NOTES\nFrom the graveyard to the fairground, this set pairs rising-dead horror with classic haunted-attraction imagery.\n\n✦ AI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of my creative process, then hand-curated, cleaned up, and prepared for print. This listing is a digital file only; no physical product is shipped.\n\n✦ USAGE\nFor personal use and small-batch commercial use on physical items you make and sell (coasters, tumblers, apparel, etc.). Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "halloween",
+      "subcollection": "coaster-bundles",
+      "productType": "digital_download",
+      "tags": [
+        "zombie_hand_png",
+        "haunted_carousel",
+        "hearse_graveyard",
+        "scarecrow_cornfield",
+        "haunted_carnival",
+        "coaster_sublimation",
+        "uv_printer_file",
+        "halloween_coaster",
+        "spooky_clipart",
+        "horror_night_art",
+        "digital_download",
+        "png_bundle",
+        "instant_download"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/de4a1c/8593028775/il_fullxfull.8593028775_nia6.jpg",
+          "alt": "Zombie Graveyard Carnival Coaster Bundle, 4 Halloween Horror PNGs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/965e27/8593028873/il_fullxfull.8593028873_rwyp.jpg",
+          "alt": "Zombie Graveyard Carnival Coaster Bundle, 4 Halloween Horror PNGs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/13ceca/8593028887/il_fullxfull.8593028887_7hjf.jpg",
+          "alt": "Zombie Graveyard Carnival Coaster Bundle, 4 Halloween Horror PNGs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/e5150b/8593028883/il_fullxfull.8593028883_m3u3.jpg",
+          "alt": "Zombie Graveyard Carnival Coaster Bundle, 4 Halloween Horror PNGs (Digital Download)"
+        },
+        {
+          "path": "https://i.etsystatic.com/64473522/r/il/84c63a/8545161514/il_fullxfull.8545161514_6mb0.jpg",
+          "alt": "Zombie Graveyard Carnival Coaster Bundle, 4 Halloween Horror PNGs (Digital Download)"
+        }
+      ],
+      "featured": false,
       "buyUrl": null,
       "updatedAt": "2026-09-21T12:00:00Z"
     }

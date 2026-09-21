@@ -35,6 +35,7 @@ const safeJsonLd = (value) =>
 
 const absoluteUrl = (pathOrUrl) => (/^https?:\/\//i.test(pathOrUrl) ? pathOrUrl : `${SITE_ORIGIN}${pathOrUrl}`);
 const assetUrl = (relativePath) => `/${relativePath}`;
+const imageUrl = (pathOrUrl) => (/^https?:\/\//i.test(pathOrUrl) ? pathOrUrl : assetUrl(pathOrUrl));
 const pluralPieces = (count) => (count === 1 ? "1 piece" : `${count} pieces`);
 
 const paragraphs = (text) =>
@@ -206,7 +207,7 @@ const productCard = (product) => {
   )}">
             <a class="shop-card-link" href="${escapeHtml(product.url)}">
               <div class="shop-card-art">
-                <img src="${escapeHtml(assetUrl(image.path))}" alt="${escapeHtml(image.alt)}" loading="lazy" decoding="async" />
+                <img src="${escapeHtml(imageUrl(image.path))}" alt="${escapeHtml(image.alt)}" loading="lazy" decoding="async" />
               </div>
               <div class="shop-card-body">
                 ${typeBadge(product.productType)}
@@ -323,9 +324,9 @@ const renderCollectionPage = (collection, catalog) => {
     { name: collection.name, path: collection.url },
   ];
   const other = catalog.collections.filter((entry) => entry.slug !== collection.slug);
+  const filters = products.length ? filterBar(products) : "";
   const content = products.length
-    ? `${filterBar(products)}
-      ${productGrid(products)}`
+    ? `${filters ? `${filters}\n      ` : ""}${productGrid(products)}`
     : `<div class="shop-empty">
         <h2>New pieces are on the way</h2>
         <p>We're preparing the ${escapeHtml(collection.name)} collection. Browse another collection, or tell us what you have in mind.</p>
@@ -341,7 +342,7 @@ const renderCollectionPage = (collection, catalog) => {
     canonicalPath: collection.url,
     noindex: products.length === 0,
     activeNav: "shop",
-    ogImage: products.length ? assetUrl(products[0].images[0].path) : undefined,
+    ogImage: products.length ? imageUrl(products[0].images[0].path) : undefined,
     ogImageAlt: products.length ? products[0].images[0].alt : undefined,
     jsonLd: [breadcrumbJsonLd(crumbs)],
     body: `    <section class="shop-hero">
@@ -379,7 +380,7 @@ const renderProductPage = (product, collection, catalog) => {
   const gallery = product.images
     .map(
       (image, index) => `<figure class="product-figure${index === 0 ? " is-primary" : ""}">
-              <img src="${escapeHtml(assetUrl(image.path))}" alt="${escapeHtml(image.alt)}"${index === 0 ? "" : ' loading="lazy"'} decoding="async" />
+              <img src="${escapeHtml(imageUrl(image.path))}" alt="${escapeHtml(image.alt)}"${index === 0 ? "" : ' loading="lazy"'} decoding="async" />
             </figure>`
     )
     .join("\n            ");
@@ -404,7 +405,7 @@ const renderProductPage = (product, collection, catalog) => {
     description: product.description,
     sku: product.sku,
     url: absoluteUrl(product.url),
-    image: product.images.map((image) => absoluteUrl(assetUrl(image.path))),
+    image: product.images.map((image) => absoluteUrl(imageUrl(image.path))),
     brand: { "@type": "Brand", name: SITE_NAME },
   };
 
@@ -428,7 +429,7 @@ const renderProductPage = (product, collection, catalog) => {
     title: product.title,
     description: product.description.replace(/\s+/g, " ").trim().slice(0, 200),
     canonicalPath: product.url,
-    ogImage: assetUrl(firstImage.path),
+    ogImage: imageUrl(firstImage.path),
     ogImageAlt: firstImage.alt,
     activeNav: "shop",
     jsonLd: [productJsonLd, breadcrumbJsonLd(crumbs)],
