@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": "prod-do-chr-0009",
+  "sku": "DO-CHR-0009",
+  "title": "Christmas PNG Bundle Vol. 09, Set of 4 Festive Winter Designs, Printable Digital Art, Instant Download",
+  "slug": "christmas-set-09",
+  "description": "Christmas Set 09 includes four unique high-resolution holiday and winter PNG designs from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 4 clean, unwatermarked PNG designs\n- sRGB production color with 600 PPI metadata\n- 44 square designs are 2400 x 2400 px; 5 landscape designs are 3200 x 2400 px.\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; downloaded customer files are clean and unwatermarked.\n\nAI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+  "collection": "christmas",
+  "subcollection": "digital-art",
+  "productType": "digital_download",
+  "tags": [
+    "christmas png",
+    "winter png bundle",
+    "holiday clipart",
+    "printable christmas",
+    "festive digital art",
+    "christmas download",
+    "instant download",
+    "png bundle",
+    "sublimation png",
+    "craft supply",
+    "holiday printable",
+    "winter scene png",
+    "christmas set 09"
+  ],
+  "price": {
+    "amountCents": 399,
+    "currency": "USD"
+  },
+  "images": [
+    {
+      "path": "assets/products/DO-CHR-0009/01_cover.jpg",
+      "alt": "Christmas Set 09 cover"
+    },
+    {
+      "path": "assets/products/DO-CHR-0009/02_preview.jpg",
+      "alt": "Christmas Set 09 watermarked preview 1"
+    },
+    {
+      "path": "assets/products/DO-CHR-0009/03_preview.jpg",
+      "alt": "Christmas Set 09 watermarked preview 2"
+    },
+    {
+      "path": "assets/products/DO-CHR-0009/04_preview.jpg",
+      "alt": "Christmas Set 09 watermarked preview 3"
+    },
+    {
+      "path": "assets/products/DO-CHR-0009/05_preview.jpg",
+      "alt": "Christmas Set 09 watermarked preview 4"
+    }
+  ],
+  "digitalFiles": [
+    {
+      "ref": "adrian:etsy/christmas/set_09/christmas_source_masters_20260924_CHR_MASTER_033.png",
+      "label": "christmas_source_masters_20260924_CHR_MASTER_033.png",
+      "kind": "png"
+    },
+    {
+      "ref": "adrian:etsy/christmas/set_09/christmas_source_masters_20260924_CHR_MASTER_034.png",
+      "label": "christmas_source_masters_20260924_CHR_MASTER_034.png",
+      "kind": "png"
+    },
+    {
+      "ref": "adrian:etsy/christmas/set_09/christmas_source_masters_20260924_CHR_MASTER_035.png",
+      "label": "christmas_source_masters_20260924_CHR_MASTER_035.png",
+      "kind": "png"
+    },
+    {
+      "ref": "adrian:etsy/christmas/set_09/christmas_source_masters_20260924_CHR_MASTER_036.png",
+      "label": "christmas_source_masters_20260924_CHR_MASTER_036.png",
+      "kind": "png"
+    }
+  ],
+  "etsy": {
+    "listingId": 4582164851,
+    "url": "https://www.etsy.com/listing/4582164851/christmas-png-bundle-vol-09-set-of-4",
+    "state": "active",
+    "syncedAt": "2026-09-25T02:29:16.953Z"
+  },
+  "siteState": "published",
+  "featured": false,
+  "createdAt": "2026-09-25T01:17:24.912Z",
+  "updatedAt": "2026-09-25T02:29:16.953Z",
+  "notes": "Approved for the Dragon Oak Studio Christmas production deployment.",
+  "provenance": "Approved ADRIAN Christmas masters; deterministic mapping 33-36."
+}

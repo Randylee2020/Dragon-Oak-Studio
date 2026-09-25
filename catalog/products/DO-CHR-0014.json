@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "id": "prod-do-chr-0014",
+  "sku": "DO-CHR-0014",
+  "title": "Complete Christmas PNG Bundle, 49 Festive Winter Designs, Printable Digital Art Collection",
+  "slug": "christmas-master-bundle",
+  "description": "The complete Dragon Oak Studio Christmas collection contains all 49 unique approved holiday and winter PNG designs.\n\nWHAT YOU GET\n- 49 clean, unwatermarked PNG designs\n- sRGB production color with 600 PPI metadata\n- 44 square designs are 2400 x 2400 px; 5 landscape designs are 3200 x 2400 px.\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; downloaded customer files are clean and unwatermarked.\n\nAI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+  "collection": "christmas",
+  "subcollection": "digital-art",
+  "productType": "digital_download",
+  "tags": [
+    "christmas png",
+    "winter png bundle",
+    "holiday clipart",
+    "printable christmas",
+    "festive digital art",
+    "christmas download",
+    "instant download",
+    "png bundle",
+    "sublimation png",
+    "craft supply",
+    "holiday printable",
+    "winter scene png",
+    "49 design bundle"
+  ],
+  "price": {
+    "amountCents": 2499,
+    "currency": "USD"
+  },
+  "images": [
+    {
+      "path": "assets/products/DO-CHR-0014/01_cover.jpg",
+      "alt": "Christmas Master Bundle cover"
+    },
+    {
+      "path": "assets/products/DO-CHR-0014/02_preview.jpg",
+      "alt": "Christmas Master Bundle watermarked preview 1"
+    },
+    {
+      "path": "assets/products/DO-CHR-0014/03_preview.jpg",
+      "alt": "Christmas Master Bundle watermarked preview 2"
+    },
+    {
+      "path": "assets/products/DO-CHR-0014/04_preview.jpg",
+      "alt": "Christmas Master Bundle watermarked preview 3"
+    },
+    {
+      "path": "assets/products/DO-CHR-0014/05_preview.jpg",
+      "alt": "Christmas Master Bundle watermarked preview 4"
+    }
+  ],
+  "digitalFiles": [
+    {
+      "ref": "adrian:etsy/christmas/master_49/Dragon_Oak_Christmas_49_Part_01_of_27.zip",
+      "label": "Dragon_Oak_Christmas_49_Part_01_of_27.zip",
+      "kind": "zip"
+    },
+    {
+      "ref": "adrian:etsy/christmas/master_49/Dragon_Oak_Christmas_49_Part_02_of_27.zip",
+      "label": "Dragon_Oak_Christmas_49_Part_02_of_27.zip",
+      "kind": "zip"
+    },
+    {
+      "ref": "adrian:etsy/christmas/master_49/Dragon_Oak_Christmas_49_Part_03_of_27.zip",
+      "label": "Dragon_Oak_Christmas_49_Part_03_of_27.zip",
+      "kind": "zip"
+    },
+    {
+      "ref": "adrian:etsy/christmas/master_49/Dragon_Oak_Christmas_49_Part_04_of_27.zip",
+      "label": "Dragon_Oak_Christmas_49_Part_04_of_27.zip",
+      "kind": "zip"
+    },
+    {
+      "ref": "adrian:etsy/christmas/master_49/Dragon_Oak_Christmas_49_Part_05_of_27.zip",
+      "label": "Dragon_Oak_Christmas_49_Part_05_of_27.zip",
+      "kind": "zip"
+    },
+    {
+      "ref": "adrian:etsy/christmas/master_49/Dragon_Oak_Christmas_49_Part_06_of_27.zip",
+      "label": "Dragon_Oak_Christmas_49_Part_06_of_27.zip",
+      "kind": "zip"
+    },
+    {
+      "ref": "adrian:etsy/christmas/master_49/Dragon_Oak_Christmas_49_Part_07_of_27.zip",
+      "label": "Dragon_Oak_Christmas_49_Part_07_of_27.zip",
+      "kind": "zip"
+    },
+    {
+      "ref": "adrian:etsy/christmas/master_49/Dragon_Oak_Christmas_49_Part_08_of_27.zip",
+      "label": "Dragon_Oak_Christmas_49_Part_08_of_27.zip",
+      "kind": "zip"
+    },
+    {
+      "ref": "adrian:etsy/christmas/master_49/Dragon_Oak_Christmas_49_Part_09_of_27.zip",
+      "label": "Dragon_Oak_Christmas_49_Part_09_of_27.zip",
+      "kind": "zip"
+    },
+    {
+      "ref": "adrian:etsy/christmas/master_49/Dragon_Oak_Christmas_49_Part_10_of_27.zip",
+      "label": "Dragon_Oak_Christmas_49_Part_10_of_27.zip",
+      "kind": "zip"
+    },
+    {
+      "ref": "adrian:etsy/christmas/master_49/Dragon_Oak_Christmas_49_Part_11_of_27.zip",
+      "label": "Dragon_Oak_Christmas_49_Part_11_of_27.zip",
+      "kind": "zip"
+    },
+    {
+      "ref": "adrian:etsy/christmas/master_49/Dragon_Oak_Christmas_49_Part_12_of_27.zip",
+      "label": "Dragon_Oak_Christmas_49_Part_12_of_27.zip",
+      "kind": "zip"
+    },
+    {
+      "ref": "adrian:etsy/christmas/master_49/Dragon_Oak_Christmas_49_Part_13_of_27.zip",
+      "label": "Dragon_Oak_Christmas_49_Part_13_of_27.zip",
+      "kind": "zip"
+    },
+    {
+      "ref": "adrian:etsy/christmas/master_49/Dragon_Oak_Christmas_49_Part_14_of_27.zip",
+      "label": "Dragon_Oak_Christmas_49_Part_14_of_27.zip",
+      "kind": "zip"
+    },
+    {
+      "ref": "adrian:etsy/christmas/master_49/Dragon_Oak_Christmas_49_Part_15_of_27.zip",
+      "label": "Dragon_Oak_Christmas_49_Part_15_of_27.zip",
+      "kind": "zip"
+    },
+    {
+      "ref": "adrian:etsy/christmas/master_49/Dragon_Oak_Christmas_49_Part_16_of_27.zip",
+      "label": "Dragon_Oak_Christmas_49_Part_16_of_27.zip",
+      "kind": "zip"
+    },
+    {
+      "ref": "adrian:etsy/christmas/master_49/Dragon_Oak_Christmas_49_Part_17_of_27.zip",
+      "label": "Dragon_Oak_Christmas_49_Part_17_of_27.zip",
+      "kind": "zip"
+    },
+    {
+      "ref": "adrian:etsy/christmas/master_49/Dragon_Oak_Christmas_49_Part_18_of_27.zip",
+      "label": "Dragon_Oak_Christmas_49_Part_18_of_27.zip",
+      "kind": "zip"
+    },
+    {
+      "ref": "adrian:etsy/christmas/master_49/Dragon_Oak_Christmas_49_Part_19_of_27.zip",
+      "label": "Dragon_Oak_Christmas_49_Part_19_of_27.zip",
+      "kind": "zip"
+    },
+    {
+      "ref": "adrian:etsy/christmas/master_49/Dragon_Oak_Christmas_49_Part_20_of_27.zip",
+      "label": "Dragon_Oak_Christmas_49_Part_20_of_27.zip",
+      "kind": "zip"
+    },
+    {
+      "ref": "adrian:etsy/christmas/master_49/Dragon_Oak_Christmas_49_Part_21_of_27.zip",
+      "label": "Dragon_Oak_Christmas_49_Part_21_of_27.zip",
+      "kind": "zip"
+    },
+    {
+      "ref": "adrian:etsy/christmas/master_49/Dragon_Oak_Christmas_49_Part_22_of_27.zip",
+      "label": "Dragon_Oak_Christmas_49_Part_22_of_27.zip",
+      "kind": "zip"
+    },
+    {
+      "ref": "adrian:etsy/christmas/master_49/Dragon_Oak_Christmas_49_Part_23_of_27.zip",
+      "label": "Dragon_Oak_Christmas_49_Part_23_of_27.zip",
+      "kind": "zip"
+    },
+    {
+      "ref": "adrian:etsy/christmas/master_49/Dragon_Oak_Christmas_49_Part_24_of_27.zip",
+      "label": "Dragon_Oak_Christmas_49_Part_24_of_27.zip",
+      "kind": "zip"
+    },
+    {
+      "ref": "adrian:etsy/christmas/master_49/Dragon_Oak_Christmas_49_Part_25_of_27.zip",
+      "label": "Dragon_Oak_Christmas_49_Part_25_of_27.zip",
+      "kind": "zip"
+    },
+    {
+      "ref": "adrian:etsy/christmas/master_49/Dragon_Oak_Christmas_49_Part_26_of_27.zip",
+      "label": "Dragon_Oak_Christmas_49_Part_26_of_27.zip",
+      "kind": "zip"
+    },
+    {
+      "ref": "adrian:etsy/christmas/master_49/Dragon_Oak_Christmas_49_Part_27_of_27.zip",
+      "label": "Dragon_Oak_Christmas_49_Part_27_of_27.zip",
+      "kind": "zip"
+    }
+  ],
+  "etsy": {
+    "listingId": null,
+    "url": null,
+    "state": "not_listed",
+    "syncedAt": null
+  },
+  "siteState": "published",
+  "featured": false,
+  "createdAt": "2026-09-25T01:17:24.912Z",
+  "updatedAt": "2026-09-25T02:29:16.953Z",
+  "notes": "Available on Dragon Oak Studio; Etsy excluded because the 49-design package exceeds Etsy's five-file limit.",
+  "provenance": "Approved ADRIAN Christmas masters; deterministic mapping 01-49."
+}

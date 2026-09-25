@@ -15,7 +15,7 @@
       "tagline": "Festive designs for the holidays.",
       "description": "Christmas pieces from Dragon Oak Studio: original holiday designs as printable digital downloads and finished physical products.",
       "url": "/shop/christmas/",
-      "count": 0
+      "count": 62
     },
     {
       "slug": "cute-bookmarks",
@@ -68,6 +68,2890 @@
       "featured": true,
       "buyUrl": null,
       "updatedAt": "2026-09-21T12:00:00Z"
+    },
+    {
+      "id": "prod-do-chr-0001",
+      "sku": "DO-CHR-0001",
+      "title": "Christmas PNG Bundle Vol. 01, Set of 4 Festive Winter Designs, Printable Digital Art, Instant Download",
+      "slug": "christmas-set-01",
+      "url": "/product/christmas-set-01/",
+      "description": "Christmas Set 01 includes four unique high-resolution holiday and winter PNG designs from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 4 clean, unwatermarked PNG designs\n- sRGB production color with 600 PPI metadata\n- 44 square designs are 2400 x 2400 px; 5 landscape designs are 3200 x 2400 px.\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; downloaded customer files are clean and unwatermarked.\n\nAI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png bundle",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "png bundle",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas set 01"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0001/01_cover.jpg",
+          "alt": "Christmas Set 01 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0001/02_preview.jpg",
+          "alt": "Christmas Set 01 watermarked preview 1"
+        },
+        {
+          "path": "assets/products/DO-CHR-0001/03_preview.jpg",
+          "alt": "Christmas Set 01 watermarked preview 2"
+        },
+        {
+          "path": "assets/products/DO-CHR-0001/04_preview.jpg",
+          "alt": "Christmas Set 01 watermarked preview 3"
+        },
+        {
+          "path": "assets/products/DO-CHR-0001/05_preview.jpg",
+          "alt": "Christmas Set 01 watermarked preview 4"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582163011/christmas-png-bundle-vol-01-set-of-4",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0002",
+      "sku": "DO-CHR-0002",
+      "title": "Christmas PNG Bundle Vol. 02, Set of 4 Festive Winter Designs, Printable Digital Art, Instant Download",
+      "slug": "christmas-set-02",
+      "url": "/product/christmas-set-02/",
+      "description": "Christmas Set 02 includes four unique high-resolution holiday and winter PNG designs from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 4 clean, unwatermarked PNG designs\n- sRGB production color with 600 PPI metadata\n- 44 square designs are 2400 x 2400 px; 5 landscape designs are 3200 x 2400 px.\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; downloaded customer files are clean and unwatermarked.\n\nAI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png bundle",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "png bundle",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas set 02"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0002/01_cover.jpg",
+          "alt": "Christmas Set 02 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0002/02_preview.jpg",
+          "alt": "Christmas Set 02 watermarked preview 1"
+        },
+        {
+          "path": "assets/products/DO-CHR-0002/03_preview.jpg",
+          "alt": "Christmas Set 02 watermarked preview 2"
+        },
+        {
+          "path": "assets/products/DO-CHR-0002/04_preview.jpg",
+          "alt": "Christmas Set 02 watermarked preview 3"
+        },
+        {
+          "path": "assets/products/DO-CHR-0002/05_preview.jpg",
+          "alt": "Christmas Set 02 watermarked preview 4"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582175476/christmas-png-bundle-vol-02-set-of-4",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0003",
+      "sku": "DO-CHR-0003",
+      "title": "Christmas PNG Bundle Vol. 03, Set of 4 Festive Winter Designs, Printable Digital Art, Instant Download",
+      "slug": "christmas-set-03",
+      "url": "/product/christmas-set-03/",
+      "description": "Christmas Set 03 includes four unique high-resolution holiday and winter PNG designs from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 4 clean, unwatermarked PNG designs\n- sRGB production color with 600 PPI metadata\n- 44 square designs are 2400 x 2400 px; 5 landscape designs are 3200 x 2400 px.\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; downloaded customer files are clean and unwatermarked.\n\nAI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png bundle",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "png bundle",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas set 03"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0003/01_cover.jpg",
+          "alt": "Christmas Set 03 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0003/02_preview.jpg",
+          "alt": "Christmas Set 03 watermarked preview 1"
+        },
+        {
+          "path": "assets/products/DO-CHR-0003/03_preview.jpg",
+          "alt": "Christmas Set 03 watermarked preview 2"
+        },
+        {
+          "path": "assets/products/DO-CHR-0003/04_preview.jpg",
+          "alt": "Christmas Set 03 watermarked preview 3"
+        },
+        {
+          "path": "assets/products/DO-CHR-0003/05_preview.jpg",
+          "alt": "Christmas Set 03 watermarked preview 4"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582163465/christmas-png-bundle-vol-03-set-of-4",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0004",
+      "sku": "DO-CHR-0004",
+      "title": "Christmas PNG Bundle Vol. 04, Set of 4 Festive Winter Designs, Printable Digital Art, Instant Download",
+      "slug": "christmas-set-04",
+      "url": "/product/christmas-set-04/",
+      "description": "Christmas Set 04 includes four unique high-resolution holiday and winter PNG designs from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 4 clean, unwatermarked PNG designs\n- sRGB production color with 600 PPI metadata\n- 44 square designs are 2400 x 2400 px; 5 landscape designs are 3200 x 2400 px.\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; downloaded customer files are clean and unwatermarked.\n\nAI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png bundle",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "png bundle",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas set 04"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0004/01_cover.jpg",
+          "alt": "Christmas Set 04 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0004/02_preview.jpg",
+          "alt": "Christmas Set 04 watermarked preview 1"
+        },
+        {
+          "path": "assets/products/DO-CHR-0004/03_preview.jpg",
+          "alt": "Christmas Set 04 watermarked preview 2"
+        },
+        {
+          "path": "assets/products/DO-CHR-0004/04_preview.jpg",
+          "alt": "Christmas Set 04 watermarked preview 3"
+        },
+        {
+          "path": "assets/products/DO-CHR-0004/05_preview.jpg",
+          "alt": "Christmas Set 04 watermarked preview 4"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582163657/christmas-png-bundle-vol-04-set-of-4",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0005",
+      "sku": "DO-CHR-0005",
+      "title": "Christmas PNG Bundle Vol. 05, Set of 4 Festive Winter Designs, Printable Digital Art, Instant Download",
+      "slug": "christmas-set-05",
+      "url": "/product/christmas-set-05/",
+      "description": "Christmas Set 05 includes four unique high-resolution holiday and winter PNG designs from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 4 clean, unwatermarked PNG designs\n- sRGB production color with 600 PPI metadata\n- 44 square designs are 2400 x 2400 px; 5 landscape designs are 3200 x 2400 px.\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; downloaded customer files are clean and unwatermarked.\n\nAI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png bundle",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "png bundle",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas set 05"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0005/01_cover.jpg",
+          "alt": "Christmas Set 05 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0005/02_preview.jpg",
+          "alt": "Christmas Set 05 watermarked preview 1"
+        },
+        {
+          "path": "assets/products/DO-CHR-0005/03_preview.jpg",
+          "alt": "Christmas Set 05 watermarked preview 2"
+        },
+        {
+          "path": "assets/products/DO-CHR-0005/04_preview.jpg",
+          "alt": "Christmas Set 05 watermarked preview 3"
+        },
+        {
+          "path": "assets/products/DO-CHR-0005/05_preview.jpg",
+          "alt": "Christmas Set 05 watermarked preview 4"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582176108/christmas-png-bundle-vol-05-set-of-4",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0006",
+      "sku": "DO-CHR-0006",
+      "title": "Christmas PNG Bundle Vol. 06, Set of 4 Festive Winter Designs, Printable Digital Art, Instant Download",
+      "slug": "christmas-set-06",
+      "url": "/product/christmas-set-06/",
+      "description": "Christmas Set 06 includes four unique high-resolution holiday and winter PNG designs from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 4 clean, unwatermarked PNG designs\n- sRGB production color with 600 PPI metadata\n- 44 square designs are 2400 x 2400 px; 5 landscape designs are 3200 x 2400 px.\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; downloaded customer files are clean and unwatermarked.\n\nAI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png bundle",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "png bundle",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas set 06"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0006/01_cover.jpg",
+          "alt": "Christmas Set 06 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0006/02_preview.jpg",
+          "alt": "Christmas Set 06 watermarked preview 1"
+        },
+        {
+          "path": "assets/products/DO-CHR-0006/03_preview.jpg",
+          "alt": "Christmas Set 06 watermarked preview 2"
+        },
+        {
+          "path": "assets/products/DO-CHR-0006/04_preview.jpg",
+          "alt": "Christmas Set 06 watermarked preview 3"
+        },
+        {
+          "path": "assets/products/DO-CHR-0006/05_preview.jpg",
+          "alt": "Christmas Set 06 watermarked preview 4"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582176352/christmas-png-bundle-vol-06-set-of-4",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0007",
+      "sku": "DO-CHR-0007",
+      "title": "Christmas PNG Bundle Vol. 07, Set of 4 Festive Winter Designs, Printable Digital Art, Instant Download",
+      "slug": "christmas-set-07",
+      "url": "/product/christmas-set-07/",
+      "description": "Christmas Set 07 includes four unique high-resolution holiday and winter PNG designs from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 4 clean, unwatermarked PNG designs\n- sRGB production color with 600 PPI metadata\n- 44 square designs are 2400 x 2400 px; 5 landscape designs are 3200 x 2400 px.\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; downloaded customer files are clean and unwatermarked.\n\nAI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png bundle",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "png bundle",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas set 07"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0007/01_cover.jpg",
+          "alt": "Christmas Set 07 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0007/02_preview.jpg",
+          "alt": "Christmas Set 07 watermarked preview 1"
+        },
+        {
+          "path": "assets/products/DO-CHR-0007/03_preview.jpg",
+          "alt": "Christmas Set 07 watermarked preview 2"
+        },
+        {
+          "path": "assets/products/DO-CHR-0007/04_preview.jpg",
+          "alt": "Christmas Set 07 watermarked preview 3"
+        },
+        {
+          "path": "assets/products/DO-CHR-0007/05_preview.jpg",
+          "alt": "Christmas Set 07 watermarked preview 4"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582164359/christmas-png-bundle-vol-07-set-of-4",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0008",
+      "sku": "DO-CHR-0008",
+      "title": "Christmas PNG Bundle Vol. 08, Set of 4 Festive Winter Designs, Printable Digital Art, Instant Download",
+      "slug": "christmas-set-08",
+      "url": "/product/christmas-set-08/",
+      "description": "Christmas Set 08 includes four unique high-resolution holiday and winter PNG designs from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 4 clean, unwatermarked PNG designs\n- sRGB production color with 600 PPI metadata\n- 44 square designs are 2400 x 2400 px; 5 landscape designs are 3200 x 2400 px.\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; downloaded customer files are clean and unwatermarked.\n\nAI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png bundle",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "png bundle",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas set 08"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0008/01_cover.jpg",
+          "alt": "Christmas Set 08 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0008/02_preview.jpg",
+          "alt": "Christmas Set 08 watermarked preview 1"
+        },
+        {
+          "path": "assets/products/DO-CHR-0008/03_preview.jpg",
+          "alt": "Christmas Set 08 watermarked preview 2"
+        },
+        {
+          "path": "assets/products/DO-CHR-0008/04_preview.jpg",
+          "alt": "Christmas Set 08 watermarked preview 3"
+        },
+        {
+          "path": "assets/products/DO-CHR-0008/05_preview.jpg",
+          "alt": "Christmas Set 08 watermarked preview 4"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582164555/christmas-png-bundle-vol-08-set-of-4",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0009",
+      "sku": "DO-CHR-0009",
+      "title": "Christmas PNG Bundle Vol. 09, Set of 4 Festive Winter Designs, Printable Digital Art, Instant Download",
+      "slug": "christmas-set-09",
+      "url": "/product/christmas-set-09/",
+      "description": "Christmas Set 09 includes four unique high-resolution holiday and winter PNG designs from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 4 clean, unwatermarked PNG designs\n- sRGB production color with 600 PPI metadata\n- 44 square designs are 2400 x 2400 px; 5 landscape designs are 3200 x 2400 px.\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; downloaded customer files are clean and unwatermarked.\n\nAI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png bundle",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "png bundle",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas set 09"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0009/01_cover.jpg",
+          "alt": "Christmas Set 09 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0009/02_preview.jpg",
+          "alt": "Christmas Set 09 watermarked preview 1"
+        },
+        {
+          "path": "assets/products/DO-CHR-0009/03_preview.jpg",
+          "alt": "Christmas Set 09 watermarked preview 2"
+        },
+        {
+          "path": "assets/products/DO-CHR-0009/04_preview.jpg",
+          "alt": "Christmas Set 09 watermarked preview 3"
+        },
+        {
+          "path": "assets/products/DO-CHR-0009/05_preview.jpg",
+          "alt": "Christmas Set 09 watermarked preview 4"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582164851/christmas-png-bundle-vol-09-set-of-4",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0010",
+      "sku": "DO-CHR-0010",
+      "title": "Christmas PNG Bundle Vol. 10, Set of 4 Festive Winter Designs, Printable Digital Art, Instant Download",
+      "slug": "christmas-set-10",
+      "url": "/product/christmas-set-10/",
+      "description": "Christmas Set 10 includes four unique high-resolution holiday and winter PNG designs from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 4 clean, unwatermarked PNG designs\n- sRGB production color with 600 PPI metadata\n- 44 square designs are 2400 x 2400 px; 5 landscape designs are 3200 x 2400 px.\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; downloaded customer files are clean and unwatermarked.\n\nAI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png bundle",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "png bundle",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas set 10"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0010/01_cover.jpg",
+          "alt": "Christmas Set 10 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0010/02_preview.jpg",
+          "alt": "Christmas Set 10 watermarked preview 1"
+        },
+        {
+          "path": "assets/products/DO-CHR-0010/03_preview.jpg",
+          "alt": "Christmas Set 10 watermarked preview 2"
+        },
+        {
+          "path": "assets/products/DO-CHR-0010/04_preview.jpg",
+          "alt": "Christmas Set 10 watermarked preview 3"
+        },
+        {
+          "path": "assets/products/DO-CHR-0010/05_preview.jpg",
+          "alt": "Christmas Set 10 watermarked preview 4"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582165127/christmas-png-bundle-vol-10-set-of-4",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0011",
+      "sku": "DO-CHR-0011",
+      "title": "Christmas PNG Bundle Vol. 11, Set of 4 Festive Winter Designs, Printable Digital Art, Instant Download",
+      "slug": "christmas-set-11",
+      "url": "/product/christmas-set-11/",
+      "description": "Christmas Set 11 includes four unique high-resolution holiday and winter PNG designs from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 4 clean, unwatermarked PNG designs\n- sRGB production color with 600 PPI metadata\n- 44 square designs are 2400 x 2400 px; 5 landscape designs are 3200 x 2400 px.\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; downloaded customer files are clean and unwatermarked.\n\nAI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png bundle",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "png bundle",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas set 11"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0011/01_cover.jpg",
+          "alt": "Christmas Set 11 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0011/02_preview.jpg",
+          "alt": "Christmas Set 11 watermarked preview 1"
+        },
+        {
+          "path": "assets/products/DO-CHR-0011/03_preview.jpg",
+          "alt": "Christmas Set 11 watermarked preview 2"
+        },
+        {
+          "path": "assets/products/DO-CHR-0011/04_preview.jpg",
+          "alt": "Christmas Set 11 watermarked preview 3"
+        },
+        {
+          "path": "assets/products/DO-CHR-0011/05_preview.jpg",
+          "alt": "Christmas Set 11 watermarked preview 4"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582165339/christmas-png-bundle-vol-11-set-of-4",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0012",
+      "sku": "DO-CHR-0012",
+      "title": "Christmas PNG Bundle Vol. 12, Set of 4 Festive Winter Designs, Printable Digital Art, Instant Download",
+      "slug": "christmas-set-12",
+      "url": "/product/christmas-set-12/",
+      "description": "Christmas Set 12 includes four unique high-resolution holiday and winter PNG designs from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 4 clean, unwatermarked PNG designs\n- sRGB production color with 600 PPI metadata\n- 44 square designs are 2400 x 2400 px; 5 landscape designs are 3200 x 2400 px.\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; downloaded customer files are clean and unwatermarked.\n\nAI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png bundle",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "png bundle",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas set 12"
+      ],
+      "price": {
+        "amountCents": 399,
+        "currency": "USD",
+        "display": "$3.99"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0012/01_cover.jpg",
+          "alt": "Christmas Set 12 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0012/02_preview.jpg",
+          "alt": "Christmas Set 12 watermarked preview 1"
+        },
+        {
+          "path": "assets/products/DO-CHR-0012/03_preview.jpg",
+          "alt": "Christmas Set 12 watermarked preview 2"
+        },
+        {
+          "path": "assets/products/DO-CHR-0012/04_preview.jpg",
+          "alt": "Christmas Set 12 watermarked preview 3"
+        },
+        {
+          "path": "assets/products/DO-CHR-0012/05_preview.jpg",
+          "alt": "Christmas Set 12 watermarked preview 4"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582177802/christmas-png-bundle-vol-12-set-of-4",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0015",
+      "sku": "DO-CHR-0015",
+      "title": "Christmas Winter PNG Design 01, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-01",
+      "url": "/product/christmas-individual-01/",
+      "description": "Christmas Individual 01 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 3200 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 01"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0015/01_cover.jpg",
+          "alt": "Christmas Individual 01 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0015/02_preview.jpg",
+          "alt": "Christmas Individual 01 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582170837/christmas-winter-png-design-01-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0016",
+      "sku": "DO-CHR-0016",
+      "title": "Christmas Winter PNG Design 02, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-02",
+      "url": "/product/christmas-individual-02/",
+      "description": "Christmas Individual 02 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 02"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0016/01_cover.jpg",
+          "alt": "Christmas Individual 02 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0016/02_preview.jpg",
+          "alt": "Christmas Individual 02 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582182832/christmas-winter-png-design-02-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0017",
+      "sku": "DO-CHR-0017",
+      "title": "Christmas Winter PNG Design 03, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-03",
+      "url": "/product/christmas-individual-03/",
+      "description": "Christmas Individual 03 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 03"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0017/01_cover.jpg",
+          "alt": "Christmas Individual 03 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0017/02_preview.jpg",
+          "alt": "Christmas Individual 03 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582182928/christmas-winter-png-design-03-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0018",
+      "sku": "DO-CHR-0018",
+      "title": "Christmas Winter PNG Design 04, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-04",
+      "url": "/product/christmas-individual-04/",
+      "description": "Christmas Individual 04 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 04"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0018/01_cover.jpg",
+          "alt": "Christmas Individual 04 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0018/02_preview.jpg",
+          "alt": "Christmas Individual 04 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582171101/christmas-winter-png-design-04-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0019",
+      "sku": "DO-CHR-0019",
+      "title": "Christmas Winter PNG Design 05, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-05",
+      "url": "/product/christmas-individual-05/",
+      "description": "Christmas Individual 05 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 05"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0019/01_cover.jpg",
+          "alt": "Christmas Individual 05 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0019/02_preview.jpg",
+          "alt": "Christmas Individual 05 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582183100/christmas-winter-png-design-05-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0020",
+      "sku": "DO-CHR-0020",
+      "title": "Christmas Winter PNG Design 06, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-06",
+      "url": "/product/christmas-individual-06/",
+      "description": "Christmas Individual 06 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 06"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0020/01_cover.jpg",
+          "alt": "Christmas Individual 06 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0020/02_preview.jpg",
+          "alt": "Christmas Individual 06 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582183172/christmas-winter-png-design-06-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0021",
+      "sku": "DO-CHR-0021",
+      "title": "Christmas Winter PNG Design 07, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-07",
+      "url": "/product/christmas-individual-07/",
+      "description": "Christmas Individual 07 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 07"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0021/01_cover.jpg",
+          "alt": "Christmas Individual 07 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0021/02_preview.jpg",
+          "alt": "Christmas Individual 07 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582183246/christmas-winter-png-design-07-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0022",
+      "sku": "DO-CHR-0022",
+      "title": "Christmas Winter PNG Design 08, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-08",
+      "url": "/product/christmas-individual-08/",
+      "description": "Christmas Individual 08 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 08"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0022/01_cover.jpg",
+          "alt": "Christmas Individual 08 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0022/02_preview.jpg",
+          "alt": "Christmas Individual 08 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582183314/christmas-winter-png-design-08-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0023",
+      "sku": "DO-CHR-0023",
+      "title": "Christmas Winter PNG Design 09, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-09",
+      "url": "/product/christmas-individual-09/",
+      "description": "Christmas Individual 09 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 09"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0023/01_cover.jpg",
+          "alt": "Christmas Individual 09 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0023/02_preview.jpg",
+          "alt": "Christmas Individual 09 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582183404/christmas-winter-png-design-09-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0024",
+      "sku": "DO-CHR-0024",
+      "title": "Christmas Winter PNG Design 10, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-10",
+      "url": "/product/christmas-individual-10/",
+      "description": "Christmas Individual 10 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 10"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0024/01_cover.jpg",
+          "alt": "Christmas Individual 10 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0024/02_preview.jpg",
+          "alt": "Christmas Individual 10 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582171627/christmas-winter-png-design-10-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0025",
+      "sku": "DO-CHR-0025",
+      "title": "Christmas Winter PNG Design 11, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-11",
+      "url": "/product/christmas-individual-11/",
+      "description": "Christmas Individual 11 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 11"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0025/01_cover.jpg",
+          "alt": "Christmas Individual 11 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0025/02_preview.jpg",
+          "alt": "Christmas Individual 11 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582171709/christmas-winter-png-design-11-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0026",
+      "sku": "DO-CHR-0026",
+      "title": "Christmas Winter PNG Design 12, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-12",
+      "url": "/product/christmas-individual-12/",
+      "description": "Christmas Individual 12 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 12"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0026/01_cover.jpg",
+          "alt": "Christmas Individual 12 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0026/02_preview.jpg",
+          "alt": "Christmas Individual 12 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582171805/christmas-winter-png-design-12-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0027",
+      "sku": "DO-CHR-0027",
+      "title": "Christmas Winter PNG Design 13, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-13",
+      "url": "/product/christmas-individual-13/",
+      "description": "Christmas Individual 13 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 3200 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 13"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0027/01_cover.jpg",
+          "alt": "Christmas Individual 13 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0027/02_preview.jpg",
+          "alt": "Christmas Individual 13 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582183772/christmas-winter-png-design-13-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0028",
+      "sku": "DO-CHR-0028",
+      "title": "Christmas Winter PNG Design 14, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-14",
+      "url": "/product/christmas-individual-14/",
+      "description": "Christmas Individual 14 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 14"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0028/01_cover.jpg",
+          "alt": "Christmas Individual 14 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0028/02_preview.jpg",
+          "alt": "Christmas Individual 14 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582171961/christmas-winter-png-design-14-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0029",
+      "sku": "DO-CHR-0029",
+      "title": "Christmas Winter PNG Design 15, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-15",
+      "url": "/product/christmas-individual-15/",
+      "description": "Christmas Individual 15 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 15"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0029/01_cover.jpg",
+          "alt": "Christmas Individual 15 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0029/02_preview.jpg",
+          "alt": "Christmas Individual 15 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582172075/christmas-winter-png-design-15-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0030",
+      "sku": "DO-CHR-0030",
+      "title": "Christmas Winter PNG Design 16, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-16",
+      "url": "/product/christmas-individual-16/",
+      "description": "Christmas Individual 16 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 16"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0030/01_cover.jpg",
+          "alt": "Christmas Individual 16 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0030/02_preview.jpg",
+          "alt": "Christmas Individual 16 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582184016/christmas-winter-png-design-16-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0031",
+      "sku": "DO-CHR-0031",
+      "title": "Christmas Winter PNG Design 17, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-17",
+      "url": "/product/christmas-individual-17/",
+      "description": "Christmas Individual 17 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 17"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0031/01_cover.jpg",
+          "alt": "Christmas Individual 17 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0031/02_preview.jpg",
+          "alt": "Christmas Individual 17 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582184090/christmas-winter-png-design-17-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0032",
+      "sku": "DO-CHR-0032",
+      "title": "Christmas Winter PNG Design 18, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-18",
+      "url": "/product/christmas-individual-18/",
+      "description": "Christmas Individual 18 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 18"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0032/01_cover.jpg",
+          "alt": "Christmas Individual 18 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0032/02_preview.jpg",
+          "alt": "Christmas Individual 18 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582172311/christmas-winter-png-design-18-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0033",
+      "sku": "DO-CHR-0033",
+      "title": "Christmas Winter PNG Design 19, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-19",
+      "url": "/product/christmas-individual-19/",
+      "description": "Christmas Individual 19 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 19"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0033/01_cover.jpg",
+          "alt": "Christmas Individual 19 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0033/02_preview.jpg",
+          "alt": "Christmas Individual 19 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582172433/christmas-winter-png-design-19-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0034",
+      "sku": "DO-CHR-0034",
+      "title": "Christmas Winter PNG Design 20, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-20",
+      "url": "/product/christmas-individual-20/",
+      "description": "Christmas Individual 20 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 20"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0034/01_cover.jpg",
+          "alt": "Christmas Individual 20 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0034/02_preview.jpg",
+          "alt": "Christmas Individual 20 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582184340/christmas-winter-png-design-20-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0035",
+      "sku": "DO-CHR-0035",
+      "title": "Christmas Winter PNG Design 21, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-21",
+      "url": "/product/christmas-individual-21/",
+      "description": "Christmas Individual 21 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 21"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0035/01_cover.jpg",
+          "alt": "Christmas Individual 21 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0035/02_preview.jpg",
+          "alt": "Christmas Individual 21 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582172575/christmas-winter-png-design-21-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0036",
+      "sku": "DO-CHR-0036",
+      "title": "Christmas Winter PNG Design 22, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-22",
+      "url": "/product/christmas-individual-22/",
+      "description": "Christmas Individual 22 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 22"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0036/01_cover.jpg",
+          "alt": "Christmas Individual 22 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0036/02_preview.jpg",
+          "alt": "Christmas Individual 22 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582172663/christmas-winter-png-design-22-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0037",
+      "sku": "DO-CHR-0037",
+      "title": "Christmas Winter PNG Design 23, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-23",
+      "url": "/product/christmas-individual-23/",
+      "description": "Christmas Individual 23 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 23"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0037/01_cover.jpg",
+          "alt": "Christmas Individual 23 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0037/02_preview.jpg",
+          "alt": "Christmas Individual 23 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582184610/christmas-winter-png-design-23-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0038",
+      "sku": "DO-CHR-0038",
+      "title": "Christmas Winter PNG Design 24, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-24",
+      "url": "/product/christmas-individual-24/",
+      "description": "Christmas Individual 24 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 24"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0038/01_cover.jpg",
+          "alt": "Christmas Individual 24 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0038/02_preview.jpg",
+          "alt": "Christmas Individual 24 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582184702/christmas-winter-png-design-24-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0039",
+      "sku": "DO-CHR-0039",
+      "title": "Christmas Winter PNG Design 25, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-25",
+      "url": "/product/christmas-individual-25/",
+      "description": "Christmas Individual 25 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 25"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0039/01_cover.jpg",
+          "alt": "Christmas Individual 25 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0039/02_preview.jpg",
+          "alt": "Christmas Individual 25 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582172871/christmas-winter-png-design-25-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0040",
+      "sku": "DO-CHR-0040",
+      "title": "Christmas Winter PNG Design 26, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-26",
+      "url": "/product/christmas-individual-26/",
+      "description": "Christmas Individual 26 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 3200 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 26"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0040/01_cover.jpg",
+          "alt": "Christmas Individual 26 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0040/02_preview.jpg",
+          "alt": "Christmas Individual 26 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582184862/christmas-winter-png-design-26-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0041",
+      "sku": "DO-CHR-0041",
+      "title": "Christmas Winter PNG Design 27, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-27",
+      "url": "/product/christmas-individual-27/",
+      "description": "Christmas Individual 27 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 27"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0041/01_cover.jpg",
+          "alt": "Christmas Individual 27 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0041/02_preview.jpg",
+          "alt": "Christmas Individual 27 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582184960/christmas-winter-png-design-27-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0042",
+      "sku": "DO-CHR-0042",
+      "title": "Christmas Winter PNG Design 28, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-28",
+      "url": "/product/christmas-individual-28/",
+      "description": "Christmas Individual 28 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 28"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0042/01_cover.jpg",
+          "alt": "Christmas Individual 28 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0042/02_preview.jpg",
+          "alt": "Christmas Individual 28 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582173131/christmas-winter-png-design-28-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0043",
+      "sku": "DO-CHR-0043",
+      "title": "Christmas Winter PNG Design 29, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-29",
+      "url": "/product/christmas-individual-29/",
+      "description": "Christmas Individual 29 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 29"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0043/01_cover.jpg",
+          "alt": "Christmas Individual 29 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0043/02_preview.jpg",
+          "alt": "Christmas Individual 29 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582173217/christmas-winter-png-design-29-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0044",
+      "sku": "DO-CHR-0044",
+      "title": "Christmas Winter PNG Design 30, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-30",
+      "url": "/product/christmas-individual-30/",
+      "description": "Christmas Individual 30 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 30"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0044/01_cover.jpg",
+          "alt": "Christmas Individual 30 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0044/02_preview.jpg",
+          "alt": "Christmas Individual 30 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582185264/christmas-winter-png-design-30-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0045",
+      "sku": "DO-CHR-0045",
+      "title": "Christmas Winter PNG Design 31, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-31",
+      "url": "/product/christmas-individual-31/",
+      "description": "Christmas Individual 31 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 31"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0045/01_cover.jpg",
+          "alt": "Christmas Individual 31 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0045/02_preview.jpg",
+          "alt": "Christmas Individual 31 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582185366/christmas-winter-png-design-31-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0046",
+      "sku": "DO-CHR-0046",
+      "title": "Christmas Winter PNG Design 32, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-32",
+      "url": "/product/christmas-individual-32/",
+      "description": "Christmas Individual 32 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 32"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0046/01_cover.jpg",
+          "alt": "Christmas Individual 32 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0046/02_preview.jpg",
+          "alt": "Christmas Individual 32 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582173449/christmas-winter-png-design-32-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0047",
+      "sku": "DO-CHR-0047",
+      "title": "Christmas Winter PNG Design 33, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-33",
+      "url": "/product/christmas-individual-33/",
+      "description": "Christmas Individual 33 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 33"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0047/01_cover.jpg",
+          "alt": "Christmas Individual 33 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0047/02_preview.jpg",
+          "alt": "Christmas Individual 33 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582173531/christmas-winter-png-design-33-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0048",
+      "sku": "DO-CHR-0048",
+      "title": "Christmas Winter PNG Design 34, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-34",
+      "url": "/product/christmas-individual-34/",
+      "description": "Christmas Individual 34 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 34"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0048/01_cover.jpg",
+          "alt": "Christmas Individual 34 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0048/02_preview.jpg",
+          "alt": "Christmas Individual 34 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582185616/christmas-winter-png-design-34-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0049",
+      "sku": "DO-CHR-0049",
+      "title": "Christmas Winter PNG Design 35, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-35",
+      "url": "/product/christmas-individual-35/",
+      "description": "Christmas Individual 35 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 35"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0049/01_cover.jpg",
+          "alt": "Christmas Individual 35 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0049/02_preview.jpg",
+          "alt": "Christmas Individual 35 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582185690/christmas-winter-png-design-35-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0050",
+      "sku": "DO-CHR-0050",
+      "title": "Christmas Winter PNG Design 36, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-36",
+      "url": "/product/christmas-individual-36/",
+      "description": "Christmas Individual 36 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 3200 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 36"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0050/01_cover.jpg",
+          "alt": "Christmas Individual 36 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0050/02_preview.jpg",
+          "alt": "Christmas Individual 36 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582173803/christmas-winter-png-design-36-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0051",
+      "sku": "DO-CHR-0051",
+      "title": "Christmas Winter PNG Design 37, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-37",
+      "url": "/product/christmas-individual-37/",
+      "description": "Christmas Individual 37 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 37"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0051/01_cover.jpg",
+          "alt": "Christmas Individual 37 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0051/02_preview.jpg",
+          "alt": "Christmas Individual 37 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582185892/christmas-winter-png-design-37-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0052",
+      "sku": "DO-CHR-0052",
+      "title": "Christmas Winter PNG Design 38, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-38",
+      "url": "/product/christmas-individual-38/",
+      "description": "Christmas Individual 38 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 38"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0052/01_cover.jpg",
+          "alt": "Christmas Individual 38 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0052/02_preview.jpg",
+          "alt": "Christmas Individual 38 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582173965/christmas-winter-png-design-38-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0053",
+      "sku": "DO-CHR-0053",
+      "title": "Christmas Winter PNG Design 39, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-39",
+      "url": "/product/christmas-individual-39/",
+      "description": "Christmas Individual 39 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 39"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0053/01_cover.jpg",
+          "alt": "Christmas Individual 39 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0053/02_preview.jpg",
+          "alt": "Christmas Individual 39 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582174053/christmas-winter-png-design-39-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0054",
+      "sku": "DO-CHR-0054",
+      "title": "Christmas Winter PNG Design 40, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-40",
+      "url": "/product/christmas-individual-40/",
+      "description": "Christmas Individual 40 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 40"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0054/01_cover.jpg",
+          "alt": "Christmas Individual 40 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0054/02_preview.jpg",
+          "alt": "Christmas Individual 40 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582174123/christmas-winter-png-design-40-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0055",
+      "sku": "DO-CHR-0055",
+      "title": "Christmas Winter PNG Design 41, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-41",
+      "url": "/product/christmas-individual-41/",
+      "description": "Christmas Individual 41 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 41"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0055/01_cover.jpg",
+          "alt": "Christmas Individual 41 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0055/02_preview.jpg",
+          "alt": "Christmas Individual 41 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582174189/christmas-winter-png-design-41-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0056",
+      "sku": "DO-CHR-0056",
+      "title": "Christmas Winter PNG Design 42, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-42",
+      "url": "/product/christmas-individual-42/",
+      "description": "Christmas Individual 42 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 42"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0056/01_cover.jpg",
+          "alt": "Christmas Individual 42 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0056/02_preview.jpg",
+          "alt": "Christmas Individual 42 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582174269/christmas-winter-png-design-42-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0057",
+      "sku": "DO-CHR-0057",
+      "title": "Christmas Winter PNG Design 43, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-43",
+      "url": "/product/christmas-individual-43/",
+      "description": "Christmas Individual 43 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 43"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0057/01_cover.jpg",
+          "alt": "Christmas Individual 43 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0057/02_preview.jpg",
+          "alt": "Christmas Individual 43 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582174343/christmas-winter-png-design-43-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0058",
+      "sku": "DO-CHR-0058",
+      "title": "Christmas Winter PNG Design 44, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-44",
+      "url": "/product/christmas-individual-44/",
+      "description": "Christmas Individual 44 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 3200 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 44"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0058/01_cover.jpg",
+          "alt": "Christmas Individual 44 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0058/02_preview.jpg",
+          "alt": "Christmas Individual 44 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582174419/christmas-winter-png-design-44-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0059",
+      "sku": "DO-CHR-0059",
+      "title": "Christmas Winter PNG Design 45, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-45",
+      "url": "/product/christmas-individual-45/",
+      "description": "Christmas Individual 45 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 45"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0059/01_cover.jpg",
+          "alt": "Christmas Individual 45 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0059/02_preview.jpg",
+          "alt": "Christmas Individual 45 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582174491/christmas-winter-png-design-45-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0060",
+      "sku": "DO-CHR-0060",
+      "title": "Christmas Winter PNG Design 46, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-46",
+      "url": "/product/christmas-individual-46/",
+      "description": "Christmas Individual 46 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 46"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0060/01_cover.jpg",
+          "alt": "Christmas Individual 46 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0060/02_preview.jpg",
+          "alt": "Christmas Individual 46 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582186546/christmas-winter-png-design-46-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0061",
+      "sku": "DO-CHR-0061",
+      "title": "Christmas Winter PNG Design 47, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-47",
+      "url": "/product/christmas-individual-47/",
+      "description": "Christmas Individual 47 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 47"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0061/01_cover.jpg",
+          "alt": "Christmas Individual 47 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0061/02_preview.jpg",
+          "alt": "Christmas Individual 47 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582174621/christmas-winter-png-design-47-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0062",
+      "sku": "DO-CHR-0062",
+      "title": "Christmas Winter PNG Design 48, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-individual-48",
+      "url": "/product/christmas-individual-48/",
+      "description": "Christmas Individual 48 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas art 48"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0062/01_cover.jpg",
+          "alt": "Christmas Individual 48 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0062/02_preview.jpg",
+          "alt": "Christmas Individual 48 watermarked preview"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582186658/christmas-winter-png-design-48-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0013",
+      "sku": "DO-CHR-0013",
+      "title": "Christmas Winter PNG Design, High Resolution Printable Digital Art, Instant Download",
+      "slug": "christmas-single-01",
+      "url": "/product/christmas-single-01/",
+      "description": "Christmas Single 01 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- The PNG keeps its approved source aspect ratio and production-master dimensions.\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; downloaded customer files are clean and unwatermarked.\n\nAI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "single png design",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "christmas artwork"
+      ],
+      "price": {
+        "amountCents": 149,
+        "currency": "USD",
+        "display": "$1.49"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0013/01_cover.jpg",
+          "alt": "Christmas Single 01 cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0013/02_preview.jpg",
+          "alt": "Christmas Single 01 watermarked preview 1"
+        }
+      ],
+      "featured": false,
+      "buyUrl": "https://www.etsy.com/listing/4582165859/christmas-winter-png-design-high",
+      "updatedAt": "2026-09-25T02:29:16.953Z"
+    },
+    {
+      "id": "prod-do-chr-0014",
+      "sku": "DO-CHR-0014",
+      "title": "Complete Christmas PNG Bundle, 49 Festive Winter Designs, Printable Digital Art Collection",
+      "slug": "christmas-master-bundle",
+      "url": "/product/christmas-master-bundle/",
+      "description": "The complete Dragon Oak Studio Christmas collection contains all 49 unique approved holiday and winter PNG designs.\n\nWHAT YOU GET\n- 49 clean, unwatermarked PNG designs\n- sRGB production color with 600 PPI metadata\n- 44 square designs are 2400 x 2400 px; 5 landscape designs are 3200 x 2400 px.\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; downloaded customer files are clean and unwatermarked.\n\nAI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+      "collection": "christmas",
+      "subcollection": "digital-art",
+      "productType": "digital_download",
+      "tags": [
+        "christmas png",
+        "winter png bundle",
+        "holiday clipart",
+        "printable christmas",
+        "festive digital art",
+        "christmas download",
+        "instant download",
+        "png bundle",
+        "sublimation png",
+        "craft supply",
+        "holiday printable",
+        "winter scene png",
+        "49 design bundle"
+      ],
+      "price": {
+        "amountCents": 2499,
+        "currency": "USD",
+        "display": "$24.99"
+      },
+      "images": [
+        {
+          "path": "assets/products/DO-CHR-0014/01_cover.jpg",
+          "alt": "Christmas Master Bundle cover"
+        },
+        {
+          "path": "assets/products/DO-CHR-0014/02_preview.jpg",
+          "alt": "Christmas Master Bundle watermarked preview 1"
+        },
+        {
+          "path": "assets/products/DO-CHR-0014/03_preview.jpg",
+          "alt": "Christmas Master Bundle watermarked preview 2"
+        },
+        {
+          "path": "assets/products/DO-CHR-0014/04_preview.jpg",
+          "alt": "Christmas Master Bundle watermarked preview 3"
+        },
+        {
+          "path": "assets/products/DO-CHR-0014/05_preview.jpg",
+          "alt": "Christmas Master Bundle watermarked preview 4"
+        }
+      ],
+      "featured": false,
+      "buyUrl": null,
+      "updatedAt": "2026-09-25T02:29:16.953Z"
     }
   ]
 }

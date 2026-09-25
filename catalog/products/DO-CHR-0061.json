@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "prod-do-chr-0061",
+  "sku": "DO-CHR-0061",
+  "title": "Christmas Winter PNG Design 47, High Resolution Printable Digital Art, Instant Download",
+  "slug": "christmas-individual-47",
+  "description": "Christmas Individual 47 is one unique high-resolution holiday and winter PNG design from the Dragon Oak Studio Christmas collection.\n\nWHAT YOU GET\n- 1 clean, unwatermarked PNG design\n- sRGB production color with 600 PPI metadata\n- Approved production-master dimensions: 2400 x 2400 px\n- Instant digital download; no physical item is shipped\n\nFILE NOTES\nThe customer artwork preserves the approved source composition and aspect ratio. Listing previews are watermarked; the downloaded customer file is clean and unwatermarked.\n\nAI DISCLOSURE\nThis design was created with the assistance of AI image-generation tools as part of the creative process, then hand-curated, inspected, and prepared for production.\n\nUSAGE\nFor personal use and small-batch commercial use on physical items you make and sell. Resale or redistribution of the digital file itself is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
+  "collection": "christmas",
+  "subcollection": "digital-art",
+  "productType": "digital_download",
+  "tags": [
+    "christmas png",
+    "winter png",
+    "holiday clipart",
+    "printable christmas",
+    "festive digital art",
+    "christmas download",
+    "instant download",
+    "single png design",
+    "sublimation png",
+    "craft supply",
+    "holiday printable",
+    "winter scene png",
+    "christmas art 47"
+  ],
+  "price": {
+    "amountCents": 149,
+    "currency": "USD"
+  },
+  "images": [
+    {
+      "path": "assets/products/DO-CHR-0061/01_cover.jpg",
+      "alt": "Christmas Individual 47 cover"
+    },
+    {
+      "path": "assets/products/DO-CHR-0061/02_preview.jpg",
+      "alt": "Christmas Individual 47 watermarked preview"
+    }
+  ],
+  "digitalFiles": [
+    {
+      "ref": "adrian:etsy/christmas/individual_47/christmas_source_masters_20260924_CHR_MASTER_047.png",
+      "label": "christmas_source_masters_20260924_CHR_MASTER_047.png",
+      "kind": "png"
+    }
+  ],
+  "etsy": {
+    "listingId": 4582174621,
+    "url": "https://www.etsy.com/listing/4582174621/christmas-winter-png-design-47-high",
+    "state": "active",
+    "syncedAt": "2026-09-25T02:29:16.953Z"
+  },
+  "siteState": "published",
+  "featured": false,
+  "createdAt": "2026-09-25T01:39:07.654Z",
+  "updatedAt": "2026-09-25T02:29:16.953Z",
+  "notes": "Approved for the Dragon Oak Studio Christmas production deployment.",
+  "provenance": "Approved ADRIAN Christmas master; deterministic design 47."
+}
