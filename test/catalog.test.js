@@ -6,6 +6,7 @@ const {
   compareProducts,
   formatPrice,
   isSafeEtsyUrl,
+  isTrustedImageUrl,
   toPublicProduct,
   validateCollections,
   validateProduct,
@@ -108,6 +109,23 @@ test("image paths must be relative assets/ paths with alt text, and must exist",
 
   const missing = validateProduct(baseProduct(), { fileExists: () => false });
   assert.ok(missing.errors.some((message) => message.includes("file not found")));
+});
+
+test("product images may use trusted Etsy CDN URLs without requiring local files", () => {
+  const trusted = "https://i.etsystatic.com/64473522/r/il/c34365/8549844100/il_fullxfull.8549844100_pf78.jpg";
+
+  assert.equal(isTrustedImageUrl(trusted), true);
+  assert.deepEqual(validateProduct(baseProduct({ images: [{ path: trusted, alt: "Etsy image" }] }), { fileExists: () => false }).errors, []);
+
+  [
+    "http://i.etsystatic.com/1/a.jpg",
+    "https://i.etsystatic.com.evil.example/1/a.jpg",
+    "https://user:pw@i.etsystatic.com/1/a.jpg",
+    "https://i.etsystatic.com/1/a.gif",
+  ].forEach((url) => {
+    assert.equal(isTrustedImageUrl(url), false, url);
+    assert.ok(errorsOf(baseProduct({ images: [{ path: url, alt: "a" }] })).length, url);
+  });
 });
 
 test("digital file references must be opaque adrian: identifiers, never URLs or paths", () => {

@@ -47,6 +47,8 @@ const ID_PATTERN = /^[a-z0-9][a-z0-9_-]{5,63}$/;
 const SKU_PATTERN = /^[A-Z0-9][A-Z0-9-]{2,39}$/;
 const SLUG_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const IMAGE_PATH_PATTERN = /^assets\/[A-Za-z0-9._\-/]+\.(?:webp|jpg|jpeg|png)$/;
+const TRUSTED_IMAGE_HOSTS = new Set(["i.etsystatic.com"]);
+const IMAGE_EXTENSION_PATTERN = /\.(?:webp|jpg|jpeg|png)$/i;
 // Digital file references are OPAQUE ADRIAN identifiers (never URLs or file-system paths).
 const DIGITAL_REF_PATTERN = /^adrian:[A-Za-z0-9._\-/]+$/;
 const ISO_TIMESTAMP_PATTERN = /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d{1,3})?(?:Z|[+-]\d{2}:\d{2})$/;
@@ -85,6 +87,28 @@ const isSafeRelativePath = (value) =>
   !value.includes("\\") &&
   !value.startsWith("/") &&
   !/^[a-z][a-z0-9+.-]*:/i.test(value);
+
+const isTrustedImageUrl = (value) => {
+  if (typeof value !== "string") {
+    return false;
+  }
+
+  try {
+    const url = new URL(value);
+
+    return (
+      url.protocol === "https:" &&
+      !url.username &&
+      !url.password &&
+      TRUSTED_IMAGE_HOSTS.has(url.hostname.toLowerCase()) &&
+      IMAGE_EXTENSION_PATTERN.test(url.pathname)
+    );
+  } catch {
+    return false;
+  }
+};
+
+const isLocalImagePath = (value) => isSafeRelativePath(value) && IMAGE_PATH_PATTERN.test(value);
 
 // Etsy links are only trusted when they are https and on an etsy.com host (blocks javascript:, data:, look-alike hosts).
 const isSafeEtsyUrl = (value) => {
@@ -212,11 +236,13 @@ const validateProduct = (product, context = {}) => {
     fail(`images must be an array of at most ${LIMITS.images} items`);
   } else {
     product.images.forEach((image, index) => {
-      if (!isPlainObject(image) || !isSafeRelativePath(image.path) || !IMAGE_PATH_PATTERN.test(image.path)) {
-        fail(`images[${index}].path must be a relative assets/... path ending in .webp, .jpg, .jpeg or .png`);
+      const path = isPlainObject(image) ? image.path : null;
+
+      if (!isPlainObject(image) || (!isLocalImagePath(path) && !isTrustedImageUrl(path))) {
+        fail(`images[${index}].path must be a relative assets/... image path or a trusted https://i.etsystatic.com image URL`);
       } else if (!isNonEmptyString(image.alt)) {
         fail(`images[${index}].alt text is required`);
-      } else if (!fileExists(image.path)) {
+      } else if (isLocalImagePath(path) && !fileExists(path)) {
         fail(`images[${index}] file not found: ${image.path}`);
       }
     });
@@ -503,6 +529,7 @@ module.exports = {
   compareProducts,
   formatPrice,
   isSafeEtsyUrl,
+  isTrustedImageUrl,
   loadCatalog,
   toPublicProduct,
   validateCollections,

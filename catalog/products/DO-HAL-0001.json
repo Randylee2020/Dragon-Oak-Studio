@@ -2,16 +2,52 @@
   "schemaVersion": 1,
   "id": "prod-do-hal-0001",
   "sku": "DO-HAL-0001",
-  "title": "Halloween Themed Custom Tumbler",
-  "slug": "halloween-themed-custom-tumbler",
-  "description": "A Halloween themed custom tumbler with full-color UV printed artwork, made by Dragon Oak Studio.",
+  "title": "Chibi Halloween Coaster PNG Bundle Vol. 3, Set of 4 Cute Kawaii Spiderweb, Witch, Candy Corn & Cat Girls, Digital Download",
+  "slug": "chibi-halloween-coaster-png-bundle-vol-3-set-of-4-cute-kawaii-spiderweb-witch-ca",
+  "description": "An adorable chibi quartet for Halloween lovers: a spooky-sweet girl swinging through a sparkling spiderweb under a giant moon, a flying witch with purple bat wings trailing a ribbon of stardust over a lantern-lit village, a candy corn girl hugging a jack-o'-lantern bucket overflowing with treats, and a black cat-costume girl pouncing beside a glowing pumpkin and yarn balls.\n\n✦ WHAT YOU GET\n• 4 separate high-resolution PNG files (1254 x 1254 px)\n• Ready for sublimation coasters, UV DTF printing, tumblers, and more\n• Instant digital download — no physical item is shipped\n\n✦ DESIGN NOTES\nKawaii chibi-style art with big sparkling eyes and warm autumn lighting give this set a cute, collectible feel that's a little different from our gothic-horror collections — perfect for anyone who wants their Halloween sweet instead of spooky.\n\n✦ AI DISCLOSURE\nThese designs were created with the assistance of AI image-generation tools as part of my creative process, then hand-curated, cleaned up, and prepared for print. This listing is a digital file only; no physical product is shipped.\n\n✦ USAGE\nFor personal use and small-batch commercial use on physical items you make and sell (coasters, tumblers, apparel, etc.). Resale or redistribution of the digital files themselves is not permitted.\n\nThank you for shopping Dragon Oak Studio!",
   "collection": "halloween",
-  "subcollection": "tumblers",
-  "productType": "physical_product",
-  "tags": ["halloween", "tumbler", "uv printed"],
-  "price": null,
+  "subcollection": "coaster-bundles",
+  "productType": "digital_download",
+  "tags": [
+    "chibi_halloween_png",
+    "kawaii_halloween_art",
+    "spider_web_girl_png",
+    "flying_witch_png",
+    "candy_corn_girl_art",
+    "black_cat_girl_png",
+    "coaster_sublimation",
+    "uv_printer_file",
+    "halloween_coaster",
+    "anime_halloween_art",
+    "digital_download",
+    "png_bundle",
+    "instant_download"
+  ],
+  "price": {
+    "amountCents": 399,
+    "currency": "USD"
+  },
   "images": [
-    { "path": "assets/halloween-tumbler.webp", "alt": "Halloween themed custom tumbler" }
+    {
+      "path": "https://i.etsystatic.com/64473522/r/il/22601f/8549739076/il_fullxfull.8549739076_md97.jpg",
+      "alt": "Chibi Halloween Coaster PNG Bundle Vol. 3, Set of 4 Cute Kawaii Spiderweb, Witch, Candy Corn & Cat Girls, Digital Download"
+    },
+    {
+      "path": "https://i.etsystatic.com/64473522/r/il/59edbc/8597613115/il_fullxfull.8597613115_a7i2.jpg",
+      "alt": "Chibi Halloween Coaster PNG Bundle Vol. 3, Set of 4 Cute Kawaii Spiderweb, Witch, Candy Corn & Cat Girls, Digital Download"
+    },
+    {
+      "path": "https://i.etsystatic.com/64473522/r/il/049b3a/8549739142/il_fullxfull.8549739142_jag2.jpg",
+      "alt": "Chibi Halloween Coaster PNG Bundle Vol. 3, Set of 4 Cute Kawaii Spiderweb, Witch, Candy Corn & Cat Girls, Digital Download"
+    },
+    {
+      "path": "https://i.etsystatic.com/64473522/r/il/3a9f3c/8597613181/il_fullxfull.8597613181_8thj.jpg",
+      "alt": "Chibi Halloween Coaster PNG Bundle Vol. 3, Set of 4 Cute Kawaii Spiderweb, Witch, Candy Corn & Cat Girls, Digital Download"
+    },
+    {
+      "path": "https://i.etsystatic.com/64473522/r/il/c578ee/8549739224/il_fullxfull.8549739224_ktr2.jpg",
+      "alt": "Chibi Halloween Coaster PNG Bundle Vol. 3, Set of 4 Cute Kawaii Spiderweb, Witch, Candy Corn & Cat Girls, Digital Download"
+    }
   ],
   "digitalFiles": [],
   "etsy": {
@@ -21,8 +57,8 @@
     "syncedAt": null
   },
   "siteState": "published",
-  "featured": true,
+  "featured": false,
   "createdAt": "2026-09-21T12:00:00Z",
   "updatedAt": "2026-09-21T12:00:00Z",
-  "provenance": "seeded from the existing site image assets/halloween-tumbler.webp; replace this placeholder SKU with the real one when the product is mapped to Etsy"
+  "provenance": "Imported from EtsyListingsDownload.csv for Storefront V1; CSV does not include reliable Etsy listing IDs or product URLs."
 }
